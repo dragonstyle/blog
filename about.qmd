@@ -1,0 +1,28 @@
+---
+title: "About"
+toc: false
+---
+
+::: {.column-margin .hidden-sm}
+![](images/Charles_Teague_Transparent.png){.frame fig-align="center" style="max-" width="250"}
+
+::: bio-link
+[<i class="bi bi-twitter"></i> dragonstyle](https://twitter.com/dragonstyle)
+:::
+
+::: bio-link
+[<i class="bi bi-github"></i> dragonstyle](https://github.com/dragonstyle)
+:::
+
+::: bio-link
+[<i class="bi bi-linkedin"></i> Charles Teague](https://www.linkedin.com/in/cteague/)
+:::
+:::
+
+Charles is the Executive Chairman of Lose It! and a Software Architect at [Rstudio](https://www.rstudio.com) where he is focused on [Quarto](https://www.quarto.org).
+
+Prior to joining Rstudio, Charles Teague was the CEO and founder of FitNow, Inc., the maker of [Lose It!](https://www.loseit.com), one of the most popular health and fitness application for iOS and Android devices. Since 2008, tens of millions of users have used Lose It! to lose more than 100 million pounds.
+
+Charles was a Technologist in Residence at [General Catalyst Partners](https://www.generalcatalyst.com) where he focused on Smartphone and Cloud Computing technologies. Before joining General Catalyst, Charles was the co-founder of Onfolio, Inc., which was acquired by Microsoft in 2005. At [Microsoft](https://www.microsoft.com) Charles worked overseeing the development and engineering of [Windows Live Writer](https://www.microsoft.com/en-us/p/open-live-writer) which was originally created at Onfolio, Inc.
+
+Before joining Onfolio, Charles was the first employee at [Allaire Corporation](https://en.wikipedia.org/wiki/Allaire_Corporation), which went public and was acquired by [Macromedia](https://en.wikipedia.org/wiki/Macromedia) in 2001. At Macromedia, Charles was a Director of Engineering responsible for the development and engineering of [ColdFusion](https://coldfusion.adobe.com) (now Adobe ColdFusion). Charles earned a Bachelor of Arts degree from [Macalester College](https://www.macalester.edu).

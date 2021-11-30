@@ -1,0 +1,9 @@
+/* css styles */
+.bio-link {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.frame {
+  border: solid .5px silver;
+}
