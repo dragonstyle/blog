@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Charles Teague Weblog</title>
+<link>https://www.charlesteague.com/index.html</link>
+<atom:link href="https://www.charlesteague.com/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-99.9.9</generator>
+<lastBuildDate>Mon, 07 Feb 2022 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Welcome to the Blog (2.0)</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/welcome/index.html</link>
+  <description><![CDATA[ 
+
+<p>Years ago, I worked on a popular for authoring blogs, <a href="https://www.microsoft.com/en-us/p/open-live-writer/9nblggh5279m?activetab=pivot:overviewtab">Windows Live Writer</a>. That tool provided a WYSIWYG experience, giving users a Microsoft Word like experience for editing their blog. During this time period, if you manged to find my blog, you’d see only test posts associated with the latest features of Live Writer.</p>
+<p>After I stopped working on Writer, I returned to blogging myself, writing primarily about my interest mobile technology and what I saw as a revolution led by the Apple iPhone. I’ve brought those old posts to this weblog, and though the are dated, it is fun to look back at how early that market was and to see how much it has grown.</p>
+<p>For the last 18 months, I’ve been working at RStudio on a new project, <a href="https://www.quarto.org">Quarto</a>. It is the very technology that is being used to create this blog. I can’t commit to writing frequently, I intend to write more frequently. We’ll see if I can live up to it!</p>
+
+
+ ]]></description>
+  <category>News</category>
+  <guid>https://www.charlesteague.com/blog/welcome/index.html</guid>
+  <pubDate>Mon, 07 Feb 2022 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>There’s an App For That</title>
+  <dc:creator>Charles Teague</dc:creator>
+  <link>https://www.charlesteague.com/blog/theres-an-app-for-that/index.html</link>
+  <description><![CDATA[ 
+
+
+<p>You probably have seen the ads highlighting the App Store- ‘There’s an App for That.’ I’ve seen a ton of them, and one of the greatest things about them is that they aren’t lying. There really is an app for that.</p>
+<p>There are now more than 17,000 applications available in the App Store. 17,706 to be precise. Each day, iPhone users can choose among 15 new games, 7 new utilities, 9 new entertainment applications, or 3 new productivity applications. 73 new applications appear in the App Store every day.</p>
+<p>Want to track your finances?&nbsp;<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=300238550&amp;mt=8">Mint.com</a>. Need to lose some weight?&nbsp;<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=297368629&amp;mt=8">Lose It</a>! Like to shop for deals?&nbsp;<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=288946910&amp;mt=8">WootWatch</a>. Bored?&nbsp;<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=302052502&amp;mt=8">Slotz</a>. Like to work out?&nbsp;<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=300235330&amp;mt=8">Runkeeper</a>. Need to have dinner delivered?&nbsp;<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=302920553&amp;mt=8">GrubHub</a>. There are apps for just about everything.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/1.png" class="img-fluid figure-img"></p>
+<p></p><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/2.png" class="img-fluid figure-img"></p>
+<p></p><p></p>
+</figure>
+</div>
+<section id="categories" class="level3">
+<h3 class="anchored" data-anchor-id="categories">Categories</h3>
+<p>Looking at the applications in the store, it is clear that the iPhone is an entertainment device. Games and Entertainment application make up more than a third of the applications in the store and typically dominate the top 100 applications in the store. In fact, Games and Entertainment make up nearly 50% of the most popular applications in the store.&nbsp;</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/3.png" class="img-fluid figure-img"></p>
+<p></p><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/4.png" class="img-fluid figure-img"></p>
+<p></p><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/5.png" class="img-fluid figure-img"></p>
+<p></p><p></p>
+</figure>
+</div>
+</section>
+<section id="pricing" class="level3">
+<h3 class="anchored" data-anchor-id="pricing">Pricing</h3>
+<p>While the low price approach of the App Store has continued, I think that the new headline should be ‘99 cents is the new free.’ The downward price trend continues, but most interestingly, but the percentage of applications that are free continues to decline. In fact, soon only 1 in 5 applications in the App Store will be free.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/6.png" class="img-fluid figure-img"></p>
+<p></p><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/7.png" class="img-fluid figure-img"></p>
+<p></p><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/8.png" class="img-fluid figure-img"></p>
+<p></p><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/9.png" class="img-fluid figure-img"></p>
+<p></p><p></p>
+</figure>
+</div>
+</section>
+<section id="summary" class="level3">
+<h3 class="anchored" data-anchor-id="summary">Summary</h3>
+<p>New SmartPhones (G1, Storm, Pre, etc…) are showing up pretty regularly now. They’re still working on catching the iPhone as far as its integration and slick user experience. The fact that the App Store is continuing to grow at such a torrid pace is bad news for these competitors. Because each new application is a potential reason for a customer to choose the iPhone and each new customer is a reason for a developer to build an application for the iPhone. This virtuous circle is creating tremendous advantage for the iPhone- it’ll make it incredibly difficult to catch Apple, once again.</p>
+<p><em>If you’re interested in doing some analysis yourself,&nbsp;<a href="application-data.csv">here is my latest raw data (csv)</a>.</em></p>
+
+
+</section>
+ ]]></description>
+  <category>iPhone</category>
+  <guid>https://www.charlesteague.com/blog/theres-an-app-for-that/index.html</guid>
+  <pubDate>Thu, 05 Feb 2009 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/theres-an-app-for-that/1.png" medium="image" type="image/png" height="124" width="144"/>
+</item>
+<item>
+  <title>App Store Raw Data</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/app-store-raw-data/index.html</link>
+  <description><![CDATA[ 
+
+<p><br>
+For those that are interested,&nbsp;<a href="applications.csv">here is recent (well actually, today’s) CSV file</a>&nbsp;with the raw data that I’ve been using to look more closely at the App Store. Feel free to use it for good.</p>
+<p>If you do decide to blog about something interesting that you’ve found in analyzing the data, it would be great if you could give me a little shout out/link and also if you could let me know so I can benefit from what you’ve learned!</p>
+
+
+ ]]></description>
+  <category>iPhone</category>
+  <category>News</category>
+  <guid>https://www.charlesteague.com/blog/app-store-raw-data/index.html</guid>
+  <pubDate>Fri, 19 Dec 2008 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>One Last Note on Trends</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/one-last-note-on-trends/index.html</link>
+  <description><![CDATA[ 
+
+<p>Prompted by Nate’s comment, here are a couple more looks at application trends on the app Store. First, if you have a look at the distribution of applications by price over time, you can see the rise of $.99 and $1.99 apps, along with the corresponding fall in free applications. Applications priced $4.99-$9.99 also see a decline, while most other prices are essentially stable.</p>
+<p><img src="https://www.charlesteague.com/blog/one-last-note-on-trends/1.png" class="img-fluid"></p>
+<p>Interestingly, with just a couple of exceptions, the distribution of categories appears to be stabilizing a bit, at least for the top genres. Games represent about a quarter of the applications in the store. The big mover appears to be medical, which has grown to more than 5% of the apps in the store.</p>
+<p><img src="https://www.charlesteague.com/blog/one-last-note-on-trends/2.png" class="img-fluid"></p>
+<p>And in a final note- the growth of the apps in the store continues to be steep- closing on 12,000 applications…</p>
+<p><img src="https://www.charlesteague.com/blog/one-last-note-on-trends/3.png" class="img-fluid"></p>
+
+
+ ]]></description>
+  <category>iPhone</category>
+  <category>News</category>
+  <guid>https://www.charlesteague.com/blog/one-last-note-on-trends/index.html</guid>
+  <pubDate>Fri, 19 Dec 2008 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/one-last-note-on-trends/1.png" medium="image" type="image/png" height="118" width="144"/>
+</item>
+<item>
+  <title>Down and To the Right By Design</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/down-and-to-the-right-by-design/index.html</link>
+  <description><![CDATA[ 
+
+
+<p>If you’re looking for market feedback on the value of applications, here it is. Using updated data to take a look a pricing trends confirms what I think everyone already knows. Each month, the average price of apps on the store just declines. For example, have a look at the average price of applications (excluding medical applications, whose high prices skew the results).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>An average application price that was once nearly $4 has fallen to nearly $2.25. It’s too early to tell, but it certainly doesn’t look like we’ve hit bottom yet, either.</p>
+<section id="games" class="level3">
+<h3 class="anchored" data-anchor-id="games"><strong>Games</strong></h3>
+<p>If you look at games, the downward trend is much more dramatic, but prices appear to have stabilized at just under 2 bucks an application. This, of course, begs the question-&nbsp;<a href="http://blog.charlesteague.com/links/2008/10/to-sell-apps-in.html">games are the most popular application in the store</a>, is this because they’re cheap? Or is this really the best we can hope for- that the most popular category of applications on the store is perceived as being worth about $1.50 an application?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="health-and-fitness" class="level3">
+<h3 class="anchored" data-anchor-id="health-and-fitness"><strong>Health and Fitness</strong></h3>
+<p>Health and Fitness is one of the few categories that appears to be reversing this trend. After an initial price drop, this category has seen average prices rise nearly every month, now approaching $3 an application. And it does make sense- after all health and fitness applications are likely to impact your life much more significantly than a game.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/3.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="why-are-prices-headed-down" class="level3">
+<h3 class="anchored" data-anchor-id="why-are-prices-headed-down"><strong>Why Are Prices Headed Down?</strong></h3>
+<p>Why the downward trend overall? There are a lot of factors.</p>
+<ol type="1">
+<li><p>Buyers of consumer mobile applications were already used to paying $5-7 for applications. This set a relatively low ceiling for applications targeted at consumers (who are the main buyer of iPhones).</p></li>
+<li><p>The inability to trial software means that users have to take a risk that they don’t like the software. This risk has to be priced into the software, reducing the price that can be charged.</p></li>
+<li><p>The large number of relatively simplistic and useless applications on the store increase the perceived risk when purchasing software. This increased risk of disappointment forces prices down further.&nbsp;</p></li>
+<li><p>Of course for many applications (lighters, flashlights, geiger counters) there are large number of substitute goods. This drives prices down. (And while we’re on the subject, do these developers call each other in the morning and decide which sort of annoying application they’re going to build today? How is it that 5 geiger counter applications manage to show up on the same day?!)</p></li>
+</ol>
+</section>
+<section id="there-is-no-end-in-site" class="level3">
+<h3 class="anchored" data-anchor-id="there-is-no-end-in-site"><strong>There is No End in Site</strong></h3>
+<p>But the real problem here isn’t that customers like cheap applications. It’s that the way the store is structured today is creating a&nbsp;<a href="https://en.wikipedia.org/wiki/Virtuous_circle_and_vicious_circle">vicious circle</a>&nbsp;of downward spiraling prices. As pricing pressure forces applications to be less expensive, developers need to respond by reducing their investment in the applications (to make them profitable). This in turn reduces the value of the applications, continuing to increase price pressure. Without some kind of change, I’m not sure where the pricing stops.&nbsp;</p>
+<p>A couple of suggestions</p>
+<ol type="1">
+<li><p>Let developers get recurring revenue by charging for upgrades or selling subscriptions. This breaks the cycle by allowing developers to profit from further investment, leaving initial prices low, but increasing revenue from satisfied users who continue to use the application.</p></li>
+<li><p>Grow the user base fast enough that some companies can be profitable even selling something for $.99. Of course, when the price pressure forces the price below $.99, then what?&nbsp;</p></li>
+</ol>
+<p>Or maybe, this is by design. After all, Apple stands to make 30% of the total app sales, and they don’t need to applications to be expensive. In fact, when you consider that they make money on the app transaction, but also that each new application adds value to the iPhone platform, more apps (even if they’re cheap) is probably better for Apple.</p>
+
+
+</section>
+ ]]></description>
+  <category>iPhone</category>
+  <category>News</category>
+  <guid>https://www.charlesteague.com/blog/down-and-to-the-right-by-design/index.html</guid>
+  <pubDate>Thu, 11 Dec 2008 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/1.png" medium="image" type="image/png" height="117" width="144"/>
+</item>
+<item>
+  <title>A Closer Look at App Store Category Growth</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/app-store-category-growth/index.html</link>
+  <description><![CDATA[ 
+
+
+<p><br>
+Taking a closer look at the growth rate of various categories confirms what everyone already knows- games are the high growth area of the App Store. There are a couple of interesting things that can be learned from the category trends, however.</p>
+<p>The below is a look at the most common application categories and their growth rate.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/app-store-category-growth/1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>1) Although the Utilities category was initially a high growth category, it’s growth is actually relatively flat. Entertainment applications have surpassed Utilities as the second most common type of application on the store.</p>
+<p>2) The Education category is growing incredibly rapidly, taking fourth place in November. If it continues to grow at its current rate, it will soon be the third most common category of application in the store.</p>
+<p>The below is a look at the least common categories and their growth rates. Healthcare &amp; Fitness is the big winner here…</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/app-store-category-growth/2.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+
+
+</section>
+ ]]></description>
+  <category>iPhone</category>
+  <category>News</category>
+  <guid>https://www.charlesteague.com/blog/app-store-category-growth/index.html</guid>
+  <pubDate>Fri, 05 Dec 2008 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/app-store-category-growth/1.png" medium="image" type="image/png" height="112" width="144"/>
+</item>
+<item>
+  <title>Apps for a Song</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/apps-for-a-song/index.html</link>
+  <description><![CDATA[ 
+
+<p>If you take a look at the growth rates of the App Store by price, something that you may have already intuitively known starts to become clear. $.99 has become the default price of applications on the store. In face, more than 1 in 3 of the applications on the store now cost $.99.</p>
+<p><img src="https://www.charlesteague.com/blog/apps-for-a-song/1.png" class="img-fluid"></p>
+<p>And the trend looks to be accelerating. The graph below illustrates the growth of various price points, and $.99 is outpacing every other price, including free. Seems everyone thinks they can make a buck on the App Store (well, 70 cents).</p>
+<p><img src="https://www.charlesteague.com/blog/apps-for-a-song/2.png" class="img-fluid"></p>
+<p>Of course, one of the very interesting things about settling on $.99 is the fact that this is also the base unit of measure in the rest of iTunes, where songs cost $.99. Are we trending toward a store that sells primarily applications in the same way it sells songs? And if so, what does that imply about how applications will look, how complex they will be, and their longevity? After all, the music business is largely a hits business (at least it used to be, now who knows what kind of business it is). And I guess the app business is likely to look the same…</p>
+
+
+ ]]></description>
+  <category>iPhone</category>
+  <guid>https://www.charlesteague.com/blog/apps-for-a-song/index.html</guid>
+  <pubDate>Thu, 04 Dec 2008 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/apps-for-a-song/1.png" medium="image" type="image/png" height="111" width="144"/>
+</item>
+<item>
+  <title>It’s True - 10,000 Applications</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/10000-applications/index.html</link>
+  <description><![CDATA[ 
+
+<p>For those waiting for my official acknowledgement, the App Store now has more than 10,000 applications available. Congrats!</p>
+<p class="page-columns page-full"><img src="https://www.charlesteague.com/blog/10000-applications/1.png" class="column-page img-fluid" style="width: 100%;"></p>
+
+
+ ]]></description>
+  <category>Random</category>
+  <category>iPhone</category>
+  <category>News</category>
+  <guid>https://www.charlesteague.com/blog/10000-applications/index.html</guid>
+  <pubDate>Thu, 04 Dec 2008 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/10000-applications/1.png" medium="image" type="image/png" height="130" width="144"/>
+</item>
+<item>
+  <title>5 months and 9,000 Applications Later</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/5-months-and-9000-apps-later/index.html</link>
+  <description><![CDATA[ 
+
+
+<p>The App Store has now been around for a little more than 5 months. And so, this afternoon I was curious about the state of the world in the App Store. After digging around on the net for some up to date analysis, I gave up and decided I’d do some analysis myself. (Most of the analysis, including my own previous analysis, only uses the top applications, which are available in an RSS feed. But that creates bias, since the analysis is exclusively based upon successful applications).</p>
+<p>After a little expedition to gather some data (I admit it, I used .Net rather than a more fashionable scripting language), I now have an easily updateable spreadsheet with all of the apps in the app store.</p>
+<p>There were some surprises.</p>
+<section id="application-publishing-trends" class="level2">
+<h2 class="anchored" data-anchor-id="application-publishing-trends"><strong>Application Publishing Trends</strong></h2>
+<p>For example, there are&nbsp;<strong><em>more than 9,000</em></strong>&nbsp;applications in the app store. You read that right. I had seen estimates of 5,000+, but that really underestimates just how many applications are there (a ton…). There is now something like 180 new applications each day. It’s an incredible trend that currently isn’t showing any sings of leveling off.</p>
+<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/1.png" class="img-fluid"></p>
+<p>Note the huge spike around the street availability date of the 2nd generation iPhone- developers are rushing to get their app in the store in time for the launch (only to be disappointed when the approval process was opaque and sluggish). Apple has clearly worked to scale their review process since their normal days are approaching that initial spike that overwhelmed the review process around the launch.</p>
+<p>If you have a look at the cumulative chart, you can see the same thing- little to no drop off in the volume of applications…</p>
+<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/2.png" class="img-fluid"></p>
+</section>
+<section id="pricing" class="level2">
+<h2 class="anchored" data-anchor-id="pricing">Pricing</h2>
+<p>There are more than 7,000 applications that are for sale, and just over 2,000 free applications.&nbsp;</p>
+<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/3.png" class="img-fluid"></p>
+<p><br>
+The average price of an application on the app store is $3.21, but if you ignore the free applications and instead ask the question what the average price is for non-free applications, the answer is actually $4.15.</p>
+<p>The distribution of prices is pretty much what you’d expect- a lot of free and cheap applications, very few applications that are very expensive. Note that there are more $.99 applications than free applications.</p>
+<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/4.png" class="img-fluid"><br>
+</p>
+<p>When you look at the average price in each category, it’s not surprising to see serious application categories like Business, Healthcare, and Finance have the highest average price. Also not that surprising to see entertainment oriented categories with the lowest average prices. This follows the vitamin versus pain killer theory- people pay more for pain killers than for vitamins.</p>
+<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/5.png" class="img-fluid"></p>
+<p>A related point to consider- free applications are&nbsp;<em>a lot</em>&nbsp;more popular than paid applications. Since we don’t know how the popularity score is calculated, it’s a bit difficult to figure out what to make of this, other than to point out the obvious- people are willing to try free stuff.</p>
+<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/6.png" class="img-fluid"></p>
+</section>
+<section id="distribution" class="level2">
+<h2 class="anchored" data-anchor-id="distribution">Distribution</h2>
+<p>In a previous posts I analyzed the 100 most popular applications (at the time). One of the takeaways from that analysis was that games dominated the top application lists. If you needed more evidence that games are the runaway success of the store, here it is. Games represent 23% of the applications available on the store, but make up between 39 and 50% of the positions on the list of top applications.</p>
+<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/7.png" class="img-fluid"></p>
+<section id="most-popular-applications-any-category-any-price" class="level3">
+<h3 class="anchored" data-anchor-id="most-popular-applications-any-category-any-price"><strong>Most Popular Applications (Any Category, Any Price)</strong></h3>
+<p>The App Store data about each application contains a field with a popularity score (this is the field that is used to show the popularity bar graphs next to songs and other content in the store). Applications, include that data as well, with values ranging from 0 to 1. When I researched how that value is populated, Apple’s official position is that it is a combination of sales and other Apple internal calculations. Well, according to the popularity score, here are the most popular applications in the App Store. All are free.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Name</strong></th>
+<th><strong>Price</strong></th>
+<th><strong>Popularity</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Google Mobile App</td>
+<td>$0.00&nbsp;</td>
+<td>1.000000000000</td>
+</tr>
+<tr class="even">
+<td>Shazam</td>
+<td>$0.00&nbsp;</td>
+<td>1.000000000000</td>
+</tr>
+<tr class="odd">
+<td>Urbanspoon</td>
+<td>$0.00&nbsp;</td>
+<td>1.000000000000</td>
+</tr>
+<tr class="even">
+<td>Backgrounds</td>
+<td>$0.00&nbsp;</td>
+<td>1.000000000000</td>
+</tr>
+<tr class="odd">
+<td>160000 Recipes - BigOven</td>
+<td>$0.00&nbsp;</td>
+<td>1.000000000000</td>
+</tr>
+<tr class="even">
+<td>Cube</td>
+<td>$0.00&nbsp;</td>
+<td>1.000000000000</td>
+</tr>
+<tr class="odd">
+<td>The Weather ChannelÂ®</td>
+<td>$0.00&nbsp;</td>
+<td>1.000000000000</td>
+</tr>
+<tr class="even">
+<td>Facebook</td>
+<td>$0.00&nbsp;</td>
+<td>1.000000000000</td>
+</tr>
+<tr class="odd">
+<td>Touch Hockey: FS5 (FREE)</td>
+<td>$0.00&nbsp;</td>
+<td>1.000000000000</td>
+</tr>
+<tr class="even">
+<td>Google Earth</td>
+<td>$0.00&nbsp;</td>
+<td>0.886920900000</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="most-popular-paid-applications" class="level3">
+<h3 class="anchored" data-anchor-id="most-popular-paid-applications"><strong>Most Popular Paid Applications</strong></h3>
+<p>Using the same popularity score, here are the more popular paid applications in the store. Note the massive discrepancy in the scores.&nbsp;<strong><em>The most popular paid application is #48 on the list of all of the most popular applications</em></strong>. Free clearly rules on the App Store.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Name</strong></th>
+<th><strong>Price</strong></th>
+<th><strong>Popularity</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Flick Fishing</td>
+<td>$0.99&nbsp;</td>
+<td>0.293970020000</td>
+</tr>
+<tr class="even">
+<td>Ocarina</td>
+<td>$0.99&nbsp;</td>
+<td>0.235705390000</td>
+</tr>
+<tr class="odd">
+<td>CameraBag</td>
+<td>$2.99&nbsp;</td>
+<td>0.217822370000</td>
+</tr>
+<tr class="even">
+<td>Moto Chaser</td>
+<td>$0.99&nbsp;</td>
+<td>0.183404980000</td>
+</tr>
+<tr class="odd">
+<td>Face Melter</td>
+<td>$1.99&nbsp;</td>
+<td>0.165116010000</td>
+</tr>
+<tr class="even">
+<td>Vint B&amp;W</td>
+<td>$0.99&nbsp;</td>
+<td>0.143047210000</td>
+</tr>
+<tr class="odd">
+<td>iHunt</td>
+<td>$0.99&nbsp;</td>
+<td>0.112076000000</td>
+</tr>
+<tr class="even">
+<td>Pocket First Aid &amp; CPR Guide</td>
+<td>$1.99&nbsp;</td>
+<td>0.102925606000</td>
+</tr>
+<tr class="odd">
+<td>Grocery iQ</td>
+<td>$0.99&nbsp;</td>
+<td>0.100141720000</td>
+</tr>
+<tr class="even">
+<td>Easy Relax</td>
+<td>$0.99&nbsp;</td>
+<td>0.092379180000</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="applications-over-100" class="level2">
+<h2 class="anchored" data-anchor-id="applications-over-100">Applications Over $100</h2>
+<p>When I took a look at the expensive applications, I was surprised to find an application that cost $899.99! Anyone remember the controversy around the release and subsequent removal of ‘I Am Rich?’ These expensive applications, unlike the frivolous ‘I Am Rich’ are actually quite useful. iRa, for example, provides monitoring of video surveillance cameras. The ‘Lexi’ applications provide access to a comprehensive drug database for use by medical providers to improve point of care service. These are not trivial applications…</p>
+<table class="table">
+<colgroup>
+<col style="width: 39%">
+<col style="width: 25%">
+<col style="width: 22%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Name</strong></th>
+<th><strong>Category</strong></th>
+<th><strong>Publisher</strong></th>
+<th><strong>Price</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>iRa</td>
+<td>Business</td>
+<td>Lextech Labs</td>
+<td>$899.99&nbsp;</td>
+</tr>
+<tr class="even">
+<td>MATG - SAP BusinessOne</td>
+<td>Finance</td>
+<td>MyAccountsToGo</td>
+<td>$449.99&nbsp;</td>
+</tr>
+<tr class="odd">
+<td>MATG - Dynamics GP</td>
+<td>Finance</td>
+<td>MyAccountsToGo</td>
+<td>$449.99&nbsp;</td>
+</tr>
+<tr class="even">
+<td>Lexi-COMPLETE</td>
+<td>Healthcare &amp; Fitness</td>
+<td>Lexi-Comp</td>
+<td>$299.99&nbsp;</td>
+</tr>
+<tr class="odd">
+<td>Lexi-SELECT</td>
+<td>Healthcare &amp; Fitness</td>
+<td>Lexi-Comp</td>
+<td>$219.99&nbsp;</td>
+</tr>
+<tr class="even">
+<td>Eclipse 500</td>
+<td>Utilities</td>
+<td>PunkStar Studios</td>
+<td>$199.99&nbsp;</td>
+</tr>
+<tr class="odd">
+<td>ROSIE Home Automation</td>
+<td>Lifestyle</td>
+<td>Savant Systems LLC</td>
+<td>$199.99&nbsp;</td>
+</tr>
+<tr class="even">
+<td>Lexi-CLINICAL SUITE</td>
+<td>Healthcare &amp; Fitness</td>
+<td>Lexi-Comp</td>
+<td>$179.99&nbsp;</td>
+</tr>
+<tr class="odd">
+<td>Lexi-PEDIATRIC SUITE</td>
+<td>Healthcare &amp; Fitness</td>
+<td>Lexi-Comp</td>
+<td>$179.99&nbsp;</td>
+</tr>
+<tr class="even">
+<td>ProRemote</td>
+<td>Music</td>
+<td>Far Out Labs</td>
+<td>$149.99&nbsp;</td>
+</tr>
+<tr class="odd">
+<td>iChart EMR</td>
+<td>Healthcare &amp; Fitness</td>
+<td>Caretools Inc</td>
+<td>$139.99&nbsp;</td>
+</tr>
+<tr class="even">
+<td>Lexi-Drugs &amp; Lexi-Interact</td>
+<td>Healthcare &amp; Fitness</td>
+<td>Lexi-Comp</td>
+<td>$119.99&nbsp;</td>
+</tr>
+<tr class="odd">
+<td>Dental Lexi-Drugs &amp; Lexi-Interact</td>
+<td>Healthcare &amp; Fitness</td>
+<td>Lexi-Comp</td>
+<td>$119.99&nbsp;</td>
+</tr>
+<tr class="even">
+<td>Tunic Guitar</td>
+<td>Music</td>
+<td>Bernhard Stopper</td>
+<td>$109.99&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="wrap-up" class="level2">
+<h2 class="anchored" data-anchor-id="wrap-up">Wrap Up</h2>
+<p>The growth of the application market for the iPhone is incredible. 9,000 applications in&nbsp;155 months!&nbsp;</p>
+<ol type="1">
+<li><p>Free applications really dominate the app store, even though there are a lot more paid applications. No idea whether anyone is making serious money, though.&nbsp;</p></li>
+<li><p>People are trying to sell serious applications on the App Store, charging hundreds of dollars for high value applications and data. No idea whether this is working at all.&nbsp;</p></li>
+</ol>
+<p>If anyone has additional thoughts about interesting analysis to consider with this data, or would like an updated copy of the data so they can do some analysis themselves, leave me a comment and I’ll do what I can!</p>
+
+
+</section>
+ ]]></description>
+  <category>iPhone</category>
+  <guid>https://www.charlesteague.com/blog/5-months-and-9000-apps-later/index.html</guid>
+  <pubDate>Tue, 25 Nov 2008 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/1.png" medium="image" type="image/png" height="91" width="144"/>
+</item>
+<item>
+  <title>Brown Zune, Windows Live Writer, and My MacBook Pro</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/brown-zune/index.html</link>
+  <description><![CDATA[ 
+
+<p>I’m more than a month into my conversion to a Mac, and so far I’ve adjusted nicely. The largest issue for me was the fact that I didn’t know any shortcut keys, so I was using the mouse a lot more than I’m used to. I’m overcoming that, though I desparately miss ctrl+tab to switch between windows of the current application.</p>
+<p>There are two applications that I haven’t been able to give up in my transition, however.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/brown-zune/Picture%202.png" class="img-fluid figure-img"></p>
+<p></p><p></p>
+</figure>
+</div>
+<p>&nbsp;</p>
+<div class="quarto-figure quarto-figure-center" style="width: 100%;">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/brown-zune/Picture%203.png" class="img-fluid figure-img"></p>
+<p></p><p></p>
+</figure>
+</div>
+<p>The transition was really smoothed by the addition of VMware- anytime I need to I can simply open up Windows and do what I need to do (I ended up installing Visual Studio there so I can whip up quick utility apps in C#, for example). to any windows users getting ready to make the jump, I can definitely give you two pieces of advice from my experience:</p>
+<p>The Mac experience is sweet. The OS is nice, the hardware and software are beautiful, and everything does really just work. I’d recommend it. Invest in VMWare Fusion. For the small additional cost of of a VMware license, you can keep your Windows apps around, and have a fall back plan in case you need to do something that just requires Windows.</p>
+
+
+ ]]></description>
+  <category>Technology</category>
+  <category>Random</category>
+  <guid>https://www.charlesteague.com/blog/brown-zune/index.html</guid>
+  <pubDate>Tue, 21 Oct 2008 04:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/brown-zune/Picture%202.png" medium="image" type="image/png"/>
+</item>
+<item>
+  <title>Hope for Expensive Apps iTunes</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/hope-for-expensive-apps/index.html</link>
+  <description><![CDATA[ 
+
+<p>One of the challenges that has faced developers of apps on the iTunes App Store has been how to price their applications. Early customers complained about applications with high (read: more than $9.99) prices. Since those early days, a competitive and crowded field of applications has conspired to push prices down as consumers faced more choices and application sought to claim a stop on the coveted ‘Top 25’ list.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/hope-for-expensive-apps/penny.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>Apple really made things a challenge, largely because they have such a limited business model for these applications (a 1 time license fee, no subscription model, no charged upgrade model, no trial model). Developer’s hands were really tied.</p>
+<p>A smart developer would be better served to build a large number of small inexpensive applications (collecting revenue from customers each time they release a new application) rather than spend a large amount of time on complicated apps. After all, a lots of users will plunk down $1.99 for an app based only on screen shots and reviews, but most are loathe to part with $29.99 on just the promise of a good app.</p>
+<p>So it came to be that the app store has been crowded, at least in my opinion, with a ton of apps that are a lot closer to gadgets than applications. Useful, sure. Valuable, maybe. An inspired use of what is an excellent mobile computing platform? Definitely not.</p>
+<p>But just today, I’ve seen a couple of apps that are bucking the trend.</p>
+<p>BeeJiveIM is a deep IM client for the iPhone that supports pretty much every IM platform out there. It uses push email to do notification of new messages. It has a broad and deep feature set. And, it costs $15.99. Jaadu VNC is a VNC client which allows you to connect to and control your desktop computer (whether that is a Mac or PC). Broad and deep feature set. $24.99. Now, we just to need to wait and see how the economics play out. Can these more complicated and expensive applications thrive at a high price, in a market with so many limitations? Will Apple continue to invest in improving iTunes for applications, adding some of the basic business models that software companies have traditionally used in selling their software?</p>
+<p>If you’re wondering why I’d like to see expensive iPhone applications, the answer is pretty simple. It’s because I’d like to see awesome, compelling, deep, feature rich, and evolving applications the iPhone. And I’d like to see the developers who build getting paid a fair price.</p>
+
+
+ ]]></description>
+  <category>iPhone</category>
+  <guid>https://www.charlesteague.com/blog/hope-for-expensive-apps/index.html</guid>
+  <pubDate>Mon, 29 Sep 2008 04:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/hope-for-expensive-apps/penny.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>App Store Comments Are Crappy, But Let’s Not Get All Draconian</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/app-store-comments/index.html</link>
+  <description><![CDATA[ 
+
+<p>Everyone who has spent some time on the App Store realizes that there are a large number of pointless or even harmful comments. Whether the post simply says ‘first’, disses an application that the commenter has never used, or complains about an issue that was fixed in an updated version of the app, the comment system on the App Store isn’t adequate. It’s a rough situation since the App Store doesn’t allow trialing of apps. Comments, the application description, and the application screenshots are the only real way for an end user to assess an application, so filling 1/3 of the assessment with garbage really hurts.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/app-store-comments/Picture%201.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>Some see this as a place where Apple should exert more control, perhaps even filtering the comments. What grand irony that the same people that complain when Apple filter apps call for Apple to filter comments! Here’s a couple of suggestions that would go a long ways to improving the commenting, but don’t require Apple to be a gatekeeper.</p>
+<ol type="1">
+<li>Allow users to rate comments. Comments that are pointless and crappy will simply be voted down (a la Slashdot, Digg, Reddit, Amazon.com reviews, and a million other examples). Use filtering to only display the low rated comments if the viewer requests it.</li>
+</ol>
+<p><em>Edit: Hey- they already allow this, and it looks to be working pretty well. Some of the apps I looked at had pretty reasonable reviews with very little noise, just from this filter alone. Nice.</em></p>
+<ol start="2" type="1">
+<li><p>Allow a single developer post to appear at or near the top of the comments. This developer post can be updated when the developer publishes a new version of their product. They can use it to explain what issues (that appear in the comments) they have addressed in the current release. A lot of developers are doing this in the application description, and it’s annoying to see a bunch of text responding to comments where there should just be text describing the application.</p></li>
+<li><p>Filter on whether the commenter has ‘bought’ the app. Since iTunes knows what Apps the user has, why not just add a simple icon to comments from folks who have actually downloaded the app, and default a filter to only show comments by people who have downloaded the app. This adds friction to the pointless commenters and will help improve the quality of comments that display.</p></li>
+</ol>
+<p>Whatever happens, how about we trend away from gatekeepers in the App Store?</p>
+
+
+ ]]></description>
+  <category>iPhone</category>
+  <guid>https://www.charlesteague.com/blog/app-store-comments/index.html</guid>
+  <pubDate>Tue, 23 Sep 2008 04:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/app-store-comments/Picture%201.png" medium="image" type="image/png"/>
+</item>
+<item>
+  <title>Transition 2</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/transition-2/index.html</link>
+  <description><![CDATA[ 
+
+<p>So on to part 2. After a couple of years focused on Windows Live Writer and blogging, the time has come for me to&nbsp; work on something new.</p>
+<p>I’m now a Technologist in Residence at General Catalyst, a position which will offer me a significant opportunity to learn from some very bright people with both great operational experience and also great experience in the venture capital community. This brings with it a whole new host of professional challenges, as in the short term I’ll likely be spending a lot less time actually building products and getting them to market (which is what is really natural for me). That said, it’s a set of challenges that I’m really looking forward to.</p>
+<p>As a part of the transition, my family and I have also relocated from the Seattle area to the Boston area. After living and working here for 10 years prior to my time at Microsoft, it feels great to be back. Just in time for the MLB playoffs too. I had a great time working at Microsoft, a career objective of mine from way back has now been checked off the list :).</p>
+<p>If you’re in the Boston area and I haven’t yet reached out to offer to buy you a cup of coffee and chat, please drop me a line!</p>
+
+
+ ]]></description>
+  <category>Venture Capital</category>
+  <category>iPhone</category>
+  <category>News</category>
+  <guid>https://www.charlesteague.com/blog/transition-2/index.html</guid>
+  <pubDate>Mon, 08 Sep 2008 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Transition Part 1</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/transition-1/index.html</link>
+  <description><![CDATA[ 
+
+<p>So I’m going through a bit of a transition in my life (more about this later). As a part of this transition, the focus of this blog is going to change. It remains my personal weblog, but rather than mostly playing around with features of Windows Live Writer, I’ll be doing a bit more writing about my current technical interests. Top of the list is the <a href="http://www.apple.com/iphone">iPhone</a> (I know, I should get in line).</p>
+<p>Stay tuned for more on the rest of the transition!</p>
+
+
+ ]]></description>
+  <category>iPhone</category>
+  <category>News</category>
+  <guid>https://www.charlesteague.com/blog/transition-1/index.html</guid>
+  <pubDate>Mon, 25 Aug 2008 04:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
