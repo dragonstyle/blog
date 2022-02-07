@@ -7,6 +7,10 @@ site:
     right:
       - text: "About"
         href: about.qmd
+      - icon: github
+        href: https://github.com/dragonstyle/blog
+      - icon: rss
+        href: index.xml
   site-url: https://www.charlesteague.com
   repo-url: https://github.com/dragonstyle/blog
   repo-actions: [edit, issue]
