@@ -10,22 +10,602 @@
 <atom:link href="https://www.charlesteague.com/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-99.9.9</generator>
-<lastBuildDate>Mon, 07 Feb 2022 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 14 Dec 2009 05:00:00 GMT</lastBuildDate>
 <item>
-  <title>Welcome to the Blog (2.0)</title>
+  <title>App Store Data for December 2009</title>
   <dc:creator></dc:creator>
-  <link>https://www.charlesteague.com/blog/welcome/index.html</link>
+  <link>https://www.charlesteague.com/blog/app-store-data-december-2009/index.html</link>
   <description><![CDATA[ 
 
-<p>Years ago, I worked on a popular for authoring blogs, <a href="https://www.microsoft.com/en-us/p/open-live-writer/9nblggh5279m?activetab=pivot:overviewtab">Windows Live Writer</a>. That tool provided a WYSIWYG experience, giving users a Microsoft Word like experience for editing their blog. During this time period, if you manged to find my blog, you’d see only test posts associated with the latest features of Live Writer.</p>
-<p>After I stopped working on Writer, I returned to blogging myself, writing primarily about my interest mobile technology and what I saw as a revolution led by the Apple iPhone. I’ve brought those old posts to this weblog, and though the are dated, it is fun to look back at how early that market was and to see how much it has grown.</p>
-<p>For the last 18 months, I’ve been working at RStudio on a new project, <a href="https://www.quarto.org">Quarto</a>. It is the very technology that is being used to create this blog. I can’t commit to writing frequently, I intend to write more frequently. We’ll see if I can live up to it!</p>
+<p><img src="https://www.charlesteague.com/blog/app-store-data-december-2009/1.png" class="img-fluid" style="float:right;"> Ok, so it has been a while since I’ve posted an update of the App Store data. Since it’s been so long, I’m including a special bonus. But first, a couple of notes:</p>
+<ol type="1">
+<li><p>It looks to me like the XML feed that I scrape to gather this data limits the results to 6000 applications per category. I’m not sure that they’re ordered by popularity, though that certainly would make sense. This same limit is in the iTunes UI that uses the feed, so popularity is sensible.</p></li>
+<li><p>I haven’t look closely at the data, nor tried to to put together any trends. You’re on your own!</p></li>
+<li><p>I added a few additional columns to the data that I scrape:</p>
+<ol type="1">
+<li><p>ApplicationUrl</p></li>
+<li><p>IconUrl</p></li>
+<li><p>Rating</p></li>
+<li><p>RatingContent</p></li>
+</ol></li>
+</ol>
+<p>As always, I’m happy to share the data, but would love to learn from people- please share what you learn with this!</p>
+<p><a href="application-data.csv">Download US only data</a>&nbsp;(6MB)</p>
 
 
  ]]></description>
+  <category>iPhone</category>
+  <guid>https://www.charlesteague.com/blog/app-store-data-december-2009/index.html</guid>
+  <pubDate>Mon, 14 Dec 2009 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/app-store-data-december-2009/1.png" medium="image" type="image/png" height="83" width="144"/>
+</item>
+<item>
+  <title>It’s been a while!</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/its-been-a-while/index.html</link>
+  <description><![CDATA[ 
+
+<p>Yes, it has been a while. Hopefully everyone is off to a good start to their holidays, as&nbsp; I am.</p>
+<p>I’ve been heads down for the last several months, working on&nbsp;<a href="http://www.loseit.com/">Lose It</a>!. Well, I finally shipped the 2.0 version that has been consuming all of my time. It’s been great to watch the adoption of the new version and the user excitement that goes with many of the new features. This is the kind of paragraph that is immensely rewarding for folks who really try to make great software:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.charlesteague.com/blog/its-been-a-while/1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>The amount of polish on Lose It’s website is a reflection of the amount of polish in the app itself. Both the Lose It! site and app work together seamlessly to give you as clear an idea as possible about your exercise and eating trends. Considering the amount of work that must have gone into it, it’s amazing that t his all comes at no charge. If you’re looking for a way to help you lose weight, I’d unconditionally recommend downloading Lose It! from the app store and setting up an account with their site.</p>
+<p>(<a href="http://www.tuaw.com/2009/11/26/lose-it-app-for-iphone-updated-to-2-0-introduces-online-sync-s/">The Unofficial Apple Weblog</a>)</p>
+</blockquote>
+<p>It’s also been great to get my chops at running an online service back- I have been in the world of client software for a number of years, but web applications are my roots, and Lose It! has finally brought me back to those roots. We’re running the service completely virtually and taking advantage of as many cloud services as we can. At the root of this is Amazon Web Services, of course, but we’re complementing AWS with&nbsp;<a href="http://www.stax.net/">Stax</a>, a service which has served as the foundation for our data and services, and a good one. Running an online service has really changed since I last did it- the demand on the service is so much higher, but so are all the tools available. It’s been great…</p>
+<p><img src="https://www.charlesteague.com/blog/its-been-a-while/2.png" class="img-fluid" style="float:right;"></p>
+<p>I’ve been immensely busy, and it looks like it won’t let up through the holidays. I’m already working on another smaller update to Lose It!. There is a ton of interest and activity in what we’re up to FitNow, so I’ll do my best to keep everyone posted when I have time. As always, you can follow me on Twitter at&nbsp;<a href="http://www.twitter.com/dragonstyle">@dragonstyle</a>, though my updates there are few and far between, still.</p>
+<p>You can follow Lose It! on Twitter at&nbsp;<a href="http://www.twitter.com/loseitapp">@loseitapp</a>&nbsp;or become a fan on Facebook at&nbsp;<a href="http://www.facebook.com/loseitapp" class="uri">http://www.facebook.com/loseitapp</a>.</p>
+
+
+ ]]></description>
+  <category>iPhone</category>
   <category>News</category>
-  <guid>https://www.charlesteague.com/blog/welcome/index.html</guid>
-  <pubDate>Mon, 07 Feb 2022 05:00:00 GMT</pubDate>
+  <guid>https://www.charlesteague.com/blog/its-been-a-while/index.html</guid>
+  <pubDate>Sun, 06 Dec 2009 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/its-been-a-while/1.png" medium="image" type="image/png" height="257" width="144"/>
+</item>
+<item>
+  <title>Radio Silence</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/radio-silience/index.html</link>
+  <description><![CDATA[ 
+
+<p>It’s been a long time since I’ve had anything to say. That’s mostly because I have been busy working on&nbsp;<a href="http://www.loseit.com/">Lose It</a>! Things are going well on that front, but I’ve been spending every free moment on it, leaving me little to say about anything else. I’m taking a few minutes to throw this out, just so everyone knows I’m still here :). When I have bit more free time, I’ll try to document a bit more about what I’ve been up to. In the meantime, if you’re a fan of&nbsp;<a href="http://www.loseit.com/">Lose It</a>!, be sure to follow&nbsp;<a href="http://www.twitter.com/loseitapp">@loseitapp</a>&nbsp;on Twitter or&nbsp;<a href="http://www.facebook.com/pages/Lose-It/64506885948">become a fan</a>&nbsp;on Facebook.</p>
+<p><img src="https://www.charlesteague.com/blog/radio-silience/1.png" class="img-fluid"></p>
+<p><img src="https://www.charlesteague.com/blog/radio-silience/2.png" class="img-fluid"></p>
+<p>As always, the data behind the above graphs is yours for the taking. Feel free to use it to do your own analysis. Download the&nbsp;<a href="application-data.csv">CSV here</a>.</p>
+
+
+ ]]></description>
+  <category>iPhone</category>
+  <guid>https://www.charlesteague.com/blog/radio-silience/index.html</guid>
+  <pubDate>Sat, 11 Jul 2009 04:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/radio-silience/1.png" medium="image" type="image/png" height="137" width="144"/>
+</item>
+<item>
+  <title>Comparing App Store Categories</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/comparing-app-store-categories/index.html</link>
+  <description><![CDATA[ 
+
+
+<p>One of the frustrations that I’ve had with the data from the App Store is the difficulty in comparing the various categories of application on the store. The popularity score appears to be related to the category, so you can’t effectively compare applications across categories. This makes it tough to do things like rank categories.</p>
+<p>As I was playing around with the data, however, I thought I’d try to rank the categories by creating a score for the category based upon the simply sum of the popularity of the top 25 most popular applications in each category. My theory is simply that even though you can’t compare across categories, you can see what categories are popular based upon the total (or average) of the most popular applications. The results aren’t that surprising— games and entertainment are overwhelmingly more popular than other categories.</p>
+<p>But way to go Finance- cracking the top 5!</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Genre</strong></th>
+<th><strong>Top 25 Popularity</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Games</td>
+<td>12.57416165</td>
+</tr>
+<tr class="even">
+<td>Entertainment</td>
+<td>10.00990161</td>
+</tr>
+<tr class="odd">
+<td>Utilities</td>
+<td>5.601598622</td>
+</tr>
+<tr class="even">
+<td>Finance</td>
+<td>4.76452379</td>
+</tr>
+<tr class="odd">
+<td>Photography</td>
+<td>3.976679545</td>
+</tr>
+<tr class="even">
+<td>Music</td>
+<td>3.936911809</td>
+</tr>
+<tr class="odd">
+<td>Social Networking</td>
+<td>3.791524468</td>
+</tr>
+<tr class="even">
+<td>Health and Fitness</td>
+<td>3.761630667</td>
+</tr>
+<tr class="odd">
+<td>Lifestyle</td>
+<td>3.74729853</td>
+</tr>
+<tr class="even">
+<td>News</td>
+<td>3.500520549</td>
+</tr>
+<tr class="odd">
+<td>Sports</td>
+<td>3.416063511</td>
+</tr>
+<tr class="even">
+<td>Medical</td>
+<td>3.376850336</td>
+</tr>
+<tr class="odd">
+<td>Reference</td>
+<td>2.890492635</td>
+</tr>
+<tr class="even">
+<td>Productivity</td>
+<td>2.622859642</td>
+</tr>
+<tr class="odd">
+<td>Travel</td>
+<td>2.526778971</td>
+</tr>
+<tr class="even">
+<td>Books</td>
+<td>1.548586185</td>
+</tr>
+<tr class="odd">
+<td>Weather</td>
+<td>1.472607508</td>
+</tr>
+<tr class="even">
+<td>Business</td>
+<td>1.275677389</td>
+</tr>
+<tr class="odd">
+<td>Navigation</td>
+<td>1.223784489</td>
+</tr>
+<tr class="even">
+<td>Education</td>
+<td>0.779896454</td>
+</tr>
+</tbody>
+</table>
+<section id="category-concentration" class="level3">
+<h3 class="anchored" data-anchor-id="category-concentration">Category Concentration</h3>
+<p>One other category related question that I’ve spent some time thinking about is the concentration of applications in a category- specifically whether some categories are dominated by highly popular applications while others have a larger number of moderately popular applications. To get a sense for this- I used the above ‘Top 25 Popularity’ score and calculated what percentage of a category’s total popularity is accounted for by the top applications. Here are the results:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Genre</th>
+<th>Concentration</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Weather</td>
+<td>96%</td>
+</tr>
+<tr class="even">
+<td>News</td>
+<td>90%</td>
+</tr>
+<tr class="odd">
+<td>Reference</td>
+<td>85%</td>
+</tr>
+<tr class="even">
+<td>Travel</td>
+<td>84%</td>
+</tr>
+<tr class="odd">
+<td>Social Networking</td>
+<td>83%</td>
+</tr>
+<tr class="even">
+<td>Sports</td>
+<td>78%</td>
+</tr>
+<tr class="odd">
+<td>Health and Fitness</td>
+<td>75%</td>
+</tr>
+<tr class="even">
+<td>Finance</td>
+<td>75%</td>
+</tr>
+<tr class="odd">
+<td>Medical</td>
+<td>73%</td>
+</tr>
+<tr class="even">
+<td>Navigation</td>
+<td>72%</td>
+</tr>
+<tr class="odd">
+<td>Music</td>
+<td>70%</td>
+</tr>
+<tr class="even">
+<td>Photography</td>
+<td>69%</td>
+</tr>
+<tr class="odd">
+<td>Lifestyle</td>
+<td>65%</td>
+</tr>
+<tr class="even">
+<td>Books</td>
+<td>64%</td>
+</tr>
+<tr class="odd">
+<td>Productivity</td>
+<td>62%</td>
+</tr>
+<tr class="even">
+<td>Business</td>
+<td>61%</td>
+</tr>
+<tr class="odd">
+<td>Utilities</td>
+<td>58%</td>
+</tr>
+<tr class="even">
+<td>Education</td>
+<td>51%</td>
+</tr>
+<tr class="odd">
+<td>Entertainment</td>
+<td>50%</td>
+</tr>
+<tr class="even">
+<td>Games</td>
+<td>34%</td>
+</tr>
+</tbody>
+</table>
+<p>Games and Entertainment are the least concentrated, interestingly- the massive numbers of applications in the category create fragmentation of the popularity. Finance, which as you recall was a top 5 category, is also pretty concentrated- whoever is winning in that category is really winning.</p>
+</section>
+<section id="pricing" class="level3">
+<h3 class="anchored" data-anchor-id="pricing">Pricing</h3>
+<p>Taking a quick look at the latest App Store data, it looks like pricing has actually stabilized in the ballpark of $2.50.</p>
+<p><img src="https://www.charlesteague.com/blog/comparing-app-store-categories/1.png" class="img-fluid"></p>
+<p>You can&nbsp;<a href="application-data.csv">download the CSV</a>&nbsp;and do some analysis for yourself.</p>
+<p>In other news, I’m going to appear on a&nbsp;<a href="http://www.mitx.org/events/1828.cfm">panel</a>&nbsp;for MITX tomorrow. I think registration has closed by now, so you’ll just have to wait with bated breath to hear what deep thoughts are covered…</p>
+<p>&nbsp;</p>
+
+
+</section>
+ ]]></description>
+  <category>iPhone</category>
+  <guid>https://www.charlesteague.com/blog/comparing-app-store-categories/index.html</guid>
+  <pubDate>Tue, 21 Apr 2009 04:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/comparing-app-store-categories/1.png" medium="image" type="image/png" height="128" width="144"/>
+</item>
+<item>
+  <title>Updated Data from the App Store</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/updated-app-store-data/index.html</link>
+  <description><![CDATA[ 
+
+
+<p>For anyone who is interested,&nbsp;<a href="application-data.csv">here is the latest data</a>&nbsp;(csv) from the App Store, as of this morning. Looks like just over 24,000 applications are currently available.</p>
+<section id="the-most-popular-premium-applications-applications-that-cost-more-than-9.99" class="level3">
+<h3 class="anchored" data-anchor-id="the-most-popular-premium-applications-applications-that-cost-more-than-9.99">The most popular premium applications (applications that cost more than $9.99)</h3>
+<table class="table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 18%">
+<col style="width: 34%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>IM+ v2.0</th>
+<th>Social Networking</th>
+<th>SHAPE Services</th>
+<th>$9.99</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Things</td>
+<td>Productivity</td>
+<td>Cultured Code</td>
+<td>$9.99</td>
+</tr>
+<tr class="even">
+<td>Todo</td>
+<td>Productivity</td>
+<td>Appigo</td>
+<td>$9.99</td>
+</tr>
+<tr class="odd">
+<td>100+ Great Books for Ten Bucks!</td>
+<td>Book</td>
+<td>BeamItDown Software</td>
+<td>$9.99</td>
+</tr>
+<tr class="even">
+<td>Lonely Planet Mandarin Phrasebook</td>
+<td>Travel</td>
+<td>Lonely Planet Publications Pty Ltd</td>
+<td>$9.99</td>
+</tr>
+<tr class="odd">
+<td>Netters Anatomy Flash Cards</td>
+<td>Medical</td>
+<td>Modality Inc.</td>
+<td>$39.99</td>
+</tr>
+<tr class="even">
+<td>MLB.com At Bat 2009</td>
+<td>Sports</td>
+<td>MLB.com</td>
+<td>$9.99</td>
+</tr>
+<tr class="odd">
+<td>iBird Explorer Plus</td>
+<td>Reference</td>
+<td>Mitch Waite Group</td>
+<td>$19.99</td>
+</tr>
+<tr class="even">
+<td>ReaddleDocs</td>
+<td>Business</td>
+<td>Readdle</td>
+<td>$9.99</td>
+</tr>
+<tr class="odd">
+<td>BeejiveIM - Instant Messaging Anywhere</td>
+<td>Social Networking</td>
+<td>Beejive Inc.</td>
+<td>$9.99</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</section>
+<section id="the-most-popular-inexpensive-applications-applications-that-cost-less-than-4.99" class="level3">
+<h3 class="anchored" data-anchor-id="the-most-popular-inexpensive-applications-applications-that-cost-less-than-4.99">The most popular inexpensive applications (applications that cost less than $4.99)</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Flick Fishing</th>
+<th>Games</th>
+<th>Freeverse Inc.</th>
+<th>$0.99</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Touch Scan Pro</td>
+<td>Entertainment</td>
+<td>Gary Fung</td>
+<td>$0.99</td>
+</tr>
+<tr class="even">
+<td>Diagnosaurus DDx</td>
+<td>Medical</td>
+<td>Unbound Medicine Inc.</td>
+<td>$0.99</td>
+</tr>
+<tr class="odd">
+<td>Flight Control</td>
+<td>Games</td>
+<td>Firemint</td>
+<td>$0.99</td>
+</tr>
+<tr class="even">
+<td>Amazing X-Ray FX</td>
+<td>Entertainment</td>
+<td>WebArtisan</td>
+<td>$0.99</td>
+</tr>
+<tr class="odd">
+<td>Night Stand</td>
+<td>Utilities</td>
+<td>SpoonJuice</td>
+<td>$1.99</td>
+</tr>
+<tr class="even">
+<td>Pocket God</td>
+<td>Entertainment</td>
+<td>Bolt Creative</td>
+<td>$0.99</td>
+</tr>
+<tr class="odd">
+<td>Medical Calculator</td>
+<td>Medical</td>
+<td>MarketWall.com</td>
+<td>$0.99</td>
+</tr>
+<tr class="even">
+<td>ColorSplash</td>
+<td>Photography</td>
+<td>Hendrik Kueck</td>
+<td>$1.99</td>
+</tr>
+<tr class="odd">
+<td>Ocarina</td>
+<td>Music</td>
+<td>Smule</td>
+<td>$0.99</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+
+
+</section>
+ ]]></description>
+  <category>iPhone</category>
+  <guid>https://www.charlesteague.com/blog/updated-app-store-data/index.html</guid>
+  <pubDate>Tue, 31 Mar 2009 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>20,000 Applications and Counting</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/20000-applications/index.html</link>
+  <description><![CDATA[ 
+
+<p>Ok, there are now more than 20,000 applications in the App Store. Amazing.</p>
+<p><img src="https://www.charlesteague.com/blog/20000-applications/1.png" class="img-fluid"></p>
+<p>And to give you a bit of perspective, it took 155 days to get the first 5,000 application. Getting from 15,000 to 20,000 took just 23 days. Getting from 20,000 to 25,000 will now take less than 20. The continued growth, especially now that we’re past the holidays really is staggering.</p>
+<p>&nbsp;</p>
+<p><img src="https://www.charlesteague.com/blog/20000-applications/2.png" class="img-fluid"></p>
+<p>And in case you’re wondering what the first application in the App Store was, here are the first 10 applications that were available in the App Store.</p>
+<table class="table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 52%">
+<col style="width: 21%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Date</strong></th>
+<th><strong>Name</strong></th>
+<th><strong>Genre</strong></th>
+<th><strong>Price</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>5/28/2008</td>
+<td>AIM</td>
+<td>Social Networking</td>
+<td>$0.00</td>
+</tr>
+<tr class="even">
+<td>5/29/2008</td>
+<td>Evernote</td>
+<td>Productivity</td>
+<td>$0.00</td>
+</tr>
+<tr class="odd">
+<td>5/29/2008</td>
+<td>nikoli SUDOKU Vol.01</td>
+<td>Games</td>
+<td>$1.99</td>
+</tr>
+<tr class="even">
+<td>5/30/2008</td>
+<td>AOL Radio</td>
+<td>Music</td>
+<td>$0.00</td>
+</tr>
+<tr class="odd">
+<td>5/30/2008</td>
+<td>Bloomberg</td>
+<td>Finance</td>
+<td>$0.00</td>
+</tr>
+<tr class="even">
+<td>5/30/2008</td>
+<td>TypePad</td>
+<td>Social Networking</td>
+<td>$0.00</td>
+</tr>
+<tr class="odd">
+<td>5/30/2008</td>
+<td>Aqua Forest - Powered By Octaveengine Casual</td>
+<td>Games</td>
+<td>$7.99</td>
+</tr>
+<tr class="even">
+<td>5/30/2008</td>
+<td>Bomberman Touch - The Legend of Mystic Bomb</td>
+<td>Games</td>
+<td>$7.99</td>
+</tr>
+<tr class="odd">
+<td>5/30/2008</td>
+<td>Frommers San Francisco</td>
+<td>Travel</td>
+<td>$9.99</td>
+</tr>
+<tr class="even">
+<td>6/2/2008</td>
+<td>Photobucket for iPhone</td>
+<td>Photography</td>
+<td>$0.00</td>
+</tr>
+</tbody>
+</table>
+<p>AIM was the first application for the iPhone- amazing.</p>
+<p>If you’re curious, take a look for yourself-&nbsp;<a href="http://blog.charlesteague.com/applications2262009.xls">here is the latest</a><a href="application-data.xls">data</a><a href="http://blog.charlesteague.com/applications2262009.xls">[.xls file]</a>&nbsp;from this morning. Feel free to use it to do your own analysis, just drop me a line with your results!</p>
+
+
+ ]]></description>
+  <category>iPhone</category>
+  <guid>https://www.charlesteague.com/blog/20000-applications/index.html</guid>
+  <pubDate>Thu, 26 Feb 2009 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/20000-applications/1.png" medium="image" type="image/png" height="111" width="144"/>
+</item>
+<item>
+  <title>The App Store Model Business Model: Lite</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/app-store-business-model-lite/index.html</link>
+  <description><![CDATA[ 
+
+
+<p>Since the beginning, figuring out the right way to monetize applications in the App Store has been confusing. Not only was the marketplace completely new and unlike any other software marketplace, but the App Store still itself was&nbsp;<a href="http://blog.charlesteague.com/links/2008/09/hope-for-expens.html">incredibly limiting</a>. In addition, the price for applications&nbsp;<a href="http://blog.charlesteague.com/links/2008/12/down-and-to-the-right.html">trended downward</a>&nbsp;while alternatives like advertising entered the market. The net of it was a lot of experimentation regarding how to make money on applications.</p>
+<section id="business-model-emerging" class="level3">
+<h3 class="anchored" data-anchor-id="business-model-emerging">Business Model Emerging</h3>
+<p>Over the last couple of months, I believe that a business model for paid applications is starting to emerge. Not surprisingly, it looks a lot like the business model that licensed software businesses have been using for a long time (turns out that all those folks had figured something out). That model? Trial versions with paid full versions.</p>
+<p>The App Store doesn’t have explicit support for this, unfortunately, but application developers are working around this by introducing ‘Lite’ versions of their applications. Not only are there&nbsp;<a href="http://www.dragthing.com/blog/?p=119">success stories</a>&nbsp;out there, but the submissions to the store show the increasing popularity of these ‘Lite’ applications. In fact, there are now nearly 1,000 ‘Lite’ applications the App Store, representing about 5% of the total applications.</p>
+<p>Looking at the categories, one other very striking thing appears. Application categories that tend to have longer term recurring value (like Games, Business, Finance, Photography, and Productivity) appear to also have the most ‘Lite’ versions.</p>
+<p><img src="https://www.charlesteague.com/blog/app-store-business-model-lite/1.png" class="img-fluid"></p>
+<p><img src="https://www.charlesteague.com/blog/app-store-business-model-lite/2.png" class="img-fluid"></p>
+<p><img src="https://www.charlesteague.com/blog/app-store-business-model-lite/3.png" class="img-fluid"></p>
+<p><img src="https://www.charlesteague.com/blog/app-store-business-model-lite/4.png" class="img-fluid"></p>
+<p>In some categories, the growth is even more pronounced. For example, in the category of Games, 14% of the applications are ‘Lite’ applications!</p>
+<p><img src="https://www.charlesteague.com/blog/app-store-business-model-lite/5.png" class="img-fluid"></p>
+<p>But the real evidence of the growing popularity of ‘Lite’ applications (at least among developers submitting applications) is that each month, a growing proportion of the new apps are ‘Lite.’ In February so far, 7% of the new applications are ‘Lite’ applications! And the downward trend of free apps continue as more ‘Lite’ apps hit the store.</p>
+<p><img src="https://www.charlesteague.com/blog/app-store-business-model-lite/6.png" class="img-fluid"></p>
+<p><img src="https://www.charlesteague.com/blog/app-store-business-model-lite/7.png" class="img-fluid"></p>
+</section>
+<section id="the-paid-upgrade-problem" class="level3">
+<h3 class="anchored" data-anchor-id="the-paid-upgrade-problem">The Paid Upgrade Problem</h3>
+<p>So I have to admit it, as a real fan of the App Store and the iPhone, I’m excited to see a business model developing, especially one that may help improve developer’s ability to collect value for their hard work. And while trial versions are a first step, they are only a first step. For though they let users try a new version before buying, and therefore should allow developers to raise their prices, they still permit developers to collect payment for their work only once.</p>
+<p>This is a problem mainly because in traditional licensed software, developers keep working on their application, improving it across a number of different versions. And at the companies that I’ve worked for, the (about) yearly upgrades were a&nbsp;<em>big</em>&nbsp;driver of yearly revenue. Without the upgrade revenue, a rational developer should really wonder whether their time spent improving an existing product will really net more users, or whether they should instead spend their time building a new application that they can monetize.</p>
+<p>So while ‘Lite’ should help reward developers who create a deep and rich application experience for their users, I’m not sure it goes far enough. To support ongoing development of these deep applications, Apple needs to do more.</p>
+</section>
+<section id="what-should-apple-do" class="level3">
+<h3 class="anchored" data-anchor-id="what-should-apple-do">What Should Apple Do?</h3>
+<p>What should Apple do? I think there are a few things that would go a long ways:</p>
+<ol type="1">
+<li><p>The most obvious thing that Apple should do is&nbsp; provide the concept of trial versions right in the App Store. By providing the infrastructure and user experience around this, they can ‘institutionalize’ the concept of trial software, making it a common and well accepting model. They can also save developers the time of having to create and maintain two applications in the store.</p></li>
+<li><p>But Apple also needs to address the upgrade problem. Apple could allow paid upgrades, but this actually ends up being a real mess since it creates a complicated set of versioning issues (for example, once a paid upgrade has been created, do bugs still get fixed in the old version?).</p></li>
+<li><p>Apple could also enable the concept of ‘subscriptions’ to software, enabling developers to charge something like $.99/month, making it possible to collect longer term revenue for highly valuable applications.</p></li>
+</ol>
+<p>It seems clear that enabling trialing natively is a no brainer for the App Store. Will Apple step up? And could they surprise us by doing even more? We’ll have to wait and see, the App Store remains a young marketplace and each month we all learn something new.</p>
+<p>[<a href="application-data.csv">CSV file of supporting data</a>]</p>
+
+
+</section>
+ ]]></description>
+  <category>iPhone</category>
+  <guid>https://www.charlesteague.com/blog/app-store-business-model-lite/index.html</guid>
+  <pubDate>Tue, 17 Feb 2009 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/app-store-business-model-lite/1.png" medium="image" type="image/png" height="119" width="144"/>
 </item>
 <item>
   <title>There’s an App For That</title>

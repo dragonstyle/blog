@@ -1,0 +1,14 @@
+---
+title: Radio Silence
+date: 7/11/2009
+categories:
+  - iPhone
+---
+
+It's been a long time since I've had anything to say. That's mostly because I have been busy working on [Lose It](http://www.loseit.com/)! Things are going well on that front, but I've been spending every free moment on it, leaving me little to say about anything else. I'm taking a few minutes to throw this out, just so everyone knows I'm still here :). When I have bit more free time, I'll try to document a bit more about what I've been up to. In the meantime, if you're a fan of [Lose It](http://www.loseit.com/)!, be sure to follow [\@loseitapp](http://www.twitter.com/loseitapp) on Twitter or [become a fan](http://www.facebook.com/pages/Lose-It/64506885948) on Facebook.
+
+![](1.png)
+
+![](2.png)
+
+As always, the data behind the above graphs is yours for the taking. Feel free to use it to do your own analysis. Download the [CSV here](application-data.csv).

@@ -1,0 +1,40 @@
+---
+title: Updated Data from the App Store
+date: 3/31/2009
+categories:
+  - iPhone
+---
+
+For anyone who is interested, [here is the latest data](application-data.csv) (csv) from the App Store, as of this morning. Looks like just over 24,000 applications are currently available.
+
+### The most popular premium applications (applications that cost more than \$9.99)
+
+| IM+ v2.0                               | Social Networking | SHAPE Services                     | \$9.99  |
+|----------------------------------------|-------------------|------------------------------------|---------|
+| Things                                 | Productivity      | Cultured Code                      | \$9.99  |
+| Todo                                   | Productivity      | Appigo                             | \$9.99  |
+| 100+ Great Books for Ten Bucks!        | Book              | BeamItDown Software                | \$9.99  |
+| Lonely Planet Mandarin Phrasebook      | Travel            | Lonely Planet Publications Pty Ltd | \$9.99  |
+| Netters Anatomy Flash Cards            | Medical           | Modality Inc.                      | \$39.99 |
+| MLB.com At Bat 2009                    | Sports            | MLB.com                            | \$9.99  |
+| iBird Explorer Plus                    | Reference         | Mitch Waite Group                  | \$19.99 |
+| ReaddleDocs                            | Business          | Readdle                            | \$9.99  |
+| BeejiveIM - Instant Messaging Anywhere | Social Networking | Beejive Inc.                       | \$9.99  |
+
+ 
+
+### The most popular inexpensive applications (applications that cost less than \$4.99)
+
+| Flick Fishing      | Games         | Freeverse Inc.        | \$0.99 |
+|--------------------|---------------|-----------------------|--------|
+| Touch Scan Pro     | Entertainment | Gary Fung             | \$0.99 |
+| Diagnosaurus DDx   | Medical       | Unbound Medicine Inc. | \$0.99 |
+| Flight Control     | Games         | Firemint              | \$0.99 |
+| Amazing X-Ray FX   | Entertainment | WebArtisan            | \$0.99 |
+| Night Stand        | Utilities     | SpoonJuice            | \$1.99 |
+| Pocket God         | Entertainment | Bolt Creative         | \$0.99 |
+| Medical Calculator | Medical       | MarketWall.com        | \$0.99 |
+| ColorSplash        | Photography   | Hendrik Kueck         | \$1.99 |
+| Ocarina            | Music         | Smule                 | \$0.99 |
+
+ 
