@@ -1,0 +1,11 @@
+---
+title: Transition Part 1
+date: 8/25/2008
+categories:
+  - iPhone
+  - News
+---
+
+So I'm going through a bit of a transition in my life (more about this later). As a part of this transition, the focus of this blog is going to change. It remains my personal weblog, but rather than mostly playing around with features of Windows Live Writer, I'll be doing a bit more writing about my current technical interests. Top of the list is the [iPhone](http://www.apple.com/iphone) (I know, I should get in line).
+
+Stay tuned for more on the rest of the transition!

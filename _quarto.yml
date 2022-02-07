@@ -2,19 +2,16 @@ project:
   type: site
 
 site:
-  title: "Charles Home Page"
+  title: Charles Teague Weblog
   navbar:
-    background: gray-100
-    left:
-      - href: index.qmd
-        text: Home
+    right:
       - about.qmd
+  site-url: https://www.charlesteague.com
 
 format:
   html:
-    theme: litera
-    toc: true
-    css: styles.css
+    theme: Sandstone
+
 
 
 

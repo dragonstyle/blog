@@ -1,0 +1,45 @@
+---
+title: There's an App For That
+date: 2/5/2009
+categories:
+  - iPhone
+author: Charles Teague
+---
+
+You probably have seen the ads highlighting the App Store- 'There's an App for That.' I've seen a ton of them, and one of the greatest things about them is that they aren't lying. There really is an app for that.
+
+There are now more than 17,000 applications available in the App Store. 17,706 to be precise. Each day, iPhone users can choose among 15 new games, 7 new utilities, 9 new entertainment applications, or 3 new productivity applications. 73 new applications appear in the App Store every day.
+
+Want to track your finances? [Mint.com](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=300238550&mt=8). Need to lose some weight? [Lose It](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=297368629&mt=8)! Like to shop for deals? [WootWatch](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=288946910&mt=8). Bored? [Slotz](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=302052502&mt=8). Like to work out? [Runkeeper](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=300235330&mt=8). Need to have dinner delivered? [GrubHub](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=302920553&mt=8). There are apps for just about everything.
+
+![Total \# of Apps in the App Store](1.png)
+
+![\# of Apps submitted each day](2.png)
+
+### Categories
+
+Looking at the applications in the store, it is clear that the iPhone is an entertainment device. Games and Entertainment application make up more than a third of the applications in the store and typically dominate the top 100 applications in the store. In fact, Games and Entertainment make up nearly 50% of the most popular applications in the store. 
+
+![Distribution of Applications by Category](3.png)
+
+![Category trend -- % of application in each category each month](4.png)
+
+![Growth of the top 5 categories](5.png)
+
+### Pricing
+
+While the low price approach of the App Store has continued, I think that the new headline should be '99 cents is the new free.' The downward price trend continues, but most interestingly, but the percentage of applications that are free continues to decline. In fact, soon only 1 in 5 applications in the App Store will be free.
+
+![Average price of an application by month](6.png)
+
+![Distribution of Applications by Price](7.png)
+
+![Paid vs. Free App by Month](8.png)
+
+![\# of Applications by price over time](9.png)
+
+### Summary
+
+New SmartPhones (G1, Storm, Pre, etc...) are showing up pretty regularly now. They're still working on catching the iPhone as far as its integration and slick user experience. The fact that the App Store is continuing to grow at such a torrid pace is bad news for these competitors. Because each new application is a potential reason for a customer to choose the iPhone and each new customer is a reason for a developer to build an application for the iPhone. This virtuous circle is creating tremendous advantage for the iPhone- it'll make it incredibly difficult to catch Apple, once again.
+
+*If you're interested in doing some analysis yourself, [here is my latest raw data (csv)](application-data.csv).*

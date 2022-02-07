@@ -1,27 +1,24 @@
 ---
-title: "About"
+title: "Charles Teague"
 toc: false
+about:
+  template: trestles
+  image: images/Charles_Teague_Transparent.png
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/dragonstyle
+    - icon: github
+      text: Github
+      href: https://github.com/dragonstyle
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/cteague/
 ---
 
-::: {.column-margin .hidden-sm}
-![](images/Charles_Teague_Transparent.png){.frame fig-align="center" style="max-" width="250"}
+Charles is a Software Architect at [Rstudio](https://www.rstudio.com) where he is focused on [Quarto](https://www.quarto.org).
 
-::: bio-link
-[<i class="bi bi-twitter"></i> dragonstyle](https://twitter.com/dragonstyle)
-:::
-
-::: bio-link
-[<i class="bi bi-github"></i> dragonstyle](https://github.com/dragonstyle)
-:::
-
-::: bio-link
-[<i class="bi bi-linkedin"></i> Charles Teague](https://www.linkedin.com/in/cteague/)
-:::
-:::
-
-Charles is the Executive Chairman of Lose It! and a Software Architect at [Rstudio](https://www.rstudio.com) where he is focused on [Quarto](https://www.quarto.org).
-
-Prior to joining Rstudio, Charles Teague was the CEO and founder of FitNow, Inc., the maker of [Lose It!](https://www.loseit.com), one of the most popular health and fitness application for iOS and Android devices. Since 2008, tens of millions of users have used Lose It! to lose more than 100 million pounds.
+Prior to joining Rstudio, Charles Teague was the CEO and founder of FitNow, Inc., the maker of [Lose It!](https://www.loseit.com), one of the most popular health and fitness application for iOS and Android devices. Since 2008, tens of millions of users have used Lose It! to lose more than 100 million pounds. He remains the Executive Chairman of Lose It!.
 
 Charles was a Technologist in Residence at [General Catalyst Partners](https://www.generalcatalyst.com) where he focused on Smartphone and Cloud Computing technologies. Before joining General Catalyst, Charles was the co-founder of Onfolio, Inc., which was acquired by Microsoft in 2005. At [Microsoft](https://www.microsoft.com) Charles worked overseeing the development and engineering of [Windows Live Writer](https://www.microsoft.com/en-us/p/open-live-writer) which was originally created at Onfolio, Inc.
 

@@ -1,0 +1,19 @@
+---
+title: One Last Note on Trends
+date: 12/19/2008
+categories:
+  - iPhone
+  - News
+---
+
+Prompted by Nate's comment, here are a couple more looks at application trends on the app Store. First, if you have a look at the distribution of applications by price over time, you can see the rise of \$.99 and \$1.99 apps, along with the corresponding fall in free applications. Applications priced \$4.99-\$9.99 also see a decline, while most other prices are essentially stable.
+
+![](1.png)
+
+Interestingly, with just a couple of exceptions, the distribution of categories appears to be stabilizing a bit, at least for the top genres. Games represent about a quarter of the applications in the store. The big mover appears to be medical, which has grown to more than 5% of the apps in the store.
+
+![](2.png)
+
+And in a final note- the growth of the apps in the store continues to be steep- closing on 12,000 applications...
+
+![](3.png)

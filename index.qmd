@@ -1,5 +1,12 @@
 ---
-title: "Charles Teague"
+listing: 
+  contents: "blog/**/*.qmd"
+  feed: true
+  categories: true
+  sort:
+    - "date desc"
+  max-description-length: 250
+  filter-ui: false
+  sort-ui: false
+page-layout: full
 ---
-
-This is a placeholder. More coming soon!

@@ -1,0 +1,22 @@
+---
+title: Hope for Expensive Apps iTunes
+date: 9/29/2008
+categories:
+  - iPhone
+---
+
+One of the challenges that has faced developers of apps on the iTunes App Store has been how to price their applications. Early customers complained about applications with high (read: more than \$9.99) prices. Since those early days, a competitive and crowded field of applications has conspired to push prices down as consumers faced more choices and application sought to claim a stop on the coveted 'Top 25' list.
+
+![](penny.jpg){fig-align="center"}
+
+Apple really made things a challenge, largely because they have such a limited business model for these applications (a 1 time license fee, no subscription model, no charged upgrade model, no trial model). Developer's hands were really tied.
+
+A smart developer would be better served to build a large number of small inexpensive applications (collecting revenue from customers each time they release a new application) rather than spend a large amount of time on complicated apps. After all, a lots of users will plunk down \$1.99 for an app based only on screen shots and reviews, but most are loathe to part with \$29.99 on just the promise of a good app.
+
+So it came to be that the app store has been crowded, at least in my opinion, with a ton of apps that are a lot closer to gadgets than applications. Useful, sure. Valuable, maybe. An inspired use of what is an excellent mobile computing platform? Definitely not.
+
+But just today, I've seen a couple of apps that are bucking the trend.
+
+BeeJiveIM is a deep IM client for the iPhone that supports pretty much every IM platform out there. It uses push email to do notification of new messages. It has a broad and deep feature set. And, it costs \$15.99. Jaadu VNC is a VNC client which allows you to connect to and control your desktop computer (whether that is a Mac or PC). Broad and deep feature set. \$24.99. Now, we just to need to wait and see how the economics play out. Can these more complicated and expensive applications thrive at a high price, in a market with so many limitations? Will Apple continue to invest in improving iTunes for applications, adding some of the basic business models that software companies have traditionally used in selling their software?
+
+If you're wondering why I'd like to see expensive iPhone applications, the answer is pretty simple. It's because I'd like to see awesome, compelling, deep, feature rich, and evolving applications the iPhone. And I'd like to see the developers who build getting paid a fair price.
