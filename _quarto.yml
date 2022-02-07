@@ -8,6 +8,12 @@ site:
       - text: "About"
         href: about.qmd
   site-url: https://www.charlesteague.com
+  repo-url: https://github.com/dragonstyle/blog
+  repo-actions: [edit, issue]
+  twitter-card:
+    creator: "@dragonstyle"
+  opengraph: true
+  
 
 format:
   html:

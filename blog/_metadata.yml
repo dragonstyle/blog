@@ -1,3 +1,6 @@
 toc: true
 freeze: true
 author: Charles Teague
+comments:
+  utterances:
+    repo: dragonstyle/blog
