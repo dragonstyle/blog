@@ -14,6 +14,8 @@ about:
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/cteague/
+    - text: ORCID
+      href: https://orcid.org/0000-0001-8715-9476
 ---
 
 Charles is a Software Architect at [Rstudio](https://www.rstudio.com) where he is focused on [Quarto](https://www.quarto.org).
