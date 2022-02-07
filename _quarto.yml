@@ -2,10 +2,11 @@ project:
   type: site
 
 site:
-  title: Charles Teague Weblog
+  title: Dragonstyle - Tech Blog of Charles Teague
   navbar:
     right:
-      - about.qmd
+      - text: "About"
+        href: about.qmd
   site-url: https://www.charlesteague.com
 
 format:
