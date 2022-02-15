@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-99.9.9">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Dragonstyle - Tech Blog of Charles Teague</title>
+  <title>Dragonstyle - The Blog of Charles Teague</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -53,6 +53,12 @@
   <script>
 
     window.document.addEventListener("DOMContentLoaded", function (_event) {
+      const listingTargetEl = window.document.querySelector('#listing .list');
+      if (!listingTargetEl) {
+        // No listing discovered, do not attach.
+        return; 
+      }
+
       const options = {
         valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
         
@@ -81,7 +87,7 @@
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
-<link rel="alternate" type="application/rss+xml" title="Dragonstyle - Tech Blog of Charles Teague" href="index.xml"><meta name="twitter:title" content="Dragonstyle - Tech Blog of Charles Teague">
+<link rel="alternate" type="application/rss+xml" title="Dragonstyle - The Blog of Charles Teague" href="index.xml"><meta name="twitter:title" content="Dragonstyle - The Blog of Charles Teague">
 <meta name="twitter:creator" content="@dragonstyle">
 <meta name="twitter:card" content="summary">
 </head>
@@ -91,7 +97,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Dragonstyle - Tech Blog of Charles Teague</span>
+    <span class="navbar-title">Dragonstyle - The Blog of Charles Teague</span>
   </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -123,15 +129,53 @@
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(21)</span></div><div class="category" data-category="News">News <span class="quarto-category-count">(9)</span></div><div class="category" data-category="Random">Random <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Technology">Technology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Venture Capital">Venture Capital <span class="quarto-category-count">(1)</span></div><div class="category" data-category="iPhone">iPhone <span class="quarto-category-count">(19)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(22)</span></div><div class="category" data-category="Analytics">Analytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Continuous Integration">Continuous Integration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="News">News <span class="quarto-category-count">(9)</span></div><div class="category" data-category="Product">Product <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Random">Random <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Startup Ideas">Startup Ideas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Technology">Technology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Venture Capital">Venture Capital <span class="quarto-category-count">(1)</span></div><div class="category" data-category="iPhone">iPhone <span class="quarto-category-count">(19)</span></div></div></div>
 <!-- main -->
-<main class="content column-page-left">
+<main class="content column-page-left" id="quarto-document-content">
 
 
 
 <div id="listing" class="quarto-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="News" data-listing-date-sort="1644210000000" data-listing-file-modified-sort="1644256996152" data-listing-reading-time-sort="0.82">
+<div class="quarto-post image-right" data-index="0" data-categories="Analytics,Product,Continuous Integration,Startup Ideas" data-listing-date-sort="1644901200000" data-listing-file-modified-sort="1644952754435" data-listing-reading-time-sort="1.905">
+<div class="thumbnail">
+<p><a href="./blog/github-action-analytics/index.html"> <img src="blog/github-action-analytics/render-perf.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./blog/github-action-analytics/index.html">
+<h3 class="no-anchor listing-title">
+Build and Test Analytics
+</h3>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Analytics'); return false;">
+Analytics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Product'); return false;">
+Product
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Continuous Integration'); return false;">
+Continuous Integration
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Startup Ideas'); return false;">
+Startup Ideas
+</div>
+</div>
+<a href="./blog/github-action-analytics/index.html">
+<div class="listing-description">
+<p>One of the things I’ve been maintaining on the <span>Quarto</span> team is the GitHub actions that build installers, run tests, and so on. A few times over the last year, we’ve run into problems in our pipeline…</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/github-action-analytics/index.html">
+<div class="listing-date">
+2/15/2022
+</div>
+</a><p><a href="./blog/github-action-analytics/index.html"></a></p>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="News" data-listing-date-sort="1644210000000" data-listing-file-modified-sort="1644256996152" data-listing-reading-time-sort="0.82">
 <div class="thumbnail">
 <a href="./blog/welcome/index.html">
 <div class="thumbnail-image">
@@ -164,7 +208,7 @@ News
 </a><p><a href="./blog/welcome/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="iPhone" data-listing-date-sort="1260766800000" data-listing-file-modified-sort="1644263052028" data-listing-reading-time-sort="0.845">
+<div class="quarto-post image-right" data-index="2" data-categories="iPhone" data-listing-date-sort="1260766800000" data-listing-file-modified-sort="1644263052028" data-listing-reading-time-sort="0.845">
 <div class="thumbnail">
 <p><a href="./blog/app-store-data-december-2009/index.html"> <img src="blog/app-store-data-december-2009/1.png" class="thumnail-image"> </a></p>
 </div>
@@ -193,7 +237,7 @@ iPhone
 </a><p><a href="./blog/app-store-data-december-2009/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="iPhone,News" data-listing-date-sort="1260075600000" data-listing-file-modified-sort="1644263138755" data-listing-reading-time-sort="1.975">
+<div class="quarto-post image-right" data-index="3" data-categories="iPhone,News" data-listing-date-sort="1260075600000" data-listing-file-modified-sort="1644263138755" data-listing-reading-time-sort="1.975">
 <div class="thumbnail">
 <p><a href="./blog/its-been-a-while/index.html"> <img src="blog/its-been-a-while/1.png" class="thumnail-image"> </a></p>
 </div>
@@ -225,7 +269,7 @@ News
 </a><p><a href="./blog/its-been-a-while/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="iPhone" data-listing-date-sort="1247284800000" data-listing-file-modified-sort="1644262476358" data-listing-reading-time-sort="0.625">
+<div class="quarto-post image-right" data-index="4" data-categories="iPhone" data-listing-date-sort="1247284800000" data-listing-file-modified-sort="1644262476358" data-listing-reading-time-sort="0.625">
 <div class="thumbnail">
 <p><a href="./blog/radio-silience/index.html"> <img src="blog/radio-silience/1.png" class="thumnail-image"> </a></p>
 </div>
@@ -254,7 +298,7 @@ iPhone
 </a><p><a href="./blog/radio-silience/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="iPhone" data-listing-date-sort="1240286400000" data-listing-file-modified-sort="1644262329362" data-listing-reading-time-sort="6.47">
+<div class="quarto-post image-right" data-index="5" data-categories="iPhone" data-listing-date-sort="1240286400000" data-listing-file-modified-sort="1644262329362" data-listing-reading-time-sort="6.47">
 <div class="thumbnail">
 <p><a href="./blog/comparing-app-store-categories/index.html"> <img src="blog/comparing-app-store-categories/1.png" class="thumnail-image"> </a></p>
 </div>
@@ -283,7 +327,7 @@ iPhone
 </a><p><a href="./blog/comparing-app-store-categories/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="iPhone" data-listing-date-sort="1238472000000" data-listing-file-modified-sort="1644262151252" data-listing-reading-time-sort="4.47">
+<div class="quarto-post image-right" data-index="6" data-categories="iPhone" data-listing-date-sort="1238472000000" data-listing-file-modified-sort="1644262151252" data-listing-reading-time-sort="4.47">
 <div class="thumbnail">
 <a href="./blog/updated-app-store-data/index.html">
 <div class="thumbnail-image">
@@ -316,7 +360,7 @@ iPhone
 </a><p><a href="./blog/updated-app-store-data/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="iPhone" data-listing-date-sort="1235624400000" data-listing-file-modified-sort="1644264122858" data-listing-reading-time-sort="3.235">
+<div class="quarto-post image-right" data-index="7" data-categories="iPhone" data-listing-date-sort="1235624400000" data-listing-file-modified-sort="1644264122858" data-listing-reading-time-sort="3.235">
 <div class="thumbnail">
 <p><a href="./blog/20000-applications/index.html"> <img src="blog/20000-applications/1.png" class="thumnail-image"> </a></p>
 </div>
@@ -345,7 +389,7 @@ iPhone
 </a><p><a href="./blog/20000-applications/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="iPhone" data-listing-date-sort="1234846800000" data-listing-file-modified-sort="1644262527857" data-listing-reading-time-sort="3.605">
+<div class="quarto-post image-right" data-index="8" data-categories="iPhone" data-listing-date-sort="1234846800000" data-listing-file-modified-sort="1644262527857" data-listing-reading-time-sort="3.605">
 <div class="thumbnail">
 <p><a href="./blog/app-store-business-model-lite/index.html"> <img src="blog/app-store-business-model-lite/1.png" class="thumnail-image"> </a></p>
 </div>
@@ -374,7 +418,7 @@ iPhone
 </a><p><a href="./blog/app-store-business-model-lite/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="iPhone" data-listing-date-sort="1233810000000" data-listing-file-modified-sort="1644260260766" data-listing-reading-time-sort="2.02">
+<div class="quarto-post image-right" data-index="9" data-categories="iPhone" data-listing-date-sort="1233810000000" data-listing-file-modified-sort="1644260260766" data-listing-reading-time-sort="2.02">
 <div class="thumbnail">
 <p><a href="./blog/theres-an-app-for-that/index.html"> <img src="blog/theres-an-app-for-that/1.png" class="thumnail-image"> </a></p>
 </div>
@@ -406,7 +450,7 @@ Charles Teague
 </a><p><a href="./blog/theres-an-app-for-that/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="9" data-categories="iPhone,News" data-listing-date-sort="1229662800000" data-listing-file-modified-sort="1644259572935" data-listing-reading-time-sort="0.39">
+<div class="quarto-post image-right" data-index="10" data-categories="iPhone,News" data-listing-date-sort="1229662800000" data-listing-file-modified-sort="1644259572935" data-listing-reading-time-sort="0.39">
 <div class="thumbnail">
 <a href="./blog/app-store-raw-data/index.html">
 <div class="thumbnail-image">
@@ -443,7 +487,7 @@ For those that are interested,&nbsp;<span>here is recent (well actually, today�
 </a><p><a href="./blog/app-store-raw-data/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="10" data-categories="iPhone,News" data-listing-date-sort="1229662800000" data-listing-file-modified-sort="1644259487291" data-listing-reading-time-sort="0.685">
+<div class="quarto-post image-right" data-index="11" data-categories="iPhone,News" data-listing-date-sort="1229662800000" data-listing-file-modified-sort="1644259487291" data-listing-reading-time-sort="0.685">
 <div class="thumbnail">
 <p><a href="./blog/one-last-note-on-trends/index.html"> <img src="blog/one-last-note-on-trends/1.png" class="thumnail-image"> </a></p>
 </div>
@@ -475,7 +519,7 @@ News
 </a><p><a href="./blog/one-last-note-on-trends/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="11" data-categories="iPhone,News" data-listing-date-sort="1228971600000" data-listing-file-modified-sort="1644258989036" data-listing-reading-time-sort="3.1">
+<div class="quarto-post image-right" data-index="12" data-categories="iPhone,News" data-listing-date-sort="1228971600000" data-listing-file-modified-sort="1644258989036" data-listing-reading-time-sort="3.1">
 <div class="thumbnail">
 <p><a href="./blog/down-and-to-the-right-by-design/index.html"> <img src="blog/down-and-to-the-right-by-design/1.png" class="thumnail-image"> </a></p>
 </div>
@@ -507,7 +551,7 @@ News
 </a><p><a href="./blog/down-and-to-the-right-by-design/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="12" data-categories="iPhone,News" data-listing-date-sort="1228453200000" data-listing-file-modified-sort="1644258858669" data-listing-reading-time-sort="0.72">
+<div class="quarto-post image-right" data-index="13" data-categories="iPhone,News" data-listing-date-sort="1228453200000" data-listing-file-modified-sort="1644258858669" data-listing-reading-time-sort="0.72">
 <div class="thumbnail">
 <p><a href="./blog/app-store-category-growth/index.html"> <img src="blog/app-store-category-growth/1.png" class="thumnail-image"> </a></p>
 </div>
@@ -540,7 +584,7 @@ Taking a closer look at the growth rate of various categories confirms what ever
 </a><p><a href="./blog/app-store-category-growth/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="13" data-categories="iPhone" data-listing-date-sort="1228366800000" data-listing-file-modified-sort="1644258385423" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="14" data-categories="iPhone" data-listing-date-sort="1228366800000" data-listing-file-modified-sort="1644258385423" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./blog/apps-for-a-song/index.html"> <img src="blog/apps-for-a-song/1.png" class="thumnail-image"> </a></p>
 </div>
@@ -569,7 +613,7 @@ iPhone
 </a><p><a href="./blog/apps-for-a-song/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="Random,iPhone,News" data-listing-date-sort="1228366800000" data-listing-file-modified-sort="1644258195374" data-listing-reading-time-sort="0.1">
+<div class="quarto-post image-right" data-index="15" data-categories="Random,iPhone,News" data-listing-date-sort="1228366800000" data-listing-file-modified-sort="1644258195374" data-listing-reading-time-sort="0.1">
 <div class="thumbnail">
 <p><a href="./blog/10000-applications/index.html"> <img src="blog/10000-applications/1.png" class="thumnail-image"> </a></p>
 </div>
@@ -604,7 +648,7 @@ News
 </a><p><a href="./blog/10000-applications/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="15" data-categories="iPhone" data-listing-date-sort="1227589200000" data-listing-file-modified-sort="1644257961597" data-listing-reading-time-sort="9.89">
+<div class="quarto-post image-right" data-index="16" data-categories="iPhone" data-listing-date-sort="1227589200000" data-listing-file-modified-sort="1644257961597" data-listing-reading-time-sort="9.89">
 <div class="thumbnail">
 <p><a href="./blog/5-months-and-9000-apps-later/index.html"> <img src="blog/5-months-and-9000-apps-later/1.png" class="thumnail-image"> </a></p>
 </div>
@@ -633,7 +677,7 @@ iPhone
 </a><p><a href="./blog/5-months-and-9000-apps-later/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="16" data-categories="Technology,Random" data-listing-date-sort="1224561600000" data-listing-file-modified-sort="1644256861815" data-listing-reading-time-sort="1.855">
+<div class="quarto-post image-right" data-index="17" data-categories="Technology,Random" data-listing-date-sort="1224561600000" data-listing-file-modified-sort="1644256861815" data-listing-reading-time-sort="1.855">
 <div class="thumbnail">
 <p><a href="./blog/brown-zune/index.html"> <img src="blog/brown-zune/Picture%202.png" class="thumnail-image"> </a></p>
 </div>
@@ -665,7 +709,7 @@ Random
 </a><p><a href="./blog/brown-zune/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="17" data-categories="iPhone" data-listing-date-sort="1222660800000" data-listing-file-modified-sort="1644256269918" data-listing-reading-time-sort="2.065">
+<div class="quarto-post image-right" data-index="18" data-categories="iPhone" data-listing-date-sort="1222660800000" data-listing-file-modified-sort="1644256269918" data-listing-reading-time-sort="2.065">
 <div class="thumbnail">
 <p><a href="./blog/hope-for-expensive-apps/index.html"> <img src="blog/hope-for-expensive-apps/penny.jpg" class="thumnail-image"> </a></p>
 </div>
@@ -694,7 +738,7 @@ iPhone
 </a><p><a href="./blog/hope-for-expensive-apps/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="18" data-categories="iPhone" data-listing-date-sort="1222142400000" data-listing-file-modified-sort="1644260268823" data-listing-reading-time-sort="2.02">
+<div class="quarto-post image-right" data-index="19" data-categories="iPhone" data-listing-date-sort="1222142400000" data-listing-file-modified-sort="1644260268823" data-listing-reading-time-sort="2.02">
 <div class="thumbnail">
 <p><a href="./blog/app-store-comments/index.html"> <img src="blog/app-store-comments/Picture%201.png" class="thumnail-image"> </a></p>
 </div>
@@ -723,7 +767,7 @@ iPhone
 </a><p><a href="./blog/app-store-comments/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="Venture Capital,iPhone,News" data-listing-date-sort="1220846400000" data-listing-file-modified-sort="1644255534626" data-listing-reading-time-sort="1.09">
+<div class="quarto-post image-right" data-index="20" data-categories="Venture Capital,iPhone,News" data-listing-date-sort="1220846400000" data-listing-file-modified-sort="1644255534626" data-listing-reading-time-sort="1.09">
 <div class="thumbnail">
 <a href="./blog/transition-2/index.html">
 <div class="thumbnail-image">
@@ -762,7 +806,7 @@ News
 </a><p><a href="./blog/transition-2/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="20" data-categories="iPhone,News" data-listing-date-sort="1219636800000" data-listing-file-modified-sort="1644255541282" data-listing-reading-time-sort="0.415">
+<div class="quarto-post image-right" data-index="21" data-categories="iPhone,News" data-listing-date-sort="1219636800000" data-listing-file-modified-sort="1644255541282" data-listing-reading-time-sort="0.415">
 <div class="thumbnail">
 <a href="./blog/transition-1/index.html">
 <div class="thumbnail-image">
