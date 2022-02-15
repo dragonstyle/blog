@@ -14,7 +14,7 @@ header-includes: |
   </script>
 
 site:
-  title: Dragonstyle - Tech Blog of Charles Teague
+  title: Dragonstyle - The Blog of Charles Teague
   navbar:
     right:
       - text: "About"
@@ -32,7 +32,7 @@ site:
 
 format:
   html:
-    theme: Sandstone
+    theme: simplex
 
 
 
