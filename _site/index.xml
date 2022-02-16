@@ -10,7 +10,47 @@
 <atom:link href="https://www.charlesteague.com/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-99.9.9</generator>
-<lastBuildDate>Mon, 14 Dec 2009 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 16 Feb 2022 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Build and Test Analytics</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/build-and-test-analytics/index.html</link>
+  <description><![CDATA[ 
+
+<p>One of the things I’ve been maintaining on the <a href="https://www.github.com/quarto-dev/quarto-cli">Quarto</a> team is the GitHub actions that build installers, run tests, and so on. A few times over the last year, we’ve run into problems in our pipeline which didn’t appear as explicit failures, but instead showed up as significant changes in the duration of tasks or actions. For example, there was a stretch where Deno bundling was facing challeges, and this initially appeared to us as very slow bundling as a part of building the installer for Quarto.</p>
+<p>Of course, since we didn’t typically build installers locally, it took a while for me to notice that building an installer had become very slow on the CI machines. This got me thinking about the need to have more systematic analytics about key elements of the CI pipeline. It would be great to be able to see a commit by commit (or PR by PR) graph of the bundle time, making it easy to pinpoint a code change that contributed to a change in behavior (for example, us updating to a new version of Deno).</p>
+<p>I looked around for a simple service that would allow me to poke a custom event into a time series and then provided nice visualization tools for this. I even thought perhaps something would already be dialed for GH actions, but I didn’t find anything (tell me if you know of one!).</p>
+<p class="page-columns page-full"><img src="https://www.charlesteague.com/blog/build-and-test-analytics/render-perf.png" class="column-screen img-fluid"></p>
+<p>I ultimately rigged up a duct tape version of this using <a href="https://www.amplitude.com">Amplitude</a> and their command line API via GitHub action. This allows me to see how long it takes to bundle Quarto and track that over time.</p>
+<p>I also add a more explicit <a href="https://github.com/quarto-dev/quarto-cli/blob/main/.github/workflows/performance-check.yml">performance check</a>. This means that we can see how our render performance changes over time and whether there are changes along the way that drive outsized changes in render performance- largely as a prompt to go look more deeply (I realize that this isn’t exactly a scientifically reproducible performance benchmark).</p>
+<p>It strikes me that there is a nice opportunity for someone to build out infrastructure that allows the tracking of metrics such as this, which nicely integrates with GH actions (perhaps even tracking some metrics about GH action performance with little to no configuration). Seems like a service that could be of benefit to a lot of developers!</p>
+
+
+ ]]></description>
+  <category>Analytics</category>
+  <category>Product</category>
+  <category>Continuous Integration</category>
+  <category>Startup Ideas</category>
+  <guid>https://www.charlesteague.com/blog/build-and-test-analytics/index.html</guid>
+  <pubDate>Wed, 16 Feb 2022 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/build-and-test-analytics/render-perf.png" medium="image" type="image/png" height="64" width="144"/>
+</item>
+<item>
+  <title>Welcome to the Blog (2.0)</title>
+  <dc:creator></dc:creator>
+  <link>https://www.charlesteague.com/blog/welcome/index.html</link>
+  <description><![CDATA[ 
+
+<p>Years ago, I worked on a popular for authoring blogs, <a href="https://www.microsoft.com/en-us/p/open-live-writer/9nblggh5279m?activetab=pivot:overviewtab">Windows Live Writer</a>. That tool provided a WYSIWYG experience, giving users a Microsoft Word like experience for editing their blog. During this time period, if you manged to find my blog, you’d see only test posts associated with the latest features of Live Writer.</p>
+<p>After I stopped working on Writer, I returned to blogging myself, writing primarily about my interest mobile technology and what I saw as a revolution led by the Apple iPhone. I’ve brought those old posts to this weblog, and though the are dated, it is fun to look back at how early that market was and to see how much it has grown.</p>
+<p>For the last 18 months, I’ve been working at RStudio on a new project, <a href="https://www.quarto.org">Quarto</a>. It is the very technology that is being used to create this blog. I can’t commit to writing frequently, I intend to write more frequently. We’ll see if I can live up to it!</p>
+
+
+ ]]></description>
+  <category>News</category>
+  <guid>https://www.charlesteague.com/blog/welcome/index.html</guid>
+  <pubDate>Mon, 07 Feb 2022 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>App Store Data for December 2009</title>
   <dc:creator></dc:creator>
@@ -1240,41 +1280,6 @@ The average price of an application on the app store is $3.21, but if you ignore
   <guid>https://www.charlesteague.com/blog/app-store-comments/index.html</guid>
   <pubDate>Tue, 23 Sep 2008 04:00:00 GMT</pubDate>
   <media:content url="https://www.charlesteague.com/blog/app-store-comments/Picture%201.png" medium="image" type="image/png"/>
-</item>
-<item>
-  <title>Transition 2</title>
-  <dc:creator></dc:creator>
-  <link>https://www.charlesteague.com/blog/transition-2/index.html</link>
-  <description><![CDATA[ 
-
-<p>So on to part 2. After a couple of years focused on Windows Live Writer and blogging, the time has come for me to&nbsp; work on something new.</p>
-<p>I’m now a Technologist in Residence at General Catalyst, a position which will offer me a significant opportunity to learn from some very bright people with both great operational experience and also great experience in the venture capital community. This brings with it a whole new host of professional challenges, as in the short term I’ll likely be spending a lot less time actually building products and getting them to market (which is what is really natural for me). That said, it’s a set of challenges that I’m really looking forward to.</p>
-<p>As a part of the transition, my family and I have also relocated from the Seattle area to the Boston area. After living and working here for 10 years prior to my time at Microsoft, it feels great to be back. Just in time for the MLB playoffs too. I had a great time working at Microsoft, a career objective of mine from way back has now been checked off the list :).</p>
-<p>If you’re in the Boston area and I haven’t yet reached out to offer to buy you a cup of coffee and chat, please drop me a line!</p>
-
-
- ]]></description>
-  <category>Venture Capital</category>
-  <category>iPhone</category>
-  <category>News</category>
-  <guid>https://www.charlesteague.com/blog/transition-2/index.html</guid>
-  <pubDate>Mon, 08 Sep 2008 04:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Transition Part 1</title>
-  <dc:creator></dc:creator>
-  <link>https://www.charlesteague.com/blog/transition-1/index.html</link>
-  <description><![CDATA[ 
-
-<p>So I’m going through a bit of a transition in my life (more about this later). As a part of this transition, the focus of this blog is going to change. It remains my personal weblog, but rather than mostly playing around with features of Windows Live Writer, I’ll be doing a bit more writing about my current technical interests. Top of the list is the <a href="http://www.apple.com/iphone">iPhone</a> (I know, I should get in line).</p>
-<p>Stay tuned for more on the rest of the transition!</p>
-
-
- ]]></description>
-  <category>iPhone</category>
-  <category>News</category>
-  <guid>https://www.charlesteague.com/blog/transition-1/index.html</guid>
-  <pubDate>Mon, 25 Aug 2008 04:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
