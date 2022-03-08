@@ -29,11 +29,10 @@ site:
   twitter-card:
     creator: "@dragonstyle"
   opengraph: true
-  margin-header: signup.html
-
 format:
   html:
-    theme: simplex
+    theme: 
+      - simplex
 
 
 

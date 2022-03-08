@@ -53,7 +53,7 @@
   <script>
 
     window.document.addEventListener("DOMContentLoaded", function (_event) {
-      const listingTargetEl = window.document.querySelector('#listing .list');
+      const listingTargetEl = window.document.querySelector('#listing-listing .list');
       if (!listingTargetEl) {
         // No listing discovered, do not attach.
         return; 
@@ -66,7 +66,7 @@
       };
 
       window['quarto-listings'] = window['quarto-listings'] || {};
-      window['quarto-listings']['listing'] = new List('listing', options);
+      window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
 
       if (window['quarto-listing-loaded']) {
         window['quarto-listing-loaded']();
@@ -108,12 +108,12 @@
     <a class="nav-link" href="./about.html">About</a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/dragonstyle/blog"><i class="bi-github" role="img">
+    <a class="nav-link" href="https://github.com/dragonstyle/blog"><i class="bi bi-github" role="img">
 </i> 
  </a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"><i class="bi-rss" role="img">
+    <a class="nav-link" href="./index.xml"><i class="bi bi-rss" role="img">
 </i> 
  </a>
   </li>  
@@ -157,7 +157,6 @@
     </div>
 </form>
 </div>
-<script type="text/javascript" src=".//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
 </div></div><h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(22)</span></div><div class="category" data-category="Analytics">Analytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Continuous Integration">Continuous Integration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="News">News <span class="quarto-category-count">(9)</span></div><div class="category" data-category="Product">Product <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Random">Random <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Startup Ideas">Startup Ideas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Technology">Technology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Venture Capital">Venture Capital <span class="quarto-category-count">(1)</span></div><div class="category" data-category="iPhone">iPhone <span class="quarto-category-count">(19)</span></div></div>
         
@@ -167,17 +166,20 @@
 
 
 
-<div id="listing" class="quarto-listing">
+<div class="quarto-listing" id="listing-listing">
 <div class="list quarto-listing-default">
 <div class="quarto-post image-right" data-index="0" data-categories="Analytics,Product,Continuous Integration,Startup Ideas" data-listing-date-sort="1644987600000" data-listing-file-modified-sort="1645043025425" data-listing-reading-time-sort="1.905">
 <div class="thumbnail">
-<p><a href="./blog/build-and-test-analytics/index.html"> <img src="blog/build-and-test-analytics/render-perf.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/build-and-test-analytics/index.html"> <img src="./blog/build-and-test-analytics/render-perf.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/build-and-test-analytics/index.html">
 <h3 class="no-anchor listing-title">
 Build and Test Analytics
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Analytics'); return false;">
@@ -202,7 +204,7 @@ Startup Ideas
 <div class="metadata">
 <a href="./blog/build-and-test-analytics/index.html">
 <div class="listing-date">
-2/16/2022
+Feb 16, 2022
 </div>
 </a><p><a href="./blog/build-and-test-analytics/index.html"></a></p>
 </div>
@@ -220,6 +222,9 @@ Startup Ideas
 <h3 class="no-anchor listing-title">
 Welcome to the Blog (2.0)
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('News'); return false;">
@@ -235,20 +240,23 @@ News
 <div class="metadata">
 <a href="./blog/welcome/index.html">
 <div class="listing-date">
-2/7/2022
+Feb 7, 2022
 </div>
 </a><p><a href="./blog/welcome/index.html"></a></p>
 </div>
 </div>
 <div class="quarto-post image-right" data-index="2" data-categories="iPhone" data-listing-date-sort="1260766800000" data-listing-file-modified-sort="1644263052028" data-listing-reading-time-sort="0.845">
 <div class="thumbnail">
-<p><a href="./blog/app-store-data-december-2009/index.html"> <img src="blog/app-store-data-december-2009/1.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/app-store-data-december-2009/index.html"> <img src="./blog/app-store-data-december-2009/1.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/app-store-data-december-2009/index.html">
 <h3 class="no-anchor listing-title">
 App Store Data for December 2009
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -264,20 +272,23 @@ iPhone
 <div class="metadata">
 <a href="./blog/app-store-data-december-2009/index.html">
 <div class="listing-date">
-12/14/2009
+Dec 14, 2009
 </div>
 </a><p><a href="./blog/app-store-data-december-2009/index.html"></a></p>
 </div>
 </div>
 <div class="quarto-post image-right" data-index="3" data-categories="iPhone,News" data-listing-date-sort="1260075600000" data-listing-file-modified-sort="1644263138755" data-listing-reading-time-sort="1.975">
 <div class="thumbnail">
-<p><a href="./blog/its-been-a-while/index.html"> <img src="blog/its-been-a-while/1.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/its-been-a-while/index.html"> <img src="./blog/its-been-a-while/1.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/its-been-a-while/index.html">
 <h3 class="no-anchor listing-title">
 It’s been a while!
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -296,20 +307,23 @@ News
 <div class="metadata">
 <a href="./blog/its-been-a-while/index.html">
 <div class="listing-date">
-12/6/2009
+Dec 6, 2009
 </div>
 </a><p><a href="./blog/its-been-a-while/index.html"></a></p>
 </div>
 </div>
 <div class="quarto-post image-right" data-index="4" data-categories="iPhone" data-listing-date-sort="1247284800000" data-listing-file-modified-sort="1644262476358" data-listing-reading-time-sort="0.625">
 <div class="thumbnail">
-<p><a href="./blog/radio-silience/index.html"> <img src="blog/radio-silience/1.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/radio-silience/index.html"> <img src="./blog/radio-silience/1.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/radio-silience/index.html">
 <h3 class="no-anchor listing-title">
 Radio Silence
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -325,20 +339,23 @@ iPhone
 <div class="metadata">
 <a href="./blog/radio-silience/index.html">
 <div class="listing-date">
-7/11/2009
+Jul 11, 2009
 </div>
 </a><p><a href="./blog/radio-silience/index.html"></a></p>
 </div>
 </div>
 <div class="quarto-post image-right" data-index="5" data-categories="iPhone" data-listing-date-sort="1240286400000" data-listing-file-modified-sort="1644262329362" data-listing-reading-time-sort="6.47">
 <div class="thumbnail">
-<p><a href="./blog/comparing-app-store-categories/index.html"> <img src="blog/comparing-app-store-categories/1.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/comparing-app-store-categories/index.html"> <img src="./blog/comparing-app-store-categories/1.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/comparing-app-store-categories/index.html">
 <h3 class="no-anchor listing-title">
 Comparing App Store Categories
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -354,7 +371,7 @@ iPhone
 <div class="metadata">
 <a href="./blog/comparing-app-store-categories/index.html">
 <div class="listing-date">
-4/21/2009
+Apr 21, 2009
 </div>
 </a><p><a href="./blog/comparing-app-store-categories/index.html"></a></p>
 </div>
@@ -372,6 +389,9 @@ iPhone
 <h3 class="no-anchor listing-title">
 Updated Data from the App Store
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -387,20 +407,23 @@ iPhone
 <div class="metadata">
 <a href="./blog/updated-app-store-data/index.html">
 <div class="listing-date">
-3/31/2009
+Mar 31, 2009
 </div>
 </a><p><a href="./blog/updated-app-store-data/index.html"></a></p>
 </div>
 </div>
 <div class="quarto-post image-right" data-index="7" data-categories="iPhone" data-listing-date-sort="1235624400000" data-listing-file-modified-sort="1644264122858" data-listing-reading-time-sort="3.235">
 <div class="thumbnail">
-<p><a href="./blog/20000-applications/index.html"> <img src="blog/20000-applications/1.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/20000-applications/index.html"> <img src="./blog/20000-applications/1.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/20000-applications/index.html">
 <h3 class="no-anchor listing-title">
 20,000 Applications and Counting
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -416,20 +439,23 @@ iPhone
 <div class="metadata">
 <a href="./blog/20000-applications/index.html">
 <div class="listing-date">
-2/26/2009
+Feb 26, 2009
 </div>
 </a><p><a href="./blog/20000-applications/index.html"></a></p>
 </div>
 </div>
 <div class="quarto-post image-right" data-index="8" data-categories="iPhone" data-listing-date-sort="1234846800000" data-listing-file-modified-sort="1644262527857" data-listing-reading-time-sort="3.605">
 <div class="thumbnail">
-<p><a href="./blog/app-store-business-model-lite/index.html"> <img src="blog/app-store-business-model-lite/1.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/app-store-business-model-lite/index.html"> <img src="./blog/app-store-business-model-lite/1.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/app-store-business-model-lite/index.html">
 <h3 class="no-anchor listing-title">
 The App Store Model Business Model: Lite
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -445,20 +471,23 @@ iPhone
 <div class="metadata">
 <a href="./blog/app-store-business-model-lite/index.html">
 <div class="listing-date">
-2/17/2009
+Feb 17, 2009
 </div>
 </a><p><a href="./blog/app-store-business-model-lite/index.html"></a></p>
 </div>
 </div>
 <div class="quarto-post image-right" data-index="9" data-categories="iPhone" data-listing-date-sort="1233810000000" data-listing-file-modified-sort="1644260260766" data-listing-reading-time-sort="2.02">
 <div class="thumbnail">
-<p><a href="./blog/theres-an-app-for-that/index.html"> <img src="blog/theres-an-app-for-that/1.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/theres-an-app-for-that/index.html"> <img src="./blog/theres-an-app-for-that/1.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/theres-an-app-for-that/index.html">
 <h3 class="no-anchor listing-title">
 There’s an App For That
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -474,7 +503,7 @@ iPhone
 <div class="metadata">
 <a href="./blog/theres-an-app-for-that/index.html">
 <div class="listing-date">
-2/5/2009
+Feb 5, 2009
 </div>
 <div class="listing-author">
 Charles Teague
@@ -495,6 +524,9 @@ Charles Teague
 <h3 class="no-anchor listing-title">
 App Store Raw Data
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -514,20 +546,23 @@ For those that are interested,&nbsp;<span>here is recent (well actually, today�
 <div class="metadata">
 <a href="./blog/app-store-raw-data/index.html">
 <div class="listing-date">
-12/19/2008
+Dec 19, 2008
 </div>
 </a><p><a href="./blog/app-store-raw-data/index.html"></a></p>
 </div>
 </div>
 <div class="quarto-post image-right" data-index="11" data-categories="iPhone,News" data-listing-date-sort="1229662800000" data-listing-file-modified-sort="1644259487291" data-listing-reading-time-sort="0.685">
 <div class="thumbnail">
-<p><a href="./blog/one-last-note-on-trends/index.html"> <img src="blog/one-last-note-on-trends/1.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/one-last-note-on-trends/index.html"> <img src="./blog/one-last-note-on-trends/1.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/one-last-note-on-trends/index.html">
 <h3 class="no-anchor listing-title">
 One Last Note on Trends
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -546,20 +581,23 @@ News
 <div class="metadata">
 <a href="./blog/one-last-note-on-trends/index.html">
 <div class="listing-date">
-12/19/2008
+Dec 19, 2008
 </div>
 </a><p><a href="./blog/one-last-note-on-trends/index.html"></a></p>
 </div>
 </div>
 <div class="quarto-post image-right" data-index="12" data-categories="iPhone,News" data-listing-date-sort="1228971600000" data-listing-file-modified-sort="1644258989036" data-listing-reading-time-sort="3.1">
 <div class="thumbnail">
-<p><a href="./blog/down-and-to-the-right-by-design/index.html"> <img src="blog/down-and-to-the-right-by-design/1.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/down-and-to-the-right-by-design/index.html"> <img src="./blog/down-and-to-the-right-by-design/1.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/down-and-to-the-right-by-design/index.html">
 <h3 class="no-anchor listing-title">
 Down and To the Right By Design
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -578,20 +616,23 @@ News
 <div class="metadata">
 <a href="./blog/down-and-to-the-right-by-design/index.html">
 <div class="listing-date">
-12/11/2008
+Dec 11, 2008
 </div>
 </a><p><a href="./blog/down-and-to-the-right-by-design/index.html"></a></p>
 </div>
 </div>
 <div class="quarto-post image-right" data-index="13" data-categories="iPhone,News" data-listing-date-sort="1228453200000" data-listing-file-modified-sort="1644258858669" data-listing-reading-time-sort="0.72">
 <div class="thumbnail">
-<p><a href="./blog/app-store-category-growth/index.html"> <img src="blog/app-store-category-growth/1.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/app-store-category-growth/index.html"> <img src="./blog/app-store-category-growth/1.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/app-store-category-growth/index.html">
 <h3 class="no-anchor listing-title">
 A Closer Look at App Store Category Growth
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -611,49 +652,23 @@ Taking a closer look at the growth rate of various categories confirms what ever
 <div class="metadata">
 <a href="./blog/app-store-category-growth/index.html">
 <div class="listing-date">
-12/5/2008
+Dec 5, 2008
 </div>
 </a><p><a href="./blog/app-store-category-growth/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="14" data-categories="iPhone" data-listing-date-sort="1228366800000" data-listing-file-modified-sort="1644258385423" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="14" data-categories="Random,iPhone,News" data-listing-date-sort="1228366800000" data-listing-file-modified-sort="1644258195374" data-listing-reading-time-sort="0.1">
 <div class="thumbnail">
-<p><a href="./blog/apps-for-a-song/index.html"> <img src="blog/apps-for-a-song/1.png" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./blog/apps-for-a-song/index.html">
-<h3 class="no-anchor listing-title">
-Apps for a Song
-</h3>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
-iPhone
-</div>
-</div>
-<a href="./blog/apps-for-a-song/index.html">
-<div class="listing-description">
-<p>If you take a look at the growth rates of the App Store by price, something that you may have already intuitively known starts to become clear. $.99 has become the default price of applications on the store. In face, more than 1 in 3 of the…</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./blog/apps-for-a-song/index.html">
-<div class="listing-date">
-12/4/2008
-</div>
-</a><p><a href="./blog/apps-for-a-song/index.html"></a></p>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="15" data-categories="Random,iPhone,News" data-listing-date-sort="1228366800000" data-listing-file-modified-sort="1644258195374" data-listing-reading-time-sort="0.1">
-<div class="thumbnail">
-<p><a href="./blog/10000-applications/index.html"> <img src="blog/10000-applications/1.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/10000-applications/index.html"> <img src="./blog/10000-applications/1.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/10000-applications/index.html">
 <h3 class="no-anchor listing-title">
 It’s True - 10,000 Applications
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Random'); return false;">
@@ -675,20 +690,55 @@ News
 <div class="metadata">
 <a href="./blog/10000-applications/index.html">
 <div class="listing-date">
-12/4/2008
+Dec 4, 2008
 </div>
 </a><p><a href="./blog/10000-applications/index.html"></a></p>
 </div>
 </div>
+<div class="quarto-post image-right" data-index="15" data-categories="iPhone" data-listing-date-sort="1228366800000" data-listing-file-modified-sort="1644258385423" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./blog/apps-for-a-song/index.html"> <img src="./blog/apps-for-a-song/1.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./blog/apps-for-a-song/index.html">
+<h3 class="no-anchor listing-title">
+Apps for a Song
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
+iPhone
+</div>
+</div>
+<a href="./blog/apps-for-a-song/index.html">
+<div class="listing-description">
+<p>If you take a look at the growth rates of the App Store by price, something that you may have already intuitively known starts to become clear. $.99 has become the default price of applications on the store. In face, more than 1 in 3 of the…</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./blog/apps-for-a-song/index.html">
+<div class="listing-date">
+Dec 4, 2008
+</div>
+</a><p><a href="./blog/apps-for-a-song/index.html"></a></p>
+</div>
+</div>
 <div class="quarto-post image-right" data-index="16" data-categories="iPhone" data-listing-date-sort="1227589200000" data-listing-file-modified-sort="1644257961597" data-listing-reading-time-sort="9.89">
 <div class="thumbnail">
-<p><a href="./blog/5-months-and-9000-apps-later/index.html"> <img src="blog/5-months-and-9000-apps-later/1.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/5-months-and-9000-apps-later/index.html"> <img src="./blog/5-months-and-9000-apps-later/1.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/5-months-and-9000-apps-later/index.html">
 <h3 class="no-anchor listing-title">
 5 months and 9,000 Applications Later
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -704,20 +754,23 @@ iPhone
 <div class="metadata">
 <a href="./blog/5-months-and-9000-apps-later/index.html">
 <div class="listing-date">
-11/25/2008
+Nov 25, 2008
 </div>
 </a><p><a href="./blog/5-months-and-9000-apps-later/index.html"></a></p>
 </div>
 </div>
 <div class="quarto-post image-right" data-index="17" data-categories="Technology,Random" data-listing-date-sort="1224561600000" data-listing-file-modified-sort="1644256861815" data-listing-reading-time-sort="1.855">
 <div class="thumbnail">
-<p><a href="./blog/brown-zune/index.html"> <img src="blog/brown-zune/Picture%202.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/brown-zune/index.html"> <img src="./blog/brown-zune/Picture 2.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/brown-zune/index.html">
 <h3 class="no-anchor listing-title">
 Brown Zune, Windows Live Writer, and My MacBook Pro
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Technology'); return false;">
@@ -736,20 +789,23 @@ Random
 <div class="metadata">
 <a href="./blog/brown-zune/index.html">
 <div class="listing-date">
-10/21/2008
+Oct 21, 2008
 </div>
 </a><p><a href="./blog/brown-zune/index.html"></a></p>
 </div>
 </div>
 <div class="quarto-post image-right" data-index="18" data-categories="iPhone" data-listing-date-sort="1222660800000" data-listing-file-modified-sort="1644256269918" data-listing-reading-time-sort="2.065">
 <div class="thumbnail">
-<p><a href="./blog/hope-for-expensive-apps/index.html"> <img src="blog/hope-for-expensive-apps/penny.jpg" class="thumnail-image"> </a></p>
+<p><a href="./blog/hope-for-expensive-apps/index.html"> <img src="./blog/hope-for-expensive-apps/penny.jpg" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/hope-for-expensive-apps/index.html">
 <h3 class="no-anchor listing-title">
 Hope for Expensive Apps iTunes
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -765,20 +821,23 @@ iPhone
 <div class="metadata">
 <a href="./blog/hope-for-expensive-apps/index.html">
 <div class="listing-date">
-9/29/2008
+Sep 29, 2008
 </div>
 </a><p><a href="./blog/hope-for-expensive-apps/index.html"></a></p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="19" data-categories="iPhone" data-listing-date-sort="1222142400000" data-listing-file-modified-sort="1644260268823" data-listing-reading-time-sort="2.02">
+<div class="quarto-post image-right" data-index="19" data-categories="iPhone" data-listing-date-sort="1222142400000" data-listing-file-modified-sort="1645110353021" data-listing-reading-time-sort="2.02">
 <div class="thumbnail">
-<p><a href="./blog/app-store-comments/index.html"> <img src="blog/app-store-comments/Picture%201.png" class="thumnail-image"> </a></p>
+<p><a href="./blog/app-store-comments/index.html"> <img src="./blog/app-store-comments/Picture 1.png" class="thumnail-image"> </a></p>
 </div>
 <div class="body">
 <a href="./blog/app-store-comments/index.html">
 <h3 class="no-anchor listing-title">
 App Store Comments Are Crappy, But Let’s Not Get All Draconian
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -794,7 +853,7 @@ iPhone
 <div class="metadata">
 <a href="./blog/app-store-comments/index.html">
 <div class="listing-date">
-9/23/2008
+Sep 23, 2008
 </div>
 </a><p><a href="./blog/app-store-comments/index.html"></a></p>
 </div>
@@ -812,6 +871,9 @@ iPhone
 <h3 class="no-anchor listing-title">
 Transition 2
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Venture Capital'); return false;">
@@ -833,7 +895,7 @@ News
 <div class="metadata">
 <a href="./blog/transition-2/index.html">
 <div class="listing-date">
-9/8/2008
+Sep 8, 2008
 </div>
 </a><p><a href="./blog/transition-2/index.html"></a></p>
 </div>
@@ -851,6 +913,9 @@ News
 <h3 class="no-anchor listing-title">
 Transition Part 1
 </h3>
+<div class="listing-subtitle">
+
+</div>
 </a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('iPhone'); return false;">
@@ -869,7 +934,7 @@ News
 <div class="metadata">
 <a href="./blog/transition-1/index.html">
 <div class="listing-date">
-8/25/2008
+Aug 25, 2008
 </div>
 </a><p><a href="./blog/transition-1/index.html"></a></p>
 </div>
