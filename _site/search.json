@@ -182,6 +182,13 @@
     "text": "For those waiting for my official acknowledgement, the App Store now has more than 10,000 applications available. Congrats!"
   },
   {
+    "objectID": "blog/writing-style/index.html",
+    "href": "blog/writing-style/index.html",
+    "title": "Great Writing",
+    "section": "",
+    "text": "Cormac McCarthy is a favorite author of mine. I find his direct, short, and almost terse style of writing to be engaging. Little did I know that he had actually weighed in on what it takes to do great scientific writing. He did!\n\n\n\n\n\nI believe what he outlines are tips for good writing (not just good scientific writing). A few highlights:\n\nKeep sentences short, simply constructed and direct. Concise, clear sentences work well for scientific explanations. Minimize clauses, compound sentences and transition words — such as ‘however’ or ‘thus’ — so that the reader can focus on the main message.\nDon’t over-elaborate. Only use an adjective if it’s relevant. Your paper is not a dialogue with the readers’ potential questions, so don’t go overboard anticipating them. Don’t say the same thing in three different ways in any single section. Don’t say both ‘elucidate’ and ‘elaborate’. Just choose one, or you risk that your readers will give up.\nDashes should emphasize the clauses you consider most important — without using bold or italics — and not only for defining terms.\nFinally, try to write the best version of your paper: the one that you like. You can’t please an anonymous reader, but you should be able to please yourself. Your paper — you hope — is for posterity. Remember how you first read the papers that inspired you while you enjoy the process of writing your own.\n\nRead: Novelist Cormac McCarthy’s tips on how to write a great science paper"
+  },
+  {
     "objectID": "blog/build-and-test-analytics/index.html",
     "href": "blog/build-and-test-analytics/index.html",
     "title": "Build and Test Analytics",
@@ -194,12 +201,5 @@
     "title": "Charles Teague",
     "section": "",
     "text": "Charles is a Software Architect at Rstudio where he is focused on Quarto.\nPrior to joining Rstudio, Charles Teague was the CEO and founder of FitNow, Inc., the maker of Lose It!, one of the most popular health and fitness application for iOS and Android devices. Since 2008, tens of millions of users have used Lose It! to lose more than 100 million pounds. He remains the Executive Chairman of Lose It!.\nCharles was a Technologist in Residence at General Catalyst Partners where he focused on Smartphone and Cloud Computing technologies. Before joining General Catalyst, Charles was the co-founder of Onfolio, Inc., which was acquired by Microsoft in 2005. At Microsoft Charles worked overseeing the development and engineering of Windows Live Writer which was originally created at Onfolio, Inc.\nBefore joining Onfolio, Charles was the first employee at Allaire Corporation, which was acquired by Macromedia in 2001. At Macromedia, Charles was a Director of Engineering responsible for the development and engineering of ColdFusion (now Adobe ColdFusion). Charles earned a Bachelor of Arts degree from Macalester College."
-  },
-  {
-    "objectID": "blog/writing-style/index.html",
-    "href": "blog/writing-style/index.html",
-    "title": "Great Writing",
-    "section": "",
-    "text": "Cormac McCarthy is a favorite author of mine. I find his direct, short, and almost terse style of writing to be engaging. Little did I know that he had actually weighed in on what it takes to do great scientific writing. He did!\n\n\n\n\n\nI believe what he outlines are tips for good writing (not just good scientific writing). A few highlights:\n\nKeep sentences short, simply constructed and direct. Concise, clear sentences work well for scientific explanations. Minimize clauses, compound sentences and transition words — such as ‘however’ or ‘thus’ — so that the reader can focus on the main message.\nDon’t over-elaborate. Only use an adjective if it’s relevant. Your paper is not a dialogue with the readers’ potential questions, so don’t go overboard anticipating them. Don’t say the same thing in three different ways in any single section. Don’t say both ‘elucidate’ and ‘elaborate’. Just choose one, or you risk that your readers will give up.\nDashes should emphasize the clauses you consider most important — without using bold or italics — and not only for defining terms.\nFinally, try to write the best version of your paper: the one that you like. You can’t please an anonymous reader, but you should be able to please yourself. Your paper — you hope — is for posterity. Remember how you first read the papers that inspired you while you enjoy the process of writing your own.\n\nRead: Novelist Cormac McCarthy’s tips on how to write a great science paper"
   }
 ]
