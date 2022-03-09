@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.charlesteague.com/index.html</loc>
-    <lastmod>2022-03-09T16:16:42.733Z</lastmod>
+    <lastmod>2022-03-09T16:29:29.098Z</lastmod>
   </url>
   <url>
     <loc>https://www.charlesteague.com/blog/brown-zune/index.html</loc>
@@ -95,5 +95,9 @@
   <url>
     <loc>https://www.charlesteague.com/about.html</loc>
     <lastmod>2022-03-09T16:16:49.444Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.charlesteague.com/blog/writing-style/index.html</loc>
+    <lastmod>2022-03-09T16:29:28.159Z</lastmod>
   </url>
 </urlset>

@@ -1,0 +1,21 @@
+---
+title: Great Writing
+subtitle: A favorite novelist weighs in on scientific writing
+date: 3/9/2022
+---
+
+Cormac McCarthy is a favorite author of mine. I find his direct, short, and almost terse style of writing to be engaging. Little did I know that he had actually weighed in on what it takes to do great scientific writing. He did!
+
+![](west.jpg){fig-align="center"}
+
+I believe what he outlines are tips for good writing (not just good scientific writing). A few highlights:
+
+-   Keep sentences short, simply constructed and direct. Concise, clear sentences work well for scientific explanations. Minimize clauses, compound sentences and transition words --- such as 'however' or 'thus' --- so that the reader can focus on the main message.
+
+-   Don't over-elaborate. Only use an adjective if it's relevant. Your paper is not a dialogue with the readers' potential questions, so don't go overboard anticipating them. Don't say the same thing in three different ways in any single section. Don't say both 'elucidate' and 'elaborate'. Just choose one, or you risk that your readers will give up.
+
+-   Dashes should emphasize the clauses you consider most important --- without using bold or italics --- and not only for defining terms.
+
+-   Finally, try to write the best version of your paper: the one that you like. You can't please an anonymous reader, but you should be able to please yourself. Your paper --- you hope --- is for posterity. Remember how you first read the papers that inspired you while you enjoy the process of writing your own.
+
+Read: [Novelist Cormac McCarthy's tips on how to write a great science paper](https://www.nature.com/articles/d41586-019-02918-5)
