@@ -7,6 +7,8 @@ categories:
 
 Years ago, I worked on a popular for authoring blogs, [Windows Live Writer](https://www.microsoft.com/en-us/p/open-live-writer/9nblggh5279m?activetab=pivot:overviewtab). That tool provided a WYSIWYG experience, giving users a Microsoft Word like experience for editing their blog. During this time period, if you manged to find my blog, you'd see only test posts associated with the latest features of Live Writer.
 
+![](window.jpg){fig-align="center"}
+
 After I stopped working on Writer, I returned to blogging myself, writing primarily about my interest mobile technology and what I saw as a revolution led by the Apple iPhone. I've brought those old posts to this weblog, and though the are dated, it is fun to look back at how early that market was and to see how much it has grown.
 
 For the last 18 months, I've been working at RStudio on a new project, [Quarto](https://www.quarto.org). It is the very technology that is being used to create this blog. I can't commit to writing frequently, I intend to write more frequently. We'll see if I can live up to it!

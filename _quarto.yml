@@ -18,6 +18,10 @@ header-includes: |
     display: flex;
     align-items: center;
   }
+  .listing-title {
+    font-weight: 600;
+    font-size: 1.2em;
+  }
   </style>
 
 site:
