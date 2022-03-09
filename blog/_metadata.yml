@@ -4,4 +4,4 @@ author: Charles Teague
 comments:
   utterances:
     repo: dragonstyle/blog
-title-block-banner: gray
+title-block-banner: true

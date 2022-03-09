@@ -4,7 +4,7 @@
   <meta name="generator" content="quarto-99.9.9">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="Charles Teague">
-  <title>Dragonstyle - The Blog of Charles Teague - Build and Test Analytics</title>
+  <title>The Tech Blog of Charles Teague - Build and Test Analytics</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -63,20 +63,17 @@
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
-<meta name="twitter:title" content="Dragonstyle - The Blog of Charles Teague - Build and Test Analytics">
+<meta name="twitter:title" content="The Tech Blog of Charles Teague - Build and Test Analytics">
 <meta name="twitter:creator" content="@dragonstyle">
 <meta name="twitter:card" content="summary">
-<style type="text/css">
-  main.quarto-banner-title-block .quarto-title-banner {
-    background-color: gray;
-  }</style></head>
+</head>
 <body class="fullcontent">
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Dragonstyle - The Blog of Charles Teague</span>
+    <img src="../../dragonstyle.png" alt="">
   </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -109,11 +106,11 @@
     
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full" data-sidebar-align="true">
 
 
 
-<div data-toc-align="true" class="quarto-title-banner color-body-bg page-columns page-full"><div class="quarto-title column-body"><h1 class="title display-7">Build and Test Analytics</h1><div class="quarto-categories"><div class="quarto-category">Analytics</div><div class="quarto-category">Product</div><div class="quarto-category">Continuous Integration</div><div class="quarto-category">Startup Ideas</div></div></div></div><div class="quarto-title-meta"><div><div class="quarto-title-meta-heading">Author</div><div class="quarto-title-meta-contents"><div class="quarto-title-authors"><p>Charles Teague</p></div></div></div><div><div class="quarto-title-meta-heading">Published</div><div class="quarto-title-meta-contents"><p class="date">February 16, 2022</p></div></div></div></header>
+<div class="quarto-title-banner color-navbar page-columns page-full"><div class="quarto-title column-body"><h1 class="title display-7">Build and Test Analytics</h1><div class="quarto-categories"><div class="quarto-category">Analytics</div><div class="quarto-category">Product</div><div class="quarto-category">Continuous Integration</div><div class="quarto-category">Startup Ideas</div></div></div></div><div class="quarto-title-meta"><div><div class="quarto-title-meta-heading">Author</div><div class="quarto-title-meta-contents"><div class="quarto-title-authors"><p>Charles Teague</p></div></div></div><div><div class="quarto-title-meta-heading">Published</div><div class="quarto-title-meta-contents"><p class="date">February 16, 2022</p></div></div></div></header>
 <p>One of the things I’ve been maintaining on the <a href="https://www.github.com/quarto-dev/quarto-cli">Quarto</a> team is the GitHub actions that build installers, run tests, and so on. A few times over the last year, we’ve run into problems in our pipeline which didn’t appear as explicit failures, but instead showed up as significant changes in the duration of tasks or actions. For example, there was a stretch where Deno bundling was facing challeges, and this initially appeared to us as very slow bundling as a part of building the installer for Quarto.</p>
 <p>Of course, since we didn’t typically build installers locally, it took a while for me to notice that building an installer had become very slow on the CI machines. This got me thinking about the need to have more systematic analytics about key elements of the CI pipeline. It would be great to be able to see a commit by commit (or PR by PR) graph of the bundle time, making it easy to pinpoint a code change that contributed to a change in behavior (for example, us updating to a new version of Deno).</p>
 <p>I looked around for a simple service that would allow me to poke a custom event into a time series and then provided nice visualization tools for this. I even thought perhaps something would already be dialed for GH actions, but I didn’t find anything (tell me if you know of one!).</p>
