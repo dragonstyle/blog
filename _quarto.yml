@@ -12,11 +12,17 @@ header-includes: |
   // track page views
   insights.trackPages()
   </script>
+  
+  <style>
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  </style>
 
 site:
-  title: "The Tech Blog of Charles Teague"
+  title: "Dragonstyle"
   navbar:
-    title: false
     logo: dragonstyle.png
     right:
       - text: "About"
