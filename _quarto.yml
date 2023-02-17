@@ -27,10 +27,12 @@ header-includes: |
 site:
   title: "Dragonstyle"
   navbar:
+    pinned: true
     logo: dragonstyle.png
     right:
       - text: "About"
         href: about.qmd
+    tools:
       - icon: github
         href: https://github.com/dragonstyle/blog
       - icon: rss
