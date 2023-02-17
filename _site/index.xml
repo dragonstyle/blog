@@ -13,6 +13,7 @@
 <lastBuildDate>Wed, 09 Mar 2022 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Great Writing</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/writing-style/index.html</link>
   <description><![CDATA[ 
 
@@ -46,6 +47,7 @@
 </item>
 <item>
   <title>Build and Test Analytics</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/build-and-test-analytics/index.html</link>
   <description><![CDATA[ 
 
@@ -73,6 +75,7 @@
 </item>
 <item>
   <title>Welcome to the Blog (2.0)</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/welcome/index.html</link>
   <description><![CDATA[ 
 
@@ -98,6 +101,7 @@
 </item>
 <item>
   <title>App Store Data for December 2009</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/app-store-data-december-2009/index.html</link>
   <description><![CDATA[ 
 
@@ -129,6 +133,7 @@
 </item>
 <item>
   <title>It’s been a while!</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/its-been-a-while/index.html</link>
   <description><![CDATA[ 
 
@@ -162,6 +167,7 @@
 </item>
 <item>
   <title>Radio Silence</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/radio-silience/index.html</link>
   <description><![CDATA[ 
 
@@ -183,6 +189,7 @@
 </item>
 <item>
   <title>Comparing App Store Categories</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/comparing-app-store-categories/index.html</link>
   <description><![CDATA[ 
 
@@ -396,6 +403,7 @@
 </item>
 <item>
   <title>Updated Data from the App Store</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/updated-app-store-data/index.html</link>
   <description><![CDATA[ 
 
@@ -559,6 +567,7 @@
 </item>
 <item>
   <title>20,000 Applications and Counting</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/20000-applications/index.html</link>
   <description><![CDATA[ 
 
@@ -662,6 +671,7 @@
 </item>
 <item>
   <title>The App Store Model Business Model: Lite</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/app-store-business-model-lite/index.html</link>
   <description><![CDATA[ 
 
@@ -725,13 +735,13 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/1.png" class="img-fluid figure-img"></p>
-<p></p><p></p>
+<p></p><figcaption class="figure-caption">Total # of Apps in the App Store</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/2.png" class="img-fluid figure-img"></p>
-<p></p><p></p>
+<p></p><figcaption class="figure-caption"># of Apps submitted each day</figcaption><p></p>
 </figure>
 </div>
 <section id="categories" class="level3">
@@ -740,19 +750,19 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/3.png" class="img-fluid figure-img"></p>
-<p></p><p></p>
+<p></p><figcaption class="figure-caption">Distribution of Applications by Category</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/4.png" class="img-fluid figure-img"></p>
-<p></p><p></p>
+<p></p><figcaption class="figure-caption">Category trend – % of application in each category each month</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/5.png" class="img-fluid figure-img"></p>
-<p></p><p></p>
+<p></p><figcaption class="figure-caption">Growth of the top 5 categories</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -762,25 +772,25 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/6.png" class="img-fluid figure-img"></p>
-<p></p><p></p>
+<p></p><figcaption class="figure-caption">Average price of an application by month</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/7.png" class="img-fluid figure-img"></p>
-<p></p><p></p>
+<p></p><figcaption class="figure-caption">Distribution of Applications by Price</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/8.png" class="img-fluid figure-img"></p>
-<p></p><p></p>
+<p></p><figcaption class="figure-caption">Paid vs.&nbsp;Free App by Month</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/9.png" class="img-fluid figure-img"></p>
-<p></p><p></p>
+<p></p><figcaption class="figure-caption"># of Applications by price over time</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -800,6 +810,7 @@
 </item>
 <item>
   <title>App Store Raw Data</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/app-store-raw-data/index.html</link>
   <description><![CDATA[ 
 
@@ -820,6 +831,7 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
 </item>
 <item>
   <title>One Last Note on Trends</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/one-last-note-on-trends/index.html</link>
   <description><![CDATA[ 
 
@@ -844,6 +856,7 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
 </item>
 <item>
   <title>Down and To the Right By Design</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/down-and-to-the-right-by-design/index.html</link>
   <description><![CDATA[ 
 
@@ -907,6 +920,7 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
 </item>
 <item>
   <title>A Closer Look at App Store Category Growth</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/app-store-category-growth/index.html</link>
   <description><![CDATA[ 
 
@@ -944,6 +958,7 @@ Taking a closer look at the growth rate of various categories confirms what ever
 </item>
 <item>
   <title>It’s True - 10,000 Applications</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/10000-applications/index.html</link>
   <description><![CDATA[ 
 
@@ -965,6 +980,7 @@ Taking a closer look at the growth rate of various categories confirms what ever
 </item>
 <item>
   <title>Apps for a Song</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/apps-for-a-song/index.html</link>
   <description><![CDATA[ 
 
@@ -987,6 +1003,7 @@ Taking a closer look at the growth rate of various categories confirms what ever
 </item>
 <item>
   <title>5 months and 9,000 Applications Later</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/5-months-and-9000-apps-later/index.html</link>
   <description><![CDATA[ 
 
@@ -1279,6 +1296,7 @@ The average price of an application on the app store is $3.21, but if you ignore
 </item>
 <item>
   <title>Brown Zune, Windows Live Writer, and My MacBook Pro</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/brown-zune/index.html</link>
   <description><![CDATA[ 
 
@@ -1289,15 +1307,15 @@ The average price of an application on the app store is $3.21, but if you ignore
 <p>There are two applications that I haven’t been able to give up in my transition, however.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/brown-zune/Picture%202.png" class="img-fluid figure-img"></p>
-<p></p><p></p>
+<p><img src="https://www.charlesteague.com/blog/brown-zune/Picture 2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">“Application #1 is Zune. Yeah, I said it. I’m not being a MS fanboy- Zune is a truly great application (the interface is far superior to iTunes, really not even comparable), but it also has subscription music, which is a huge money saver for me (I waste a lot less money buying music that I end up getting sick of or not liking at all). So enjoy the rich irony of Zune running on my MacBook Pro, and my horrible brown Zune docked to the awesomely great looking laptop.”</figcaption><p></p>
 </figure>
 </div>
 <p>&nbsp;</p>
 <div class="quarto-figure quarto-figure-center" style="width: 100%;">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/brown-zune/Picture%203.png" class="img-fluid figure-img"></p>
-<p></p><p></p>
+<p><img src="https://www.charlesteague.com/blog/brown-zune/Picture 3.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The second application is, of course, Windows Live Writer. I actually spent the first week or so on the Mac without installing Writer, and it was just too painful. Trying to use the web interface was a complete non starter, and there was simply no comparison between other editors out there (ok, now I’m being biased). A quick VMWare and Windows XP install later and I’m running Writer on my Mac, using Unity to create a first class experience.</figcaption><p></p>
 </figure>
 </div>
 <p>The transition was really smoothed by the addition of VMware- anytime I need to I can simply open up Windows and do what I need to do (I ended up installing Visual Studio there so I can whip up quick utility apps in C#, for example). to any windows users getting ready to make the jump, I can definitely give you two pieces of advice from my experience:</p>
@@ -1314,6 +1332,7 @@ The average price of an application on the app store is $3.21, but if you ignore
 </item>
 <item>
   <title>Hope for Expensive Apps iTunes</title>
+  <dc:creator>Charles Teague</dc:creator>
   <link>https://www.charlesteague.com/blog/hope-for-expensive-apps/index.html</link>
   <description><![CDATA[ 
 
