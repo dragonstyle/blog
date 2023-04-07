@@ -19,14 +19,13 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
@@ -86,8 +85,11 @@ insights.trackPages()
 
 <meta name="twitter:title" content="Dragonstyle - 20,000 Applications and Counting">
 <meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://www.charlesteague.com/blog/20000-applications/1.png">
 <meta name="twitter:creator" content="@dragonstyle">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="673">
+<meta name="twitter:image-width" content="873">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -166,7 +168,7 @@ insights.trackPages()
 
 
 <p>Ok, there are now more than 20,000 applications in the App Store. Amazing.</p>
-<p><img src="1.png" class="img-fluid"></p>
+<p><img src="1.png" class="quarto-discovered-preview-image img-fluid"></p>
 <p>And to give you a bit of perspective, it took 155 days to get the first 5,000 application. Getting from 15,000 to 20,000 took just 23 days. Getting from 20,000 to 25,000 will now take less than 20. The continued growth, especially now that we’re past the holidays really is staggering.</p>
 <p>&nbsp;</p>
 <p><img src="2.png" class="img-fluid"></p>
@@ -282,9 +284,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -480,4 +496,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dragonstyle/blog/edit/main/blog/20000-applications/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dragonstyle/blog/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>

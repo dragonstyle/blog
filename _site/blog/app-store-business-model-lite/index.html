@@ -19,14 +19,13 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
@@ -86,8 +85,11 @@ insights.trackPages()
 
 <meta name="twitter:title" content="Dragonstyle - The App Store Model Business Model: Lite">
 <meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://www.charlesteague.com/blog/app-store-business-model-lite/1.png">
 <meta name="twitter:creator" content="@dragonstyle">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="582">
+<meta name="twitter:image-width" content="705">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -171,7 +173,7 @@ insights.trackPages()
 <p>Over the last couple of months, I believe that a business model for paid applications is starting to emerge. Not surprisingly, it looks a lot like the business model that licensed software businesses have been using for a long time (turns out that all those folks had figured something out). That model? Trial versions with paid full versions.</p>
 <p>The App Store doesn’t have explicit support for this, unfortunately, but application developers are working around this by introducing ‘Lite’ versions of their applications. Not only are there&nbsp;<a href="http://www.dragthing.com/blog/?p=119">success stories</a>&nbsp;out there, but the submissions to the store show the increasing popularity of these ‘Lite’ applications. In fact, there are now nearly 1,000 ‘Lite’ applications the App Store, representing about 5% of the total applications.</p>
 <p>Looking at the categories, one other very striking thing appears. Application categories that tend to have longer term recurring value (like Games, Business, Finance, Photography, and Productivity) appear to also have the most ‘Lite’ versions.</p>
-<p><img src="1.png" class="img-fluid"></p>
+<p><img src="1.png" class="quarto-discovered-preview-image img-fluid"></p>
 <p><img src="2.png" class="img-fluid"></p>
 <p><img src="3.png" class="img-fluid"></p>
 <p><img src="4.png" class="img-fluid"></p>
@@ -229,9 +231,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -427,4 +443,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dragonstyle/blog/edit/main/blog/app-store-business-model-lite/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dragonstyle/blog/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>

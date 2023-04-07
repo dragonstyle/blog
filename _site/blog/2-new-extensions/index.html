@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Charles Teague">
-<meta name="dcterms.date" content="2009-12-14">
+<meta name="dcterms.date" content="2023-04-07">
 
-<title>Dragonstyle - App Store Data for December 2009</title>
+<title>Dragonstyle - 2 New Extensions for Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,6 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/unsplash-styles-1.0.0/style.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,12 +84,10 @@ insights.trackPages()
 </style>
 
 
-<meta name="twitter:title" content="Dragonstyle - App Store Data for December 2009">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://www.charlesteague.com/blog/app-store-data-december-2009/1.png">
+<meta name="twitter:title" content="Dragonstyle - 2 New Extensions for Quarto">
+<meta name="twitter:description" content="Make Placeholder and Test Document Great">
+<meta name="twitter:image" content="https://www.charlesteague.com/blog/2-new-extensions/cat.jpeg">
 <meta name="twitter:creator" content="@dragonstyle">
-<meta name="twitter:image-height" content="119">
-<meta name="twitter:image-width" content="206">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -129,9 +128,11 @@ insights.trackPages()
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">App Store Data for December 2009</h1>
+      <h1 class="title">2 New Extensions for Quarto</h1>
+            <p class="subtitle lead">Make Placeholder and Test Document Great</p>
                                 <div class="quarto-categories">
-                <div class="quarto-category">iPhone</div>
+                <div class="quarto-category">Quarto</div>
+                <div class="quarto-category">Extensions</div>
               </div>
                   </div>
   </div>
@@ -149,7 +150,7 @@ insights.trackPages()
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">December 14, 2009</p>
+        <p class="date">April 7, 2023</p>
       </div>
     </div>
     
@@ -167,22 +168,25 @@ insights.trackPages()
 
 
 
-<p><img src="1.png" class="quarto-discovered-preview-image img-fluid" style="float:right;"> Ok, so it has been a while since I’ve posted an update of the App Store data. Since it’s been so long, I’m including a special bonus. But first, a couple of notes:</p>
-<ol type="1">
-<li><p>It looks to me like the XML feed that I scrape to gather this data limits the results to 6000 applications per category. I’m not sure that they’re ordered by popularity, though that certainly would make sense. This same limit is in the iTunes UI that uses the feed, so popularity is sensible.</p></li>
-<li><p>I haven’t look closely at the data, nor tried to to put together any trends. You’re on your own!</p></li>
-<li><p>I added a few additional columns to the data that I scrape:</p>
-<ol type="1">
-<li><p>ApplicationUrl</p></li>
-<li><p>IconUrl</p></li>
-<li><p>Rating</p></li>
-<li><p>RatingContent</p></li>
-</ol></li>
-</ol>
-<p>As always, I’m happy to share the data, but would love to learn from people- please share what you learn with this!</p>
-<p><a href="application-data.csv">Download US only data</a>&nbsp;(6MB)</p>
+<p>As a part of my work on Quarto, I find myself creating test documents with placeholder content. This is something I while creating a document used in a test, trying to reproduce a bug, or while testing a new feature. I’ve created a couple of Quarto extensions that are designed to make this process a little easier (at least on myself!).</p>
+<section id="lipsum" class="level2">
+<h2 class="anchored" data-anchor-id="lipsum">Lipsum</h2>
+<p>I often head to a <code>lorem ipsum</code> generator and copy and paste some content into test documents. Instead, I can now use the <code>dragonstyle/lipsum</code> extension to generate placeholder content, like:</p>
+<p><code>{{&lt; lipsum &gt;}}</code></p>
+<p>which will generate 5 paragaphs of lipsum text in my document. More details on the extension can be found in the <a href="https://github.com/dragonstyle/lipsum">extension repo</a>.</p>
+</section>
+<section id="unsplash" class="level2">
+<h2 class="anchored" data-anchor-id="unsplash">Unsplash</h2>
+<div class="unsplash-container float-right" style="width: 250px; ">
+<img src="cat.jpeg" class="img-fluid">
+</div>
+<p>I also often find myself grabbing images from either a search engine or a random page on the web. Rather than do this, I can now use the <code>dragonstyle/unsplash</code> extension to generate placeholder images, like:</p>
+<p><code>{{&lt; unsplash cat.jpeg &gt;}}</code></p>
+<p>This has the additional benefit of suprising me with frequently delightful images. More details on the extension can be found in the <a href="https://github.com/dragonstyle/unsplash">extension repo</a>.</p>
+<p>The image accompanying this section was placed in just that way!</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -424,4 +428,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dragonstyle/blog/edit/main/blog/app-store-data-december-2009/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dragonstyle/blog/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dragonstyle/blog/edit/main/blog/2-new-extensions/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dragonstyle/blog/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>

@@ -19,14 +19,13 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
@@ -86,8 +85,11 @@ insights.trackPages()
 
 <meta name="twitter:title" content="Dragonstyle - Build and Test Analytics">
 <meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://www.charlesteague.com/blog/build-and-test-analytics/render-perf.png">
 <meta name="twitter:creator" content="@dragonstyle">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="523">
+<meta name="twitter:image-width" content="1182">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -171,7 +173,7 @@ insights.trackPages()
 <p>One of the things I’ve been maintaining on the <a href="https://www.github.com/quarto-dev/quarto-cli">Quarto</a> team is the GitHub actions that build installers, run tests, and so on. A few times over the last year, we’ve run into problems in our pipeline which didn’t appear as explicit failures, but instead showed up as significant changes in the duration of tasks or actions. For example, there was a stretch where Deno bundling was facing challeges, and this initially appeared to us as very slow bundling as a part of building the installer for Quarto.</p>
 <p>Of course, since we didn’t typically build installers locally, it took a while for me to notice that building an installer had become very slow on the CI machines. This got me thinking about the need to have more systematic analytics about key elements of the CI pipeline. It would be great to be able to see a commit by commit (or PR by PR) graph of the bundle time, making it easy to pinpoint a code change that contributed to a change in behavior (for example, us updating to a new version of Deno).</p>
 <p>I looked around for a simple service that would allow me to poke a custom event into a time series and then provided nice visualization tools for this. I even thought perhaps something would already be dialed for GH actions, but I didn’t find anything (tell me if you know of one!).</p>
-<p class="page-columns page-full"><img src="render-perf.png" class="column-screen img-fluid"></p>
+<p class="page-columns page-full"><img src="render-perf.png" class="quarto-discovered-preview-image column-screen img-fluid"></p>
 <p>I ultimately rigged up a duct tape version of this using <a href="https://www.amplitude.com">Amplitude</a> and their command line API via GitHub action. This allows me to see how long it takes to bundle Quarto and track that over time.</p>
 <p>I also add a more explicit <a href="https://github.com/quarto-dev/quarto-cli/blob/main/.github/workflows/performance-check.yml">performance check</a>. This means that we can see how our render performance changes over time and whether there are changes along the way that drive outsized changes in render performance- largely as a prompt to go look more deeply (I realize that this isn’t exactly a scientifically reproducible performance benchmark).</p>
 <p>It strikes me that there is a nice opportunity for someone to build out infrastructure that allows the tracking of metrics such as this, which nicely integrates with GH actions (perhaps even tracking some metrics about GH action performance with little to no configuration). Seems like a service that could be of benefit to a lot of developers!</p>
@@ -206,9 +208,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -404,4 +420,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dragonstyle/blog/edit/main/blog/build-and-test-analytics/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dragonstyle/blog/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>

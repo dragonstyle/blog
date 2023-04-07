@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/blog/2-new-extensions/index.html",
       "/blog/writing-style/index.html",
       "/blog/build-and-test-analytics/index.html",
       "/blog/welcome/index.html",

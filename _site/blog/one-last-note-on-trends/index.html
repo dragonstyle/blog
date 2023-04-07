@@ -19,14 +19,13 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
@@ -86,8 +85,11 @@ insights.trackPages()
 
 <meta name="twitter:title" content="Dragonstyle - One Last Note on Trends">
 <meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://www.charlesteague.com/blog/one-last-note-on-trends/1.png">
 <meta name="twitter:creator" content="@dragonstyle">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="783">
+<meta name="twitter:image-width" content="955">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -167,7 +169,7 @@ insights.trackPages()
 
 
 <p>Prompted by Nate’s comment, here are a couple more looks at application trends on the app Store. First, if you have a look at the distribution of applications by price over time, you can see the rise of $.99 and $1.99 apps, along with the corresponding fall in free applications. Applications priced $4.99-$9.99 also see a decline, while most other prices are essentially stable.</p>
-<p><img src="1.png" class="img-fluid"></p>
+<p><img src="1.png" class="quarto-discovered-preview-image img-fluid"></p>
 <p>Interestingly, with just a couple of exceptions, the distribution of categories appears to be stabilizing a bit, at least for the top genres. Games represent about a quarter of the applications in the store. The big mover appears to be medical, which has grown to more than 5% of the apps in the store.</p>
 <p><img src="2.png" class="img-fluid"></p>
 <p>And in a final note- the growth of the apps in the store continues to be steep- closing on 12,000 applications…</p>
@@ -203,9 +205,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -401,4 +417,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dragonstyle/blog/edit/main/blog/one-last-note-on-trends/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dragonstyle/blog/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>

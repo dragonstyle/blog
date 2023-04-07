@@ -1,0 +1,30 @@
+---
+title: 2 New Extensions for Quarto
+subtitle: Make Placeholder and Test Document Great
+date: last-modified
+categories:
+  - Quarto
+  - Extensions
+---
+
+As a part of my work on Quarto, I find myself creating test documents with placeholder content. This is something I while creating a document used in a test, trying to reproduce a bug, or while testing a new feature. I've created a couple of Quarto extensions that are designed to make this process a little easier (at least on myself!).
+
+## Lipsum
+
+I often head to a `lorem ipsum` generator and copy and paste some content into test documents. Instead, I can now use the `dragonstyle/lipsum` extension to generate placeholder content, like:
+
+`{{{< lipsum >}}}`
+
+which will generate 5 paragaphs of lipsum text in my document. More details on the extension can be found in the  [extension repo](https://github.com/dragonstyle/lipsum).
+
+## Unsplash
+
+{{< unsplash cat.jpeg width=250px float=right >}}
+
+I also often find myself grabbing images from either a search engine or a random page on the web. Rather than do this, I can now use the `dragonstyle/unsplash` extension to generate placeholder images, like:
+
+`{{{< unsplash cat.jpeg >}}}`
+
+This has the additional benefit of suprising me with frequently delightful images. More details on the extension can be found in the [extension repo](https://github.com/dragonstyle/unsplash).
+
+The image accompanying this section was placed in just that way!

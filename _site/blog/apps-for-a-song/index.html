@@ -19,14 +19,13 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
@@ -86,8 +85,11 @@ insights.trackPages()
 
 <meta name="twitter:title" content="Dragonstyle - Apps for a Song">
 <meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://www.charlesteague.com/blog/apps-for-a-song/1.png">
 <meta name="twitter:creator" content="@dragonstyle">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="768">
+<meta name="twitter:image-width" content="1000">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -166,7 +168,7 @@ insights.trackPages()
 
 
 <p>If you take a look at the growth rates of the App Store by price, something that you may have already intuitively known starts to become clear. $.99 has become the default price of applications on the store. In face, more than 1 in 3 of the applications on the store now cost $.99.</p>
-<p><img src="1.png" class="img-fluid"></p>
+<p><img src="1.png" class="quarto-discovered-preview-image img-fluid"></p>
 <p>And the trend looks to be accelerating. The graph below illustrates the growth of various price points, and $.99 is outpacing every other price, including free. Seems everyone thinks they can make a buck on the App Store (well, 70 cents).</p>
 <p><img src="2.png" class="img-fluid"></p>
 <p>Of course, one of the very interesting things about settling on $.99 is the fact that this is also the base unit of measure in the rest of iTunes, where songs cost $.99. Are we trending toward a store that sells primarily applications in the same way it sells songs? And if so, what does that imply about how applications will look, how complex they will be, and their longevity? After all, the music business is largely a hits business (at least it used to be, now who knows what kind of business it is). And I guess the app business is likely to look the same…</p>
@@ -201,9 +203,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -399,4 +415,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dragonstyle/blog/edit/main/blog/apps-for-a-song/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dragonstyle/blog/issues/new" class="toc-action">Report an issue</a></p></div></div></div></div></footer></body></html>

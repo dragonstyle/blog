@@ -10,7 +10,42 @@
 <atom:link href="https://www.charlesteague.com/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-99.9.9</generator>
-<lastBuildDate>Wed, 09 Mar 2022 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 07 Apr 2023 18:03:18 GMT</lastBuildDate>
+<item>
+  <title>2 New Extensions for Quarto</title>
+  <dc:creator>Charles Teague</dc:creator>
+  <link>https://www.charlesteague.com/blog/2-new-extensions/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>As a part of my work on Quarto, I find myself creating test documents with placeholder content. This is something I while creating a document used in a test, trying to reproduce a bug, or while testing a new feature. I’ve created a couple of Quarto extensions that are designed to make this process a little easier (at least on myself!).</p>
+<section id="lipsum" class="level2">
+<h2 class="anchored" data-anchor-id="lipsum">Lipsum</h2>
+<p>I often head to a <code>lorem ipsum</code> generator and copy and paste some content into test documents. Instead, I can now use the <code>dragonstyle/lipsum</code> extension to generate placeholder content, like:</p>
+<p><code>{{&lt; lipsum &gt;}}</code></p>
+<p>which will generate 5 paragaphs of lipsum text in my document. More details on the extension can be found in the <a href="https://github.com/dragonstyle/lipsum">extension repo</a>.</p>
+</section>
+<section id="unsplash" class="level2">
+<h2 class="anchored" data-anchor-id="unsplash">Unsplash</h2>
+<div class="unsplash-container float-right" style="width: 250px; ">
+<img src="https://www.charlesteague.com/blog/2-new-extensions/cat.jpeg" class="img-fluid">
+</div>
+<p>I also often find myself grabbing images from either a search engine or a random page on the web. Rather than do this, I can now use the <code>dragonstyle/unsplash</code> extension to generate placeholder images, like:</p>
+<p><code>{{&lt; unsplash cat.jpeg &gt;}}</code></p>
+<p>This has the additional benefit of suprising me with frequently delightful images. More details on the extension can be found in the <a href="https://github.com/dragonstyle/unsplash">extension repo</a>.</p>
+<p>The image accompanying this section was placed in just that way!</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Quarto</category>
+  <category>Extensions</category>
+  <guid>https://www.charlesteague.com/blog/2-new-extensions/index.html</guid>
+  <pubDate>Fri, 07 Apr 2023 18:03:18 GMT</pubDate>
+</item>
 <item>
   <title>Great Writing</title>
   <dc:creator>Charles Teague</dc:creator>
@@ -23,7 +58,7 @@
 <p>Cormac McCarthy is a favorite author of mine. I find his direct, short, and almost terse style of writing to be engaging. Little did I know that he had actually weighed in on what it takes to do great scientific writing. He did!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/writing-style/west.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/writing-style/west.jpg" class="quarto-discovered-preview-image img-fluid figure-img"></p>
 </figure>
 </div>
 <p>I believe what he outlines are tips for good writing (not just good scientific writing). A few highlights:</p>
@@ -43,7 +78,6 @@
   <category>Science</category>
   <guid>https://www.charlesteague.com/blog/writing-style/index.html</guid>
   <pubDate>Wed, 09 Mar 2022 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/writing-style/west.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Build and Test Analytics</title>
@@ -57,7 +91,7 @@
 <p>One of the things I’ve been maintaining on the <a href="https://www.github.com/quarto-dev/quarto-cli">Quarto</a> team is the GitHub actions that build installers, run tests, and so on. A few times over the last year, we’ve run into problems in our pipeline which didn’t appear as explicit failures, but instead showed up as significant changes in the duration of tasks or actions. For example, there was a stretch where Deno bundling was facing challeges, and this initially appeared to us as very slow bundling as a part of building the installer for Quarto.</p>
 <p>Of course, since we didn’t typically build installers locally, it took a while for me to notice that building an installer had become very slow on the CI machines. This got me thinking about the need to have more systematic analytics about key elements of the CI pipeline. It would be great to be able to see a commit by commit (or PR by PR) graph of the bundle time, making it easy to pinpoint a code change that contributed to a change in behavior (for example, us updating to a new version of Deno).</p>
 <p>I looked around for a simple service that would allow me to poke a custom event into a time series and then provided nice visualization tools for this. I even thought perhaps something would already be dialed for GH actions, but I didn’t find anything (tell me if you know of one!).</p>
-<p class="page-columns page-full"><img src="https://www.charlesteague.com/blog/build-and-test-analytics/render-perf.png" class="column-screen img-fluid"></p>
+<p class="page-columns page-full"><img src="https://www.charlesteague.com/blog/build-and-test-analytics/render-perf.png" class="quarto-discovered-preview-image column-screen img-fluid"></p>
 <p>I ultimately rigged up a duct tape version of this using <a href="https://www.amplitude.com">Amplitude</a> and their command line API via GitHub action. This allows me to see how long it takes to bundle Quarto and track that over time.</p>
 <p>I also add a more explicit <a href="https://github.com/quarto-dev/quarto-cli/blob/main/.github/workflows/performance-check.yml">performance check</a>. This means that we can see how our render performance changes over time and whether there are changes along the way that drive outsized changes in render performance- largely as a prompt to go look more deeply (I realize that this isn’t exactly a scientifically reproducible performance benchmark).</p>
 <p>It strikes me that there is a nice opportunity for someone to build out infrastructure that allows the tracking of metrics such as this, which nicely integrates with GH actions (perhaps even tracking some metrics about GH action performance with little to no configuration). Seems like a service that could be of benefit to a lot of developers!</p>
@@ -71,7 +105,6 @@
   <category>Startup Ideas</category>
   <guid>https://www.charlesteague.com/blog/build-and-test-analytics/index.html</guid>
   <pubDate>Wed, 16 Feb 2022 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/build-and-test-analytics/render-perf.png" medium="image" type="image/png" height="64" width="144"/>
 </item>
 <item>
   <title>Welcome to the Blog (2.0)</title>
@@ -85,7 +118,7 @@
 <p>Years ago, I worked on a popular for authoring blogs, <a href="https://www.microsoft.com/en-us/p/open-live-writer/9nblggh5279m?activetab=pivot:overviewtab">Windows Live Writer</a>. That tool provided a WYSIWYG experience, giving users a Microsoft Word like experience for editing their blog. During this time period, if you manged to find my blog, you’d see only test posts associated with the latest features of Live Writer.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/welcome/window.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/welcome/window.jpg" class="quarto-discovered-preview-image img-fluid figure-img"></p>
 </figure>
 </div>
 <p>After I stopped working on Writer, I returned to blogging myself, writing primarily about my interest mobile technology and what I saw as a revolution led by the Apple iPhone. I’ve brought those old posts to this weblog, and though the are dated, it is fun to look back at how early that market was and to see how much it has grown.</p>
@@ -97,7 +130,6 @@
   <category>News</category>
   <guid>https://www.charlesteague.com/blog/welcome/index.html</guid>
   <pubDate>Mon, 07 Feb 2022 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/welcome/window.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>App Store Data for December 2009</title>
@@ -108,7 +140,7 @@
 
 
 
-<p><img src="https://www.charlesteague.com/blog/app-store-data-december-2009/1.png" class="img-fluid" style="float:right;"> Ok, so it has been a while since I’ve posted an update of the App Store data. Since it’s been so long, I’m including a special bonus. But first, a couple of notes:</p>
+<p><img src="https://www.charlesteague.com/blog/app-store-data-december-2009/1.png" class="quarto-discovered-preview-image img-fluid" style="float:right;"> Ok, so it has been a while since I’ve posted an update of the App Store data. Since it’s been so long, I’m including a special bonus. But first, a couple of notes:</p>
 <ol type="1">
 <li><p>It looks to me like the XML feed that I scrape to gather this data limits the results to 6000 applications per category. I’m not sure that they’re ordered by popularity, though that certainly would make sense. This same limit is in the iTunes UI that uses the feed, so popularity is sensible.</p></li>
 <li><p>I haven’t look closely at the data, nor tried to to put together any trends. You’re on your own!</p></li>
@@ -129,7 +161,6 @@
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/app-store-data-december-2009/index.html</guid>
   <pubDate>Mon, 14 Dec 2009 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/app-store-data-december-2009/1.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 <item>
   <title>It’s been a while!</title>
@@ -144,7 +175,7 @@
 <p>I’ve been heads down for the last several months, working on&nbsp;<a href="http://www.loseit.com/">Lose It</a>!. Well, I finally shipped the 2.0 version that has been consuming all of my time. It’s been great to watch the adoption of the new version and the user excitement that goes with many of the new features. This is the kind of paragraph that is immensely rewarding for folks who really try to make great software:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/its-been-a-while/1.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/its-been-a-while/1.png" class="quarto-discovered-preview-image img-fluid figure-img"></p>
 </figure>
 </div>
 <blockquote class="blockquote">
@@ -163,7 +194,6 @@
   <category>News</category>
   <guid>https://www.charlesteague.com/blog/its-been-a-while/index.html</guid>
   <pubDate>Sun, 06 Dec 2009 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/its-been-a-while/1.png" medium="image" type="image/png" height="257" width="144"/>
 </item>
 <item>
   <title>Radio Silence</title>
@@ -175,7 +205,7 @@
 
 
 <p>It’s been a long time since I’ve had anything to say. That’s mostly because I have been busy working on&nbsp;<a href="http://www.loseit.com/">Lose It</a>! Things are going well on that front, but I’ve been spending every free moment on it, leaving me little to say about anything else. I’m taking a few minutes to throw this out, just so everyone knows I’m still here :). When I have bit more free time, I’ll try to document a bit more about what I’ve been up to. In the meantime, if you’re a fan of&nbsp;<a href="http://www.loseit.com/">Lose It</a>!, be sure to follow&nbsp;<a href="http://www.twitter.com/loseitapp">@loseitapp</a>&nbsp;on Twitter or&nbsp;<a href="http://www.facebook.com/pages/Lose-It/64506885948">become a fan</a>&nbsp;on Facebook.</p>
-<p><img src="https://www.charlesteague.com/blog/radio-silience/1.png" class="img-fluid"></p>
+<p><img src="https://www.charlesteague.com/blog/radio-silience/1.png" class="quarto-discovered-preview-image img-fluid"></p>
 <p><img src="https://www.charlesteague.com/blog/radio-silience/2.png" class="img-fluid"></p>
 <p>As always, the data behind the above graphs is yours for the taking. Feel free to use it to do your own analysis. Download the&nbsp;<a href="application-data.csv">CSV here</a>.</p>
 
@@ -185,7 +215,6 @@
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/radio-silience/index.html</guid>
   <pubDate>Sat, 11 Jul 2009 04:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/radio-silience/1.png" medium="image" type="image/png" height="137" width="144"/>
 </item>
 <item>
   <title>Comparing App Store Categories</title>
@@ -387,7 +416,7 @@
 <section id="pricing" class="level3">
 <h3 class="anchored" data-anchor-id="pricing">Pricing</h3>
 <p>Taking a quick look at the latest App Store data, it looks like pricing has actually stabilized in the ballpark of $2.50.</p>
-<p><img src="https://www.charlesteague.com/blog/comparing-app-store-categories/1.png" class="img-fluid"></p>
+<p><img src="https://www.charlesteague.com/blog/comparing-app-store-categories/1.png" class="quarto-discovered-preview-image img-fluid"></p>
 <p>You can&nbsp;<a href="application-data.csv">download the CSV</a>&nbsp;and do some analysis for yourself.</p>
 <p>In other news, I’m going to appear on a&nbsp;<a href="http://www.mitx.org/events/1828.cfm">panel</a>&nbsp;for MITX tomorrow. I think registration has closed by now, so you’ll just have to wait with bated breath to hear what deep thoughts are covered…</p>
 <p>&nbsp;</p>
@@ -399,7 +428,6 @@
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/comparing-app-store-categories/index.html</guid>
   <pubDate>Tue, 21 Apr 2009 04:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/comparing-app-store-categories/1.png" medium="image" type="image/png" height="128" width="144"/>
 </item>
 <item>
   <title>Updated Data from the App Store</title>
@@ -575,7 +603,7 @@
 
 
 <p>Ok, there are now more than 20,000 applications in the App Store. Amazing.</p>
-<p><img src="https://www.charlesteague.com/blog/20000-applications/1.png" class="img-fluid"></p>
+<p><img src="https://www.charlesteague.com/blog/20000-applications/1.png" class="quarto-discovered-preview-image img-fluid"></p>
 <p>And to give you a bit of perspective, it took 155 days to get the first 5,000 application. Getting from 15,000 to 20,000 took just 23 days. Getting from 20,000 to 25,000 will now take less than 20. The continued growth, especially now that we’re past the holidays really is staggering.</p>
 <p>&nbsp;</p>
 <p><img src="https://www.charlesteague.com/blog/20000-applications/2.png" class="img-fluid"></p>
@@ -667,7 +695,6 @@
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/20000-applications/index.html</guid>
   <pubDate>Thu, 26 Feb 2009 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/20000-applications/1.png" medium="image" type="image/png" height="111" width="144"/>
 </item>
 <item>
   <title>The App Store Model Business Model: Lite</title>
@@ -684,7 +711,7 @@
 <p>Over the last couple of months, I believe that a business model for paid applications is starting to emerge. Not surprisingly, it looks a lot like the business model that licensed software businesses have been using for a long time (turns out that all those folks had figured something out). That model? Trial versions with paid full versions.</p>
 <p>The App Store doesn’t have explicit support for this, unfortunately, but application developers are working around this by introducing ‘Lite’ versions of their applications. Not only are there&nbsp;<a href="http://www.dragthing.com/blog/?p=119">success stories</a>&nbsp;out there, but the submissions to the store show the increasing popularity of these ‘Lite’ applications. In fact, there are now nearly 1,000 ‘Lite’ applications the App Store, representing about 5% of the total applications.</p>
 <p>Looking at the categories, one other very striking thing appears. Application categories that tend to have longer term recurring value (like Games, Business, Finance, Photography, and Productivity) appear to also have the most ‘Lite’ versions.</p>
-<p><img src="https://www.charlesteague.com/blog/app-store-business-model-lite/1.png" class="img-fluid"></p>
+<p><img src="https://www.charlesteague.com/blog/app-store-business-model-lite/1.png" class="quarto-discovered-preview-image img-fluid"></p>
 <p><img src="https://www.charlesteague.com/blog/app-store-business-model-lite/2.png" class="img-fluid"></p>
 <p><img src="https://www.charlesteague.com/blog/app-store-business-model-lite/3.png" class="img-fluid"></p>
 <p><img src="https://www.charlesteague.com/blog/app-store-business-model-lite/4.png" class="img-fluid"></p>
@@ -718,7 +745,6 @@
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/app-store-business-model-lite/index.html</guid>
   <pubDate>Tue, 17 Feb 2009 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/app-store-business-model-lite/1.png" medium="image" type="image/png" height="119" width="144"/>
 </item>
 <item>
   <title>There’s an App For That</title>
@@ -734,7 +760,7 @@
 <p>Want to track your finances?&nbsp;<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=300238550&amp;mt=8">Mint.com</a>. Need to lose some weight?&nbsp;<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=297368629&amp;mt=8">Lose It</a>! Like to shop for deals?&nbsp;<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=288946910&amp;mt=8">WootWatch</a>. Bored?&nbsp;<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=302052502&amp;mt=8">Slotz</a>. Like to work out?&nbsp;<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=300235330&amp;mt=8">Runkeeper</a>. Need to have dinner delivered?&nbsp;<a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=302920553&amp;mt=8">GrubHub</a>. There are apps for just about everything.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/1.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/1.png" class="quarto-discovered-preview-image img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Total # of Apps in the App Store</figcaption><p></p>
 </figure>
 </div>
@@ -806,7 +832,6 @@
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/theres-an-app-for-that/index.html</guid>
   <pubDate>Thu, 05 Feb 2009 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/theres-an-app-for-that/1.png" medium="image" type="image/png" height="124" width="144"/>
 </item>
 <item>
   <title>App Store Raw Data</title>
@@ -839,7 +864,7 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
 
 
 <p>Prompted by Nate’s comment, here are a couple more looks at application trends on the app Store. First, if you have a look at the distribution of applications by price over time, you can see the rise of $.99 and $1.99 apps, along with the corresponding fall in free applications. Applications priced $4.99-$9.99 also see a decline, while most other prices are essentially stable.</p>
-<p><img src="https://www.charlesteague.com/blog/one-last-note-on-trends/1.png" class="img-fluid"></p>
+<p><img src="https://www.charlesteague.com/blog/one-last-note-on-trends/1.png" class="quarto-discovered-preview-image img-fluid"></p>
 <p>Interestingly, with just a couple of exceptions, the distribution of categories appears to be stabilizing a bit, at least for the top genres. Games represent about a quarter of the applications in the store. The big mover appears to be medical, which has grown to more than 5% of the apps in the store.</p>
 <p><img src="https://www.charlesteague.com/blog/one-last-note-on-trends/2.png" class="img-fluid"></p>
 <p>And in a final note- the growth of the apps in the store continues to be steep- closing on 12,000 applications…</p>
@@ -852,7 +877,6 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
   <category>News</category>
   <guid>https://www.charlesteague.com/blog/one-last-note-on-trends/index.html</guid>
   <pubDate>Fri, 19 Dec 2008 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/one-last-note-on-trends/1.png" medium="image" type="image/png" height="118" width="144"/>
 </item>
 <item>
   <title>Down and To the Right By Design</title>
@@ -866,7 +890,7 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
 <p>If you’re looking for market feedback on the value of applications, here it is. Using updated data to take a look a pricing trends confirms what I think everyone already knows. Each month, the average price of apps on the store just declines. For example, have a look at the average price of applications (excluding medical applications, whose high prices skew the results).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/1.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/1.png" class="quarto-discovered-preview-image img-fluid figure-img"></p>
 </figure>
 </div>
 <p>An average application price that was once nearly $4 has fallen to nearly $2.25. It’s too early to tell, but it certainly doesn’t look like we’ve hit bottom yet, either.</p>
@@ -916,7 +940,6 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
   <category>News</category>
   <guid>https://www.charlesteague.com/blog/down-and-to-the-right-by-design/index.html</guid>
   <pubDate>Thu, 11 Dec 2008 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/1.png" medium="image" type="image/png" height="117" width="144"/>
 </item>
 <item>
   <title>A Closer Look at App Store Category Growth</title>
@@ -932,7 +955,7 @@ Taking a closer look at the growth rate of various categories confirms what ever
 <p>The below is a look at the most common application categories and their growth rate.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/app-store-category-growth/1.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/app-store-category-growth/1.png" class="quarto-discovered-preview-image img-fluid figure-img"></p>
 </figure>
 </div>
 <p>1) Although the Utilities category was initially a high growth category, it’s growth is actually relatively flat. Entertainment applications have surpassed Utilities as the second most common type of application on the store.</p>
@@ -954,7 +977,6 @@ Taking a closer look at the growth rate of various categories confirms what ever
   <category>News</category>
   <guid>https://www.charlesteague.com/blog/app-store-category-growth/index.html</guid>
   <pubDate>Fri, 05 Dec 2008 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/app-store-category-growth/1.png" medium="image" type="image/png" height="112" width="144"/>
 </item>
 <item>
   <title>It’s True - 10,000 Applications</title>
@@ -966,7 +988,7 @@ Taking a closer look at the growth rate of various categories confirms what ever
 
 
 <p>For those waiting for my official acknowledgement, the App Store now has more than 10,000 applications available. Congrats!</p>
-<p class="page-columns page-full"><img src="https://www.charlesteague.com/blog/10000-applications/1.png" class="column-page img-fluid" style="width: 100%;"></p>
+<p class="page-columns page-full"><img src="https://www.charlesteague.com/blog/10000-applications/1.png" class="quarto-discovered-preview-image column-page img-fluid" style="width: 100%;"></p>
 
 
 
@@ -976,7 +998,6 @@ Taking a closer look at the growth rate of various categories confirms what ever
   <category>News</category>
   <guid>https://www.charlesteague.com/blog/10000-applications/index.html</guid>
   <pubDate>Thu, 04 Dec 2008 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/10000-applications/1.png" medium="image" type="image/png" height="130" width="144"/>
 </item>
 <item>
   <title>Apps for a Song</title>
@@ -988,7 +1009,7 @@ Taking a closer look at the growth rate of various categories confirms what ever
 
 
 <p>If you take a look at the growth rates of the App Store by price, something that you may have already intuitively known starts to become clear. $.99 has become the default price of applications on the store. In face, more than 1 in 3 of the applications on the store now cost $.99.</p>
-<p><img src="https://www.charlesteague.com/blog/apps-for-a-song/1.png" class="img-fluid"></p>
+<p><img src="https://www.charlesteague.com/blog/apps-for-a-song/1.png" class="quarto-discovered-preview-image img-fluid"></p>
 <p>And the trend looks to be accelerating. The graph below illustrates the growth of various price points, and $.99 is outpacing every other price, including free. Seems everyone thinks they can make a buck on the App Store (well, 70 cents).</p>
 <p><img src="https://www.charlesteague.com/blog/apps-for-a-song/2.png" class="img-fluid"></p>
 <p>Of course, one of the very interesting things about settling on $.99 is the fact that this is also the base unit of measure in the rest of iTunes, where songs cost $.99. Are we trending toward a store that sells primarily applications in the same way it sells songs? And if so, what does that imply about how applications will look, how complex they will be, and their longevity? After all, the music business is largely a hits business (at least it used to be, now who knows what kind of business it is). And I guess the app business is likely to look the same…</p>
@@ -999,7 +1020,6 @@ Taking a closer look at the growth rate of various categories confirms what ever
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/apps-for-a-song/index.html</guid>
   <pubDate>Thu, 04 Dec 2008 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/apps-for-a-song/1.png" medium="image" type="image/png" height="111" width="144"/>
 </item>
 <item>
   <title>5 months and 9,000 Applications Later</title>
@@ -1016,7 +1036,7 @@ Taking a closer look at the growth rate of various categories confirms what ever
 <section id="application-publishing-trends" class="level2">
 <h2 class="anchored" data-anchor-id="application-publishing-trends"><strong>Application Publishing Trends</strong></h2>
 <p>For example, there are&nbsp;<strong><em>more than 9,000</em></strong>&nbsp;applications in the app store. You read that right. I had seen estimates of 5,000+, but that really underestimates just how many applications are there (a ton…). There is now something like 180 new applications each day. It’s an incredible trend that currently isn’t showing any sings of leveling off.</p>
-<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/1.png" class="img-fluid"></p>
+<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/1.png" class="quarto-discovered-preview-image img-fluid"></p>
 <p>Note the huge spike around the street availability date of the 2nd generation iPhone- developers are rushing to get their app in the store in time for the launch (only to be disappointed when the approval process was opaque and sluggish). Apple has clearly worked to scale their review process since their normal days are approaching that initial spike that overwhelmed the review process around the launch.</p>
 <p>If you have a look at the cumulative chart, you can see the same thing- little to no drop off in the volume of applications…</p>
 <p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/2.png" class="img-fluid"></p>
@@ -1292,7 +1312,6 @@ The average price of an application on the app store is $3.21, but if you ignore
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/5-months-and-9000-apps-later/index.html</guid>
   <pubDate>Tue, 25 Nov 2008 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/1.png" medium="image" type="image/png" height="91" width="144"/>
 </item>
 <item>
   <title>Brown Zune, Windows Live Writer, and My MacBook Pro</title>
@@ -1307,7 +1326,7 @@ The average price of an application on the app store is $3.21, but if you ignore
 <p>There are two applications that I haven’t been able to give up in my transition, however.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/brown-zune/Picture 2.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/brown-zune/Picture 2.png" class="quarto-discovered-preview-image img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">“Application #1 is Zune. Yeah, I said it. I’m not being a MS fanboy- Zune is a truly great application (the interface is far superior to iTunes, really not even comparable), but it also has subscription music, which is a huge money saver for me (I waste a lot less money buying music that I end up getting sick of or not liking at all). So enjoy the rich irony of Zune running on my MacBook Pro, and my horrible brown Zune docked to the awesomely great looking laptop.”</figcaption><p></p>
 </figure>
 </div>
@@ -1328,37 +1347,6 @@ The average price of an application on the app store is $3.21, but if you ignore
   <category>Random</category>
   <guid>https://www.charlesteague.com/blog/brown-zune/index.html</guid>
   <pubDate>Tue, 21 Oct 2008 04:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/brown-zune/Picture%202.png" medium="image" type="image/png"/>
-</item>
-<item>
-  <title>Hope for Expensive Apps iTunes</title>
-  <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/hope-for-expensive-apps/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>One of the challenges that has faced developers of apps on the iTunes App Store has been how to price their applications. Early customers complained about applications with high (read: more than $9.99) prices. Since those early days, a competitive and crowded field of applications has conspired to push prices down as consumers faced more choices and application sought to claim a stop on the coveted ‘Top 25’ list.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/hope-for-expensive-apps/penny.jpg" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<p>Apple really made things a challenge, largely because they have such a limited business model for these applications (a 1 time license fee, no subscription model, no charged upgrade model, no trial model). Developer’s hands were really tied.</p>
-<p>A smart developer would be better served to build a large number of small inexpensive applications (collecting revenue from customers each time they release a new application) rather than spend a large amount of time on complicated apps. After all, a lots of users will plunk down $1.99 for an app based only on screen shots and reviews, but most are loathe to part with $29.99 on just the promise of a good app.</p>
-<p>So it came to be that the app store has been crowded, at least in my opinion, with a ton of apps that are a lot closer to gadgets than applications. Useful, sure. Valuable, maybe. An inspired use of what is an excellent mobile computing platform? Definitely not.</p>
-<p>But just today, I’ve seen a couple of apps that are bucking the trend.</p>
-<p>BeeJiveIM is a deep IM client for the iPhone that supports pretty much every IM platform out there. It uses push email to do notification of new messages. It has a broad and deep feature set. And, it costs $15.99. Jaadu VNC is a VNC client which allows you to connect to and control your desktop computer (whether that is a Mac or PC). Broad and deep feature set. $24.99. Now, we just to need to wait and see how the economics play out. Can these more complicated and expensive applications thrive at a high price, in a market with so many limitations? Will Apple continue to invest in improving iTunes for applications, adding some of the basic business models that software companies have traditionally used in selling their software?</p>
-<p>If you’re wondering why I’d like to see expensive iPhone applications, the answer is pretty simple. It’s because I’d like to see awesome, compelling, deep, feature rich, and evolving applications the iPhone. And I’d like to see the developers who build getting paid a fair price.</p>
-
-
-
- ]]></description>
-  <category>iPhone</category>
-  <guid>https://www.charlesteague.com/blog/hope-for-expensive-apps/index.html</guid>
-  <pubDate>Mon, 29 Sep 2008 04:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/hope-for-expensive-apps/penny.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
