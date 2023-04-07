@@ -84,6 +84,27 @@
     "text": "It’s been a long time since I’ve had anything to say. That’s mostly because I have been busy working on Lose It! Things are going well on that front, but I’ve been spending every free moment on it, leaving me little to say about anything else. I’m taking a few minutes to throw this out, just so everyone knows I’m still here :). When I have bit more free time, I’ll try to document a bit more about what I’ve been up to. In the meantime, if you’re a fan of Lose It!, be sure to follow @loseitapp on Twitter or become a fan on Facebook.\n\n\nAs always, the data behind the above graphs is yours for the taking. Feel free to use it to do your own analysis. Download the CSV here."
   },
   {
+    "objectID": "blog/2-new-extensions/index.html",
+    "href": "blog/2-new-extensions/index.html",
+    "title": "2 New Extensions for Quarto",
+    "section": "",
+    "text": "As a part of my work on Quarto, I find myself creating test documents with placeholder content. This is something I while creating a document used in a test, trying to reproduce a bug, or while testing a new feature. I’ve created a couple of Quarto extensions that are designed to make this process a little easier (at least on myself!)."
+  },
+  {
+    "objectID": "blog/2-new-extensions/index.html#lipsum",
+    "href": "blog/2-new-extensions/index.html#lipsum",
+    "title": "2 New Extensions for Quarto",
+    "section": "Lipsum",
+    "text": "Lipsum\nI often head to a lorem ipsum generator and copy and paste some content into test documents. Instead, I can now use the dragonstyle/lipsum extension to generate placeholder content, like:\n{{&lt; lipsum &gt;}}\nwhich will generate 5 paragaphs of lipsum text in my document. More details on the extension can be found in the extension repo."
+  },
+  {
+    "objectID": "blog/2-new-extensions/index.html#unsplash",
+    "href": "blog/2-new-extensions/index.html#unsplash",
+    "title": "2 New Extensions for Quarto",
+    "section": "Unsplash",
+    "text": "Unsplash\n\n\n\nI also often find myself grabbing images from either a search engine or a random page on the web. Rather than do this, I can now use the dragonstyle/unsplash extension to generate placeholder images, like:\n{{&lt; unsplash cat.jpeg &gt;}}\nThis has the additional benefit of suprising me with frequently delightful images. More details on the extension can be found in the extension repo.\nThe image accompanying this section was placed in just that way!"
+  },
+  {
     "objectID": "blog/welcome/index.html",
     "href": "blog/welcome/index.html",
     "title": "Welcome to the Blog (2.0)",
@@ -208,26 +229,5 @@
     "title": "Charles Teague",
     "section": "",
     "text": "Charles is a Software Architect at Rstudio where he is focused on Quarto.\nPrior to joining Rstudio, Charles Teague was the CEO and founder of FitNow, Inc., the maker of Lose It!, one of the most popular health and fitness application for iOS and Android devices. Since 2008, tens of millions of users have used Lose It! to lose more than 100 million pounds. He remains the Executive Chairman of Lose It!.\nCharles was a Technologist in Residence at General Catalyst Partners where he focused on Smartphone and Cloud Computing technologies. Before joining General Catalyst, Charles was the co-founder of Onfolio, Inc., which was acquired by Microsoft in 2005. At Microsoft Charles worked overseeing the development and engineering of Windows Live Writer which was originally created at Onfolio, Inc.\nBefore joining Onfolio, Charles was the first employee at Allaire Corporation, which was acquired by Macromedia in 2001. At Macromedia, Charles was a Director of Engineering responsible for the development and engineering of ColdFusion (now Adobe ColdFusion). Charles earned a Bachelor of Arts degree from Macalester College."
-  },
-  {
-    "objectID": "blog/2-new-extensions/index.html",
-    "href": "blog/2-new-extensions/index.html",
-    "title": "2 New Extensions for Quarto",
-    "section": "",
-    "text": "As a part of my work on Quarto, I find myself creating test documents with placeholder content. This is something I while creating a document used in a test, trying to reproduce a bug, or while testing a new feature. I’ve created a couple of Quarto extensions that are designed to make this process a little easier (at least on myself!)."
-  },
-  {
-    "objectID": "blog/2-new-extensions/index.html#lipsum",
-    "href": "blog/2-new-extensions/index.html#lipsum",
-    "title": "2 New Extensions for Quarto",
-    "section": "Lipsum",
-    "text": "Lipsum\nI often head to a lorem ipsum generator and copy and paste some content into test documents. Instead, I can now use the dragonstyle/lipsum extension to generate placeholder content, like:\n{{&lt; lipsum &gt;}}\nwhich will generate 5 paragaphs of lipsum text in my document. More details on the extension can be found in the extension repo."
-  },
-  {
-    "objectID": "blog/2-new-extensions/index.html#unsplash",
-    "href": "blog/2-new-extensions/index.html#unsplash",
-    "title": "2 New Extensions for Quarto",
-    "section": "Unsplash",
-    "text": "Unsplash\n\n\n\nI also often find myself grabbing images from either a search engine or a random page on the web. Rather than do this, I can now use the dragonstyle/unsplash extension to generate placeholder images, like:\n{{&lt; unsplash cat.jpeg &gt;}}\nThis has the additional benefit of suprising me with frequently delightful images. More details on the extension can be found in the extension repo.\nThe image accompanying this section was placed in just that way!"
   }
 ]
