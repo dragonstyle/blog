@@ -10,7 +10,7 @@
 <atom:link href="https://www.charlesteague.com/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-99.9.9</generator>
-<lastBuildDate>Fri, 07 Apr 2023 18:03:18 GMT</lastBuildDate>
+<lastBuildDate>Sat, 11 Nov 2023 14:52:49 GMT</lastBuildDate>
 <item>
   <title>2 New Extensions for Quarto</title>
   <dc:creator>Charles Teague</dc:creator>
@@ -44,7 +44,7 @@
   <category>Quarto</category>
   <category>Extensions</category>
   <guid>https://www.charlesteague.com/blog/2-new-extensions/index.html</guid>
-  <pubDate>Fri, 07 Apr 2023 18:03:18 GMT</pubDate>
+  <pubDate>Sat, 11 Nov 2023 14:52:49 GMT</pubDate>
 </item>
 <item>
   <title>Great Writing</title>
@@ -78,6 +78,7 @@
   <category>Science</category>
   <guid>https://www.charlesteague.com/blog/writing-style/index.html</guid>
   <pubDate>Wed, 09 Mar 2022 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/writing-style/west.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Build and Test Analytics</title>
@@ -105,6 +106,7 @@
   <category>Startup Ideas</category>
   <guid>https://www.charlesteague.com/blog/build-and-test-analytics/index.html</guid>
   <pubDate>Wed, 16 Feb 2022 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/build-and-test-analytics/render-perf.png" medium="image" type="image/png" height="64" width="144"/>
 </item>
 <item>
   <title>Welcome to the Blog (2.0)</title>
@@ -130,6 +132,7 @@
   <category>News</category>
   <guid>https://www.charlesteague.com/blog/welcome/index.html</guid>
   <pubDate>Mon, 07 Feb 2022 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/welcome/window.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>App Store Data for December 2009</title>
@@ -161,6 +164,7 @@
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/app-store-data-december-2009/index.html</guid>
   <pubDate>Mon, 14 Dec 2009 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/app-store-data-december-2009/1.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 <item>
   <title>It’s been a while!</title>
@@ -194,6 +198,7 @@
   <category>News</category>
   <guid>https://www.charlesteague.com/blog/its-been-a-while/index.html</guid>
   <pubDate>Sun, 06 Dec 2009 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/its-been-a-while/1.png" medium="image" type="image/png" height="257" width="144"/>
 </item>
 <item>
   <title>Radio Silence</title>
@@ -215,6 +220,7 @@
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/radio-silience/index.html</guid>
   <pubDate>Sat, 11 Jul 2009 04:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/radio-silience/1.png" medium="image" type="image/png" height="137" width="144"/>
 </item>
 <item>
   <title>Comparing App Store Categories</title>
@@ -428,6 +434,7 @@
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/comparing-app-store-categories/index.html</guid>
   <pubDate>Tue, 21 Apr 2009 04:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/comparing-app-store-categories/1.png" medium="image" type="image/png" height="128" width="144"/>
 </item>
 <item>
   <title>Updated Data from the App Store</title>
@@ -695,6 +702,7 @@
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/20000-applications/index.html</guid>
   <pubDate>Thu, 26 Feb 2009 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/20000-applications/1.png" medium="image" type="image/png" height="111" width="144"/>
 </item>
 <item>
   <title>The App Store Model Business Model: Lite</title>
@@ -745,6 +753,7 @@
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/app-store-business-model-lite/index.html</guid>
   <pubDate>Tue, 17 Feb 2009 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/app-store-business-model-lite/1.png" medium="image" type="image/png" height="119" width="144"/>
 </item>
 <item>
   <title>There’s an App For That</title>
@@ -832,6 +841,7 @@
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/theres-an-app-for-that/index.html</guid>
   <pubDate>Thu, 05 Feb 2009 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/theres-an-app-for-that/1.png" medium="image" type="image/png" height="124" width="144"/>
 </item>
 <item>
   <title>App Store Raw Data</title>
@@ -877,6 +887,7 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
   <category>News</category>
   <guid>https://www.charlesteague.com/blog/one-last-note-on-trends/index.html</guid>
   <pubDate>Fri, 19 Dec 2008 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/one-last-note-on-trends/1.png" medium="image" type="image/png" height="118" width="144"/>
 </item>
 <item>
   <title>Down and To the Right By Design</title>
@@ -940,6 +951,7 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
   <category>News</category>
   <guid>https://www.charlesteague.com/blog/down-and-to-the-right-by-design/index.html</guid>
   <pubDate>Thu, 11 Dec 2008 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/1.png" medium="image" type="image/png" height="117" width="144"/>
 </item>
 <item>
   <title>A Closer Look at App Store Category Growth</title>
@@ -977,6 +989,7 @@ Taking a closer look at the growth rate of various categories confirms what ever
   <category>News</category>
   <guid>https://www.charlesteague.com/blog/app-store-category-growth/index.html</guid>
   <pubDate>Fri, 05 Dec 2008 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/app-store-category-growth/1.png" medium="image" type="image/png" height="112" width="144"/>
 </item>
 <item>
   <title>It’s True - 10,000 Applications</title>
@@ -998,6 +1011,7 @@ Taking a closer look at the growth rate of various categories confirms what ever
   <category>News</category>
   <guid>https://www.charlesteague.com/blog/10000-applications/index.html</guid>
   <pubDate>Thu, 04 Dec 2008 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/10000-applications/1.png" medium="image" type="image/png" height="130" width="144"/>
 </item>
 <item>
   <title>Apps for a Song</title>
@@ -1020,6 +1034,7 @@ Taking a closer look at the growth rate of various categories confirms what ever
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/apps-for-a-song/index.html</guid>
   <pubDate>Thu, 04 Dec 2008 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/apps-for-a-song/1.png" medium="image" type="image/png" height="111" width="144"/>
 </item>
 <item>
   <title>5 months and 9,000 Applications Later</title>
@@ -1312,6 +1327,7 @@ The average price of an application on the app store is $3.21, but if you ignore
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/5-months-and-9000-apps-later/index.html</guid>
   <pubDate>Tue, 25 Nov 2008 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/1.png" medium="image" type="image/png" height="91" width="144"/>
 </item>
 <item>
   <title>Brown Zune, Windows Live Writer, and My MacBook Pro</title>
@@ -1347,6 +1363,7 @@ The average price of an application on the app store is $3.21, but if you ignore
   <category>Random</category>
   <guid>https://www.charlesteague.com/blog/brown-zune/index.html</guid>
   <pubDate>Tue, 21 Oct 2008 04:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/brown-zune/Picture%202.png" medium="image" type="image/png"/>
 </item>
 </channel>
 </rss>

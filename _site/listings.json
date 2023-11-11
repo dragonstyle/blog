@@ -1,5 +1,15 @@
 [
   {
+    "listing": "/forest/trees/index.html",
+    "items": []
+  },
+  {
+    "listing": "/forest/index.html",
+    "items": [
+      "/forest/trees/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/blog/2-new-extensions/index.html",

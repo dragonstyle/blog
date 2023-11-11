@@ -1,0 +1,13 @@
+---
+title: On Site Trees
+description: |
+  A table with all photos of tree marked on site with construction flags.
+image: 1a.jpeg
+author: Charles Teague
+listing: 
+  type: table
+  contents: "*.jpeg"
+include-in-header: 
+  text: |
+    <meta name="robots" content="noindex, nofollow" />  
+---
