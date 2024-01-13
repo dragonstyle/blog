@@ -19,7 +19,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,8 +63,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -115,7 +123,35 @@ insights.trackPages()
 }
 </style>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta name="twitter:title" content="Dragonstyle - On Site Trees">
 <meta name="twitter:description" content="A table with all photos of tree marked on site with construction flags.">
@@ -128,9 +164,9 @@ insights.trackPages()
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../../dragonstyle.png" alt="" class="navbar-logo">
     </a>
@@ -138,28 +174,22 @@ insights.trackPages()
     <span class="navbar-title">Dragonstyle</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
- <span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/dragonstyle/blog" rel="" target=""><i class="bi bi-github" role="img">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml" rel="" target=""><i class="bi bi-rss" role="img">
-</i> 
- <span class="menu-text"></span></a>
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+    <a href="https://github.com/dragonstyle/blog" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="../../index.xml" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-rss"></i></a>
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -197,7 +227,9 @@ insights.trackPages()
   </div>
   
 
+
 </header>
+
 
 
 
@@ -226,7 +258,6 @@ insights.trackPages()
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-
 <table class="quarto-listing-table table">
 <thead>
 <tr>
@@ -240,751 +271,822 @@ insights.trackPages()
 </thead>
 <tbody class="list">
 <tr data-index="0" data-listing-file-modified-sort="1699715774261" data-listing-filename-sort="10a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/10a.jpeg" class="filename">10a.jpeg</a>
+<td>
+<a href="../../forest/trees/10a.jpeg" class="filename listing-filename">10a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:14 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:14 AM</span>
 </td>
 </tr>
 <tr data-index="1" data-listing-file-modified-sort="1699715774409" data-listing-filename-sort="10b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/10b.jpeg" class="filename">10b.jpeg</a>
+<td>
+<a href="../../forest/trees/10b.jpeg" class="filename listing-filename">10b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:14 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:14 AM</span>
 </td>
 </tr>
 <tr data-index="2" data-listing-file-modified-sort="1699715774723" data-listing-filename-sort="10c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/10c.jpeg" class="filename">10c.jpeg</a>
+<td>
+<a href="../../forest/trees/10c.jpeg" class="filename listing-filename">10c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:14 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:14 AM</span>
 </td>
 </tr>
 <tr data-index="3" data-listing-file-modified-sort="1699715775016" data-listing-filename-sort="10d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/10d.jpeg" class="filename">10d.jpeg</a>
+<td>
+<a href="../../forest/trees/10d.jpeg" class="filename listing-filename">10d.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:15 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:15 AM</span>
 </td>
 </tr>
 <tr data-index="4" data-listing-file-modified-sort="1699715774562" data-listing-filename-sort="11a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/11a.jpeg" class="filename">11a.jpeg</a>
+<td>
+<a href="../../forest/trees/11a.jpeg" class="filename listing-filename">11a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:14 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:14 AM</span>
 </td>
 </tr>
 <tr data-index="5" data-listing-file-modified-sort="1699715774871" data-listing-filename-sort="11b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/11b.jpeg" class="filename">11b.jpeg</a>
+<td>
+<a href="../../forest/trees/11b.jpeg" class="filename listing-filename">11b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:14 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:14 AM</span>
 </td>
 </tr>
 <tr data-index="6" data-listing-file-modified-sort="1699715775161" data-listing-filename-sort="11c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/11c.jpeg" class="filename">11c.jpeg</a>
+<td>
+<a href="../../forest/trees/11c.jpeg" class="filename listing-filename">11c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:15 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:15 AM</span>
 </td>
 </tr>
 <tr data-index="7" data-listing-file-modified-sort="1699715775323" data-listing-filename-sort="11d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/11d.jpeg" class="filename">11d.jpeg</a>
+<td>
+<a href="../../forest/trees/11d.jpeg" class="filename listing-filename">11d.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:15 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:15 AM</span>
 </td>
 </tr>
 <tr data-index="8" data-listing-file-modified-sort="1699715775620" data-listing-filename-sort="11e.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/11e.jpeg" class="filename">11e.jpeg</a>
+<td>
+<a href="../../forest/trees/11e.jpeg" class="filename listing-filename">11e.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:15 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:15 AM</span>
 </td>
 </tr>
 <tr data-index="9" data-listing-file-modified-sort="1699715775468" data-listing-filename-sort="11f.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/11f.jpeg" class="filename">11f.jpeg</a>
+<td>
+<a href="../../forest/trees/11f.jpeg" class="filename listing-filename">11f.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:15 AM
-</td>
-</tr>
-<tr data-index="10" data-listing-file-modified-sort="1699715775757" data-listing-filename-sort="12a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/12a.jpeg" class="filename">12a.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:15 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:15 AM</span>
 </td>
 </tr>
-<tr data-index="11" data-listing-file-modified-sort="1699715777218" data-listing-filename-sort="12b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/12b.jpeg" class="filename">12b.jpeg</a>
+<tr data-index="10" data-listing-file-modified-sort="1703535502905" data-listing-filename-sort="12a.jpeg">
+<td>
+<a href="../../forest/trees/12a.jpeg" class="filename listing-filename">12a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:17 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:18:22 PM</span>
 </td>
 </tr>
-<tr data-index="12" data-listing-file-modified-sort="1699715776473" data-listing-filename-sort="12c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/12c.jpeg" class="filename">12c.jpeg</a>
+<tr data-index="11" data-listing-file-modified-sort="1703535503152" data-listing-filename-sort="12b.jpeg">
+<td>
+<a href="../../forest/trees/12b.jpeg" class="filename listing-filename">12b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:16 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:18:23 PM</span>
+</td>
+</tr>
+<tr data-index="12" data-listing-file-modified-sort="1703535502989" data-listing-filename-sort="12c.jpeg">
+<td>
+<a href="../../forest/trees/12c.jpeg" class="filename listing-filename">12c.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">12/25/23, 3:18:22 PM</span>
 </td>
 </tr>
 <tr data-index="13" data-listing-file-modified-sort="1699715775905" data-listing-filename-sort="12d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/12d.jpeg" class="filename">12d.jpeg</a>
+<td>
+<a href="../../forest/trees/12d.jpeg" class="filename listing-filename">12d.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:15 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:15 AM</span>
 </td>
 </tr>
 <tr data-index="14" data-listing-file-modified-sort="1699715776038" data-listing-filename-sort="13a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/13a.jpeg" class="filename">13a.jpeg</a>
+<td>
+<a href="../../forest/trees/13a.jpeg" class="filename listing-filename">13a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:16 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:16 AM</span>
 </td>
 </tr>
 <tr data-index="15" data-listing-file-modified-sort="1699715777507" data-listing-filename-sort="13b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/13b.jpeg" class="filename">13b.jpeg</a>
+<td>
+<a href="../../forest/trees/13b.jpeg" class="filename listing-filename">13b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:17 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:17 AM</span>
 </td>
 </tr>
 <tr data-index="16" data-listing-file-modified-sort="1699715776178" data-listing-filename-sort="13c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/13c.jpeg" class="filename">13c.jpeg</a>
+<td>
+<a href="../../forest/trees/13c.jpeg" class="filename listing-filename">13c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:16 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:16 AM</span>
 </td>
 </tr>
 <tr data-index="17" data-listing-file-modified-sort="1699715778390" data-listing-filename-sort="13d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/13d.jpeg" class="filename">13d.jpeg</a>
+<td>
+<a href="../../forest/trees/13d.jpeg" class="filename listing-filename">13d.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:18 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:18 AM</span>
 </td>
 </tr>
 <tr data-index="18" data-listing-file-modified-sort="1699715777358" data-listing-filename-sort="13e.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/13e.jpeg" class="filename">13e.jpeg</a>
+<td>
+<a href="../../forest/trees/13e.jpeg" class="filename listing-filename">13e.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:17 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:17 AM</span>
 </td>
 </tr>
 <tr data-index="19" data-listing-file-modified-sort="1699715776320" data-listing-filename-sort="14a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/14a.jpeg" class="filename">14a.jpeg</a>
+<td>
+<a href="../../forest/trees/14a.jpeg" class="filename listing-filename">14a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:16 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:16 AM</span>
 </td>
 </tr>
 <tr data-index="20" data-listing-file-modified-sort="1699715777818" data-listing-filename-sort="14b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/14b.jpeg" class="filename">14b.jpeg</a>
+<td>
+<a href="../../forest/trees/14b.jpeg" class="filename listing-filename">14b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:17 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:17 AM</span>
 </td>
 </tr>
 <tr data-index="21" data-listing-file-modified-sort="1699715777661" data-listing-filename-sort="14c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/14c.jpeg" class="filename">14c.jpeg</a>
+<td>
+<a href="../../forest/trees/14c.jpeg" class="filename listing-filename">14c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:17 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:17 AM</span>
 </td>
 </tr>
 <tr data-index="22" data-listing-file-modified-sort="1699715778666" data-listing-filename-sort="14d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/14d.jpeg" class="filename">14d.jpeg</a>
+<td>
+<a href="../../forest/trees/14d.jpeg" class="filename listing-filename">14d.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:18 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:18 AM</span>
 </td>
 </tr>
 <tr data-index="23" data-listing-file-modified-sort="1699715776765" data-listing-filename-sort="14e.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/14e.jpeg" class="filename">14e.jpeg</a>
+<td>
+<a href="../../forest/trees/14e.jpeg" class="filename listing-filename">14e.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:16 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:16 AM</span>
 </td>
 </tr>
 <tr data-index="24" data-listing-file-modified-sort="1699715780040" data-listing-filename-sort="15a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/15a.jpeg" class="filename">15a.jpeg</a>
+<td>
+<a href="../../forest/trees/15a.jpeg" class="filename listing-filename">15a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:20 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:20 AM</span>
 </td>
 </tr>
 <tr data-index="25" data-listing-file-modified-sort="1699715782457" data-listing-filename-sort="15b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/15b.jpeg" class="filename">15b.jpeg</a>
+<td>
+<a href="../../forest/trees/15b.jpeg" class="filename listing-filename">15b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:22 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:22 AM</span>
 </td>
 </tr>
 <tr data-index="26" data-listing-file-modified-sort="1699715781828" data-listing-filename-sort="15c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/15c.jpeg" class="filename">15c.jpeg</a>
+<td>
+<a href="../../forest/trees/15c.jpeg" class="filename listing-filename">15c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:21 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:21 AM</span>
 </td>
 </tr>
 <tr data-index="27" data-listing-file-modified-sort="1699715782594" data-listing-filename-sort="15d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/15d.jpeg" class="filename">15d.jpeg</a>
+<td>
+<a href="../../forest/trees/15d.jpeg" class="filename listing-filename">15d.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:22 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:22 AM</span>
 </td>
 </tr>
 <tr data-index="28" data-listing-file-modified-sort="1699715782147" data-listing-filename-sort="16a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/16a.jpeg" class="filename">16a.jpeg</a>
+<td>
+<a href="../../forest/trees/16a.jpeg" class="filename listing-filename">16a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:22 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:22 AM</span>
 </td>
 </tr>
 <tr data-index="29" data-listing-file-modified-sort="1699715777954" data-listing-filename-sort="16b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/16b.jpeg" class="filename">16b.jpeg</a>
+<td>
+<a href="../../forest/trees/16b.jpeg" class="filename listing-filename">16b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:17 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:17 AM</span>
 </td>
 </tr>
 <tr data-index="30" data-listing-file-modified-sort="1699715778810" data-listing-filename-sort="16c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/16c.jpeg" class="filename">16c.jpeg</a>
+<td>
+<a href="../../forest/trees/16c.jpeg" class="filename listing-filename">16c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:18 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:18 AM</span>
 </td>
 </tr>
 <tr data-index="31" data-listing-file-modified-sort="1699715778099" data-listing-filename-sort="17a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/17a.jpeg" class="filename">17a.jpeg</a>
+<td>
+<a href="../../forest/trees/17a.jpeg" class="filename listing-filename">17a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:18 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:18 AM</span>
 </td>
 </tr>
 <tr data-index="32" data-listing-file-modified-sort="1699715780865" data-listing-filename-sort="17b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/17b.jpeg" class="filename">17b.jpeg</a>
+<td>
+<a href="../../forest/trees/17b.jpeg" class="filename listing-filename">17b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:20 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:20 AM</span>
 </td>
 </tr>
 <tr data-index="33" data-listing-file-modified-sort="1699715780707" data-listing-filename-sort="17c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/17c.jpeg" class="filename">17c.jpeg</a>
+<td>
+<a href="../../forest/trees/17c.jpeg" class="filename listing-filename">17c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:20 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:20 AM</span>
 </td>
 </tr>
 <tr data-index="34" data-listing-file-modified-sort="1699715779578" data-listing-filename-sort="17d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/17d.jpeg" class="filename">17d.jpeg</a>
+<td>
+<a href="../../forest/trees/17d.jpeg" class="filename listing-filename">17d.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:19 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:19 AM</span>
 </td>
 </tr>
 <tr data-index="35" data-listing-file-modified-sort="1699715778966" data-listing-filename-sort="17e.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/17e.jpeg" class="filename">17e.jpeg</a>
+<td>
+<a href="../../forest/trees/17e.jpeg" class="filename listing-filename">17e.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:18 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:18 AM</span>
 </td>
 </tr>
 <tr data-index="36" data-listing-file-modified-sort="1699715778240" data-listing-filename-sort="18a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/18a.jpeg" class="filename">18a.jpeg</a>
+<td>
+<a href="../../forest/trees/18a.jpeg" class="filename listing-filename">18a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:18 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:18 AM</span>
 </td>
 </tr>
 <tr data-index="37" data-listing-file-modified-sort="1699715776931" data-listing-filename-sort="18b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/18b.jpeg" class="filename">18b.jpeg</a>
+<td>
+<a href="../../forest/trees/18b.jpeg" class="filename listing-filename">18b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:16 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:16 AM</span>
 </td>
 </tr>
 <tr data-index="38" data-listing-file-modified-sort="1699715777073" data-listing-filename-sort="18c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/18c.jpeg" class="filename">18c.jpeg</a>
+<td>
+<a href="../../forest/trees/18c.jpeg" class="filename listing-filename">18c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:17 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:17 AM</span>
 </td>
 </tr>
 <tr data-index="39" data-listing-file-modified-sort="1699715776627" data-listing-filename-sort="18d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/18d.jpeg" class="filename">18d.jpeg</a>
+<td>
+<a href="../../forest/trees/18d.jpeg" class="filename listing-filename">18d.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:16 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:16 AM</span>
 </td>
 </tr>
 <tr data-index="40" data-listing-file-modified-sort="1699715780483" data-listing-filename-sort="19a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/19a.jpeg" class="filename">19a.jpeg</a>
+<td>
+<a href="../../forest/trees/19a.jpeg" class="filename listing-filename">19a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:20 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:20 AM</span>
 </td>
 </tr>
 <tr data-index="41" data-listing-file-modified-sort="1699715780332" data-listing-filename-sort="19b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/19b.jpeg" class="filename">19b.jpeg</a>
+<td>
+<a href="../../forest/trees/19b.jpeg" class="filename listing-filename">19b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:20 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:20 AM</span>
 </td>
 </tr>
 <tr data-index="42" data-listing-file-modified-sort="1699715781363" data-listing-filename-sort="19c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/19c.jpeg" class="filename">19c.jpeg</a>
+<td>
+<a href="../../forest/trees/19c.jpeg" class="filename listing-filename">19c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:21 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:21 AM</span>
 </td>
 </tr>
 <tr data-index="43" data-listing-file-modified-sort="1699715781520" data-listing-filename-sort="19d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/19d.jpeg" class="filename">19d.jpeg</a>
+<td>
+<a href="../../forest/trees/19d.jpeg" class="filename listing-filename">19d.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:21 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:21 AM</span>
 </td>
 </tr>
 <tr data-index="44" data-listing-file-modified-sort="1699715769616" data-listing-filename-sort="1a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/1a.jpeg" class="filename">1a.jpeg</a>
+<td>
+<a href="../../forest/trees/1a.jpeg" class="filename listing-filename">1a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:09 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:09 AM</span>
 </td>
 </tr>
-<tr data-index="45" data-listing-file-modified-sort="1699715769875" data-listing-filename-sort="1b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/1b.jpeg" class="filename">1b.jpeg</a>
+<tr data-index="45" data-listing-file-modified-sort="1703536079893" data-listing-filename-sort="1b.jpeg">
+<td>
+<a href="../../forest/trees/1b.jpeg" class="filename listing-filename">1b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:09 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:27:59 PM</span>
 </td>
 </tr>
 <tr data-index="46" data-listing-file-modified-sort="1699715769699" data-listing-filename-sort="1c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/1c.jpeg" class="filename">1c.jpeg</a>
+<td>
+<a href="../../forest/trees/1c.jpeg" class="filename listing-filename">1c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:09 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:09 AM</span>
 </td>
 </tr>
 <tr data-index="47" data-listing-file-modified-sort="1699715770034" data-listing-filename-sort="1d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/1d.jpeg" class="filename">1d.jpeg</a>
+<td>
+<a href="../../forest/trees/1d.jpeg" class="filename listing-filename">1d.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:10 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:10 AM</span>
 </td>
 </tr>
 <tr data-index="48" data-listing-file-modified-sort="1699715782291" data-listing-filename-sort="20a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/20a.jpeg" class="filename">20a.jpeg</a>
+<td>
+<a href="../../forest/trees/20a.jpeg" class="filename listing-filename">20a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:22 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:22 AM</span>
 </td>
 </tr>
 <tr data-index="49" data-listing-file-modified-sort="1699715781995" data-listing-filename-sort="20b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/20b.jpeg" class="filename">20b.jpeg</a>
+<td>
+<a href="../../forest/trees/20b.jpeg" class="filename listing-filename">20b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:21 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:21 AM</span>
 </td>
 </tr>
 <tr data-index="50" data-listing-file-modified-sort="1699715779893" data-listing-filename-sort="20c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/20c.jpeg" class="filename">20c.jpeg</a>
+<td>
+<a href="../../forest/trees/20c.jpeg" class="filename listing-filename">20c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:19 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:19 AM</span>
 </td>
 </tr>
 <tr data-index="51" data-listing-file-modified-sort="1699715779739" data-listing-filename-sort="21a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/21a.jpeg" class="filename">21a.jpeg</a>
+<td>
+<a href="../../forest/trees/21a.jpeg" class="filename listing-filename">21a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:19 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:19 AM</span>
 </td>
 </tr>
 <tr data-index="52" data-listing-file-modified-sort="1699715781679" data-listing-filename-sort="21b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/21b.jpeg" class="filename">21b.jpeg</a>
+<td>
+<a href="../../forest/trees/21b.jpeg" class="filename listing-filename">21b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:21 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:21 AM</span>
 </td>
 </tr>
 <tr data-index="53" data-listing-file-modified-sort="1699715781179" data-listing-filename-sort="21c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/21c.jpeg" class="filename">21c.jpeg</a>
+<td>
+<a href="../../forest/trees/21c.jpeg" class="filename listing-filename">21c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:21 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:21 AM</span>
 </td>
 </tr>
 <tr data-index="54" data-listing-file-modified-sort="1699715779421" data-listing-filename-sort="22a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/22a.jpeg" class="filename">22a.jpeg</a>
+<td>
+<a href="../../forest/trees/22a.jpeg" class="filename listing-filename">22a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:19 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:19 AM</span>
 </td>
 </tr>
 <tr data-index="55" data-listing-file-modified-sort="1699715780195" data-listing-filename-sort="22b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/22b.jpeg" class="filename">22b.jpeg</a>
+<td>
+<a href="../../forest/trees/22b.jpeg" class="filename listing-filename">22b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:20 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:20 AM</span>
 </td>
 </tr>
 <tr data-index="56" data-listing-file-modified-sort="1699715781024" data-listing-filename-sort="22c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/22c.jpeg" class="filename">22c.jpeg</a>
+<td>
+<a href="../../forest/trees/22c.jpeg" class="filename listing-filename">22c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:21 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:21 AM</span>
 </td>
 </tr>
 <tr data-index="57" data-listing-file-modified-sort="1699715769535" data-listing-filename-sort="22d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/22d.jpeg" class="filename">22d.jpeg</a>
+<td>
+<a href="../../forest/trees/22d.jpeg" class="filename listing-filename">22d.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:09 AM
-</td>
-</tr>
-<tr data-index="58" data-listing-file-modified-sort="1699715779269" data-listing-filename-sort="23a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/23a.jpeg" class="filename">23a.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:19 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:09 AM</span>
 </td>
 </tr>
-<tr data-index="59" data-listing-file-modified-sort="1699715778521" data-listing-filename-sort="23b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/23b.jpeg" class="filename">23b.jpeg</a>
+<tr data-index="58" data-listing-file-modified-sort="1703535566031" data-listing-filename-sort="23a.jpeg">
+<td>
+<a href="../../forest/trees/23a.jpeg" class="filename listing-filename">23a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:18 AM
-</td>
-</tr>
-<tr data-index="60" data-listing-file-modified-sort="1699715779124" data-listing-filename-sort="23c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/23c.jpeg" class="filename">23c.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:19 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:19:26 PM</span>
 </td>
 </tr>
-<tr data-index="61" data-listing-file-modified-sort="1699715770198" data-listing-filename-sort="2a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/2a.jpeg" class="filename">2a.jpeg</a>
+<tr data-index="59" data-listing-file-modified-sort="1703535566107" data-listing-filename-sort="23b.jpeg">
+<td>
+<a href="../../forest/trees/23b.jpeg" class="filename listing-filename">23b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:10 AM
-</td>
-</tr>
-<tr data-index="62" data-listing-file-modified-sort="1699715769783" data-listing-filename-sort="2b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/2b.jpeg" class="filename">2b.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:09 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:19:26 PM</span>
 </td>
 </tr>
-<tr data-index="63" data-listing-file-modified-sort="1699715769952" data-listing-filename-sort="2c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/2c.jpeg" class="filename">2c.jpeg</a>
+<tr data-index="60" data-listing-file-modified-sort="1703535565966" data-listing-filename-sort="23c.jpeg">
+<td>
+<a href="../../forest/trees/23c.jpeg" class="filename listing-filename">23c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:09 AM
-</td>
-</tr>
-<tr data-index="64" data-listing-file-modified-sort="1699715770115" data-listing-filename-sort="3a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/3a.jpeg" class="filename">3a.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:10 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:19:25 PM</span>
 </td>
 </tr>
-<tr data-index="65" data-listing-file-modified-sort="1699715770282" data-listing-filename-sort="3b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/3b.jpeg" class="filename">3b.jpeg</a>
+<tr data-index="61" data-listing-file-modified-sort="1703535614186" data-listing-filename-sort="24a.jpeg">
+<td>
+<a href="../../forest/trees/24a.jpeg" class="filename listing-filename">24a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:10 AM
-</td>
-</tr>
-<tr data-index="66" data-listing-file-modified-sort="1699715771028" data-listing-filename-sort="3c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/3c.jpeg" class="filename">3c.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:11 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:20:14 PM</span>
 </td>
 </tr>
-<tr data-index="67" data-listing-file-modified-sort="1699715770655" data-listing-filename-sort="3d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/3d.jpeg" class="filename">3d.jpeg</a>
+<tr data-index="62" data-listing-file-modified-sort="1703535614121" data-listing-filename-sort="24b.jpeg">
+<td>
+<a href="../../forest/trees/24b.jpeg" class="filename listing-filename">24b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:10 AM
-</td>
-</tr>
-<tr data-index="68" data-listing-file-modified-sort="1699715770585" data-listing-filename-sort="4a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/4a.jpeg" class="filename">4a.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:10 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:20:14 PM</span>
 </td>
 </tr>
-<tr data-index="69" data-listing-file-modified-sort="1699715770447" data-listing-filename-sort="4b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/4b.jpeg" class="filename">4b.jpeg</a>
+<tr data-index="63" data-listing-file-modified-sort="1703535614257" data-listing-filename-sort="24c.jpeg">
+<td>
+<a href="../../forest/trees/24c.jpeg" class="filename listing-filename">24c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:10 AM
-</td>
-</tr>
-<tr data-index="70" data-listing-file-modified-sort="1699715771300" data-listing-filename-sort="4c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/4c.jpeg" class="filename">4c.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:11 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:20:14 PM</span>
 </td>
 </tr>
-<tr data-index="71" data-listing-file-modified-sort="1699715771172" data-listing-filename-sort="4d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/4d.jpeg" class="filename">4d.jpeg</a>
+<tr data-index="64" data-listing-file-modified-sort="1703535665863" data-listing-filename-sort="25a.jpeg">
+<td>
+<a href="../../forest/trees/25a.jpeg" class="filename listing-filename">25a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:11 AM
-</td>
-</tr>
-<tr data-index="72" data-listing-file-modified-sort="1699715770777" data-listing-filename-sort="5a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/5a.jpeg" class="filename">5a.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:10 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:21:05 PM</span>
 </td>
 </tr>
-<tr data-index="73" data-listing-file-modified-sort="1699715770918" data-listing-filename-sort="5b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/5b.jpeg" class="filename">5b.jpeg</a>
+<tr data-index="65" data-listing-file-modified-sort="1703535665664" data-listing-filename-sort="25b.jpeg">
+<td>
+<a href="../../forest/trees/25b.jpeg" class="filename listing-filename">25b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:10 AM
-</td>
-</tr>
-<tr data-index="74" data-listing-file-modified-sort="1699715772015" data-listing-filename-sort="5c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/5c.jpeg" class="filename">5c.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:12 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:21:05 PM</span>
 </td>
 </tr>
-<tr data-index="75" data-listing-file-modified-sort="1699715772328" data-listing-filename-sort="5d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/5d.jpeg" class="filename">5d.jpeg</a>
+<tr data-index="66" data-listing-file-modified-sort="1703535665764" data-listing-filename-sort="25c.jpeg">
+<td>
+<a href="../../forest/trees/25c.jpeg" class="filename listing-filename">25c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:12 AM
-</td>
-</tr>
-<tr data-index="76" data-listing-file-modified-sort="1699715771728" data-listing-filename-sort="6a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/6a.jpeg" class="filename">6a.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:11 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:21:05 PM</span>
 </td>
 </tr>
-<tr data-index="77" data-listing-file-modified-sort="1699715771426" data-listing-filename-sort="6b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/6b.jpeg" class="filename">6b.jpeg</a>
+<tr data-index="67" data-listing-file-modified-sort="1703535701495" data-listing-filename-sort="26a.jpeg">
+<td>
+<a href="../../forest/trees/26a.jpeg" class="filename listing-filename">26a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:11 AM
-</td>
-</tr>
-<tr data-index="78" data-listing-file-modified-sort="1699715771604" data-listing-filename-sort="6c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/6c.jpeg" class="filename">6c.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:11 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:21:41 PM</span>
 </td>
 </tr>
-<tr data-index="79" data-listing-file-modified-sort="1699715771880" data-listing-filename-sort="7a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/7a.jpeg" class="filename">7a.jpeg</a>
+<tr data-index="68" data-listing-file-modified-sort="1703535701426" data-listing-filename-sort="26b.jpeg">
+<td>
+<a href="../../forest/trees/26b.jpeg" class="filename listing-filename">26b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:11 AM
-</td>
-</tr>
-<tr data-index="80" data-listing-file-modified-sort="1699715772508" data-listing-filename-sort="7b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/7b.jpeg" class="filename">7b.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:12 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:21:41 PM</span>
 </td>
 </tr>
-<tr data-index="81" data-listing-file-modified-sort="1699715772172" data-listing-filename-sort="7c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/7c.jpeg" class="filename">7c.jpeg</a>
+<tr data-index="69" data-listing-file-modified-sort="1703535701595" data-listing-filename-sort="26c.jpeg">
+<td>
+<a href="../../forest/trees/26c.jpeg" class="filename listing-filename">26c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:12 AM
-</td>
-</tr>
-<tr data-index="82" data-listing-file-modified-sort="1699715772674" data-listing-filename-sort="7d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/7d.jpeg" class="filename">7d.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:12 AM
+<td>
+<span class="listing-file-modified">12/25/23, 3:21:41 PM</span>
 </td>
 </tr>
-<tr data-index="83" data-listing-file-modified-sort="1699715772820" data-listing-filename-sort="7e.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/7e.jpeg" class="filename">7e.jpeg</a>
+<tr data-index="70" data-listing-file-modified-sort="1699715770198" data-listing-filename-sort="2a.jpeg">
+<td>
+<a href="../../forest/trees/2a.jpeg" class="filename listing-filename">2a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:12 AM
-</td>
-</tr>
-<tr data-index="84" data-listing-file-modified-sort="1699715772986" data-listing-filename-sort="7f.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/7f.jpeg" class="filename">7f.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:12 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:10 AM</span>
 </td>
 </tr>
-<tr data-index="85" data-listing-file-modified-sort="1699715773139" data-listing-filename-sort="8a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/8a.jpeg" class="filename">8a.jpeg</a>
+<tr data-index="71" data-listing-file-modified-sort="1699715769783" data-listing-filename-sort="2b.jpeg">
+<td>
+<a href="../../forest/trees/2b.jpeg" class="filename listing-filename">2b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:13 AM
-</td>
-</tr>
-<tr data-index="86" data-listing-file-modified-sort="1699715773264" data-listing-filename-sort="8b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/8b.jpeg" class="filename">8b.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:13 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:09 AM</span>
 </td>
 </tr>
-<tr data-index="87" data-listing-file-modified-sort="1699715773404" data-listing-filename-sort="8c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/8c.jpeg" class="filename">8c.jpeg</a>
+<tr data-index="72" data-listing-file-modified-sort="1699715769952" data-listing-filename-sort="2c.jpeg">
+<td>
+<a href="../../forest/trees/2c.jpeg" class="filename listing-filename">2c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:13 AM
-</td>
-</tr>
-<tr data-index="88" data-listing-file-modified-sort="1699715773561" data-listing-filename-sort="8d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/8d.jpeg" class="filename">8d.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:13 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:09 AM</span>
 </td>
 </tr>
-<tr data-index="89" data-listing-file-modified-sort="1699715773704" data-listing-filename-sort="9a.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/9a.jpeg" class="filename">9a.jpeg</a>
+<tr data-index="73" data-listing-file-modified-sort="1699715770115" data-listing-filename-sort="3a.jpeg">
+<td>
+<a href="../../forest/trees/3a.jpeg" class="filename listing-filename">3a.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:13 AM
-</td>
-</tr>
-<tr data-index="90" data-listing-file-modified-sort="1699715773813" data-listing-filename-sort="9b.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/9b.jpeg" class="filename">9b.jpeg</a>
-</td>
-<td class="listing-file-modified">
-11/11/23, 10:16:13 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:10 AM</span>
 </td>
 </tr>
-<tr data-index="91" data-listing-file-modified-sort="1699715773971" data-listing-filename-sort="9c.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/9c.jpeg" class="filename">9c.jpeg</a>
+<tr data-index="74" data-listing-file-modified-sort="1699715770282" data-listing-filename-sort="3b.jpeg">
+<td>
+<a href="../../forest/trees/3b.jpeg" class="filename listing-filename">3b.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:13 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:10 AM</span>
 </td>
 </tr>
-<tr data-index="92" data-listing-file-modified-sort="1699715774118" data-listing-filename-sort="9d.jpeg">
-<td class="listing-filename">
-<a href="../../forest/trees/9d.jpeg" class="filename">9d.jpeg</a>
+<tr data-index="75" data-listing-file-modified-sort="1699715771028" data-listing-filename-sort="3c.jpeg">
+<td>
+<a href="../../forest/trees/3c.jpeg" class="filename listing-filename">3c.jpeg</a>
 </td>
-<td class="listing-file-modified">
-11/11/23, 10:16:14 AM
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:11 AM</span>
+</td>
+</tr>
+<tr data-index="76" data-listing-file-modified-sort="1699715770655" data-listing-filename-sort="3d.jpeg">
+<td>
+<a href="../../forest/trees/3d.jpeg" class="filename listing-filename">3d.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:10 AM</span>
+</td>
+</tr>
+<tr data-index="77" data-listing-file-modified-sort="1699715770585" data-listing-filename-sort="4a.jpeg">
+<td>
+<a href="../../forest/trees/4a.jpeg" class="filename listing-filename">4a.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:10 AM</span>
+</td>
+</tr>
+<tr data-index="78" data-listing-file-modified-sort="1699715770447" data-listing-filename-sort="4b.jpeg">
+<td>
+<a href="../../forest/trees/4b.jpeg" class="filename listing-filename">4b.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:10 AM</span>
+</td>
+</tr>
+<tr data-index="79" data-listing-file-modified-sort="1699715771300" data-listing-filename-sort="4c.jpeg">
+<td>
+<a href="../../forest/trees/4c.jpeg" class="filename listing-filename">4c.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:11 AM</span>
+</td>
+</tr>
+<tr data-index="80" data-listing-file-modified-sort="1699715771172" data-listing-filename-sort="4d.jpeg">
+<td>
+<a href="../../forest/trees/4d.jpeg" class="filename listing-filename">4d.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:11 AM</span>
+</td>
+</tr>
+<tr data-index="81" data-listing-file-modified-sort="1699715770777" data-listing-filename-sort="5a.jpeg">
+<td>
+<a href="../../forest/trees/5a.jpeg" class="filename listing-filename">5a.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:10 AM</span>
+</td>
+</tr>
+<tr data-index="82" data-listing-file-modified-sort="1699715770918" data-listing-filename-sort="5b.jpeg">
+<td>
+<a href="../../forest/trees/5b.jpeg" class="filename listing-filename">5b.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:10 AM</span>
+</td>
+</tr>
+<tr data-index="83" data-listing-file-modified-sort="1703535759173" data-listing-filename-sort="5c.jpeg">
+<td>
+<a href="../../forest/trees/5c.jpeg" class="filename listing-filename">5c.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">12/25/23, 3:22:39 PM</span>
+</td>
+</tr>
+<tr data-index="84" data-listing-file-modified-sort="1699715772328" data-listing-filename-sort="5d.jpeg">
+<td>
+<a href="../../forest/trees/5d.jpeg" class="filename listing-filename">5d.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:12 AM</span>
+</td>
+</tr>
+<tr data-index="85" data-listing-file-modified-sort="1699715771728" data-listing-filename-sort="6a.jpeg">
+<td>
+<a href="../../forest/trees/6a.jpeg" class="filename listing-filename">6a.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:11 AM</span>
+</td>
+</tr>
+<tr data-index="86" data-listing-file-modified-sort="1699715771426" data-listing-filename-sort="6b.jpeg">
+<td>
+<a href="../../forest/trees/6b.jpeg" class="filename listing-filename">6b.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:11 AM</span>
+</td>
+</tr>
+<tr data-index="87" data-listing-file-modified-sort="1699715771604" data-listing-filename-sort="6c.jpeg">
+<td>
+<a href="../../forest/trees/6c.jpeg" class="filename listing-filename">6c.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:11 AM</span>
+</td>
+</tr>
+<tr data-index="88" data-listing-file-modified-sort="1699715771880" data-listing-filename-sort="7a.jpeg">
+<td>
+<a href="../../forest/trees/7a.jpeg" class="filename listing-filename">7a.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:11 AM</span>
+</td>
+</tr>
+<tr data-index="89" data-listing-file-modified-sort="1699715772508" data-listing-filename-sort="7b.jpeg">
+<td>
+<a href="../../forest/trees/7b.jpeg" class="filename listing-filename">7b.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:12 AM</span>
+</td>
+</tr>
+<tr data-index="90" data-listing-file-modified-sort="1699715772172" data-listing-filename-sort="7c.jpeg">
+<td>
+<a href="../../forest/trees/7c.jpeg" class="filename listing-filename">7c.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:12 AM</span>
+</td>
+</tr>
+<tr data-index="91" data-listing-file-modified-sort="1699715772674" data-listing-filename-sort="7d.jpeg">
+<td>
+<a href="../../forest/trees/7d.jpeg" class="filename listing-filename">7d.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:12 AM</span>
+</td>
+</tr>
+<tr data-index="92" data-listing-file-modified-sort="1699715772820" data-listing-filename-sort="7e.jpeg">
+<td>
+<a href="../../forest/trees/7e.jpeg" class="filename listing-filename">7e.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:12 AM</span>
+</td>
+</tr>
+<tr data-index="93" data-listing-file-modified-sort="1699715772986" data-listing-filename-sort="7f.jpeg">
+<td>
+<a href="../../forest/trees/7f.jpeg" class="filename listing-filename">7f.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:12 AM</span>
+</td>
+</tr>
+<tr data-index="94" data-listing-file-modified-sort="1699715773139" data-listing-filename-sort="8a.jpeg">
+<td>
+<a href="../../forest/trees/8a.jpeg" class="filename listing-filename">8a.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:13 AM</span>
+</td>
+</tr>
+<tr data-index="95" data-listing-file-modified-sort="1699715773264" data-listing-filename-sort="8b.jpeg">
+<td>
+<a href="../../forest/trees/8b.jpeg" class="filename listing-filename">8b.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:13 AM</span>
+</td>
+</tr>
+<tr data-index="96" data-listing-file-modified-sort="1699715773404" data-listing-filename-sort="8c.jpeg">
+<td>
+<a href="../../forest/trees/8c.jpeg" class="filename listing-filename">8c.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:13 AM</span>
+</td>
+</tr>
+<tr data-index="97" data-listing-file-modified-sort="1699715773561" data-listing-filename-sort="8d.jpeg">
+<td>
+<a href="../../forest/trees/8d.jpeg" class="filename listing-filename">8d.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:13 AM</span>
+</td>
+</tr>
+<tr data-index="98" data-listing-file-modified-sort="1699715773704" data-listing-filename-sort="9a.jpeg">
+<td>
+<a href="../../forest/trees/9a.jpeg" class="filename listing-filename">9a.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:13 AM</span>
+</td>
+</tr>
+<tr data-index="99" data-listing-file-modified-sort="1699715773813" data-listing-filename-sort="9b.jpeg">
+<td>
+<a href="../../forest/trees/9b.jpeg" class="filename listing-filename">9b.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:13 AM</span>
+</td>
+</tr>
+<tr data-index="100" data-listing-file-modified-sort="1699715773971" data-listing-filename-sort="9c.jpeg">
+<td>
+<a href="../../forest/trees/9c.jpeg" class="filename listing-filename">9c.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:13 AM</span>
+</td>
+</tr>
+<tr data-index="101" data-listing-file-modified-sort="1699715774118" data-listing-filename-sort="9d.jpeg">
+<td>
+<a href="../../forest/trees/9d.jpeg" class="filename listing-filename">9d.jpeg</a>
+</td>
+<td>
+<span class="listing-file-modified">11/11/23, 10:16:14 AM</span>
 </td>
 </tr>
 </tbody>
-
 </table>
 <div class="listing-no-matching d-none">
 No matching items
@@ -1020,9 +1122,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -1058,10 +1174,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1071,8 +1186,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1087,6 +1211,233 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -1130,4 +1481,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/dragonstyle/blog/edit/main/forest/trees/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dragonstyle/blog/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

@@ -6,7 +6,7 @@
       version="2.0">
 <channel>
 <title>Dragonstyle</title>
-<link>https://www.charlesteague.com/index.html</link>
+<link>https://www.charlesteague.com/</link>
 <atom:link href="https://www.charlesteague.com/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-99.9.9</generator>
@@ -14,8 +14,9 @@
 <item>
   <title>2 New Extensions for Quarto</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/2-new-extensions/index.html</link>
+  <link>https://www.charlesteague.com/blog/2-new-extensions/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -43,14 +44,15 @@
  ]]></description>
   <category>Quarto</category>
   <category>Extensions</category>
-  <guid>https://www.charlesteague.com/blog/2-new-extensions/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/2-new-extensions/</guid>
   <pubDate>Sat, 11 Nov 2023 14:52:49 GMT</pubDate>
 </item>
 <item>
   <title>Great Writing</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/writing-style/index.html</link>
+  <link>https://www.charlesteague.com/blog/writing-style/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -58,7 +60,7 @@
 <p>Cormac McCarthy is a favorite author of mine. I find his direct, short, and almost terse style of writing to be engaging. Little did I know that he had actually weighed in on what it takes to do great scientific writing. He did!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/writing-style/west.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/writing-style/west.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>I believe what he outlines are tips for good writing (not just good scientific writing). A few highlights:</p>
@@ -76,15 +78,15 @@
   <category>Writing</category>
   <category>Random</category>
   <category>Science</category>
-  <guid>https://www.charlesteague.com/blog/writing-style/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/writing-style/</guid>
   <pubDate>Wed, 09 Mar 2022 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/writing-style/west.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Build and Test Analytics</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/build-and-test-analytics/index.html</link>
+  <link>https://www.charlesteague.com/blog/build-and-test-analytics/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -104,15 +106,15 @@
   <category>Product</category>
   <category>Continuous Integration</category>
   <category>Startup Ideas</category>
-  <guid>https://www.charlesteague.com/blog/build-and-test-analytics/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/build-and-test-analytics/</guid>
   <pubDate>Wed, 16 Feb 2022 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/build-and-test-analytics/render-perf.png" medium="image" type="image/png" height="64" width="144"/>
 </item>
 <item>
   <title>Welcome to the Blog (2.0)</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/welcome/index.html</link>
+  <link>https://www.charlesteague.com/blog/welcome/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -120,7 +122,7 @@
 <p>Years ago, I worked on a popular for authoring blogs, <a href="https://www.microsoft.com/en-us/p/open-live-writer/9nblggh5279m?activetab=pivot:overviewtab">Windows Live Writer</a>. That tool provided a WYSIWYG experience, giving users a Microsoft Word like experience for editing their blog. During this time period, if you manged to find my blog, you’d see only test posts associated with the latest features of Live Writer.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/welcome/window.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/welcome/window.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>After I stopped working on Writer, I returned to blogging myself, writing primarily about my interest mobile technology and what I saw as a revolution led by the Apple iPhone. I’ve brought those old posts to this weblog, and though the are dated, it is fun to look back at how early that market was and to see how much it has grown.</p>
@@ -130,15 +132,15 @@
 
  ]]></description>
   <category>News</category>
-  <guid>https://www.charlesteague.com/blog/welcome/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/welcome/</guid>
   <pubDate>Mon, 07 Feb 2022 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/welcome/window.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>App Store Data for December 2009</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/app-store-data-december-2009/index.html</link>
+  <link>https://www.charlesteague.com/blog/app-store-data-december-2009/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -162,15 +164,15 @@
 
  ]]></description>
   <category>iPhone</category>
-  <guid>https://www.charlesteague.com/blog/app-store-data-december-2009/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/app-store-data-december-2009/</guid>
   <pubDate>Mon, 14 Dec 2009 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/app-store-data-december-2009/1.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 <item>
   <title>It’s been a while!</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/its-been-a-while/index.html</link>
+  <link>https://www.charlesteague.com/blog/its-been-a-while/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -179,7 +181,7 @@
 <p>I’ve been heads down for the last several months, working on&nbsp;<a href="http://www.loseit.com/">Lose It</a>!. Well, I finally shipped the 2.0 version that has been consuming all of my time. It’s been great to watch the adoption of the new version and the user excitement that goes with many of the new features. This is the kind of paragraph that is immensely rewarding for folks who really try to make great software:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/its-been-a-while/1.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/its-been-a-while/1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <blockquote class="blockquote">
@@ -196,15 +198,15 @@
  ]]></description>
   <category>iPhone</category>
   <category>News</category>
-  <guid>https://www.charlesteague.com/blog/its-been-a-while/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/its-been-a-while/</guid>
   <pubDate>Sun, 06 Dec 2009 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/its-been-a-while/1.png" medium="image" type="image/png" height="257" width="144"/>
 </item>
 <item>
   <title>Radio Silence</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/radio-silience/index.html</link>
+  <link>https://www.charlesteague.com/blog/radio-silience/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -218,15 +220,15 @@
 
  ]]></description>
   <category>iPhone</category>
-  <guid>https://www.charlesteague.com/blog/radio-silience/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/radio-silience/</guid>
   <pubDate>Sat, 11 Jul 2009 04:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/radio-silience/1.png" medium="image" type="image/png" height="137" width="144"/>
 </item>
 <item>
   <title>Comparing App Store Categories</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/comparing-app-store-categories/index.html</link>
+  <link>https://www.charlesteague.com/blog/comparing-app-store-categories/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -432,15 +434,15 @@
 
  ]]></description>
   <category>iPhone</category>
-  <guid>https://www.charlesteague.com/blog/comparing-app-store-categories/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/comparing-app-store-categories/</guid>
   <pubDate>Tue, 21 Apr 2009 04:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/comparing-app-store-categories/1.png" medium="image" type="image/png" height="128" width="144"/>
 </item>
 <item>
   <title>Updated Data from the App Store</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/updated-app-store-data/index.html</link>
+  <link>https://www.charlesteague.com/blog/updated-app-store-data/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -597,14 +599,15 @@
 
  ]]></description>
   <category>iPhone</category>
-  <guid>https://www.charlesteague.com/blog/updated-app-store-data/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/updated-app-store-data/</guid>
   <pubDate>Tue, 31 Mar 2009 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>20,000 Applications and Counting</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/20000-applications/index.html</link>
+  <link>https://www.charlesteague.com/blog/20000-applications/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -700,15 +703,15 @@
 
  ]]></description>
   <category>iPhone</category>
-  <guid>https://www.charlesteague.com/blog/20000-applications/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/20000-applications/</guid>
   <pubDate>Thu, 26 Feb 2009 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/20000-applications/1.png" medium="image" type="image/png" height="111" width="144"/>
 </item>
 <item>
   <title>The App Store Model Business Model: Lite</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/app-store-business-model-lite/index.html</link>
+  <link>https://www.charlesteague.com/blog/app-store-business-model-lite/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -751,15 +754,15 @@
 
  ]]></description>
   <category>iPhone</category>
-  <guid>https://www.charlesteague.com/blog/app-store-business-model-lite/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/app-store-business-model-lite/</guid>
   <pubDate>Tue, 17 Feb 2009 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/app-store-business-model-lite/1.png" medium="image" type="image/png" height="119" width="144"/>
 </item>
 <item>
   <title>There’s an App For That</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/theres-an-app-for-that/index.html</link>
+  <link>https://www.charlesteague.com/blog/theres-an-app-for-that/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -770,13 +773,13 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/1.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Total # of Apps in the App Store</figcaption><p></p>
+<figcaption>Total # of Apps in the App Store</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/2.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"># of Apps submitted each day</figcaption><p></p>
+<figcaption># of Apps submitted each day</figcaption>
 </figure>
 </div>
 <section id="categories" class="level3">
@@ -785,19 +788,19 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/3.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Distribution of Applications by Category</figcaption><p></p>
+<figcaption>Distribution of Applications by Category</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/4.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Category trend – % of application in each category each month</figcaption><p></p>
+<figcaption>Category trend – % of application in each category each month</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/5.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Growth of the top 5 categories</figcaption><p></p>
+<figcaption>Growth of the top 5 categories</figcaption>
 </figure>
 </div>
 </section>
@@ -807,25 +810,25 @@
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/6.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Average price of an application by month</figcaption><p></p>
+<figcaption>Average price of an application by month</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/7.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Distribution of Applications by Price</figcaption><p></p>
+<figcaption>Distribution of Applications by Price</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/8.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Paid vs.&nbsp;Free App by Month</figcaption><p></p>
+<figcaption>Paid vs.&nbsp;Free App by Month</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/theres-an-app-for-that/9.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"># of Applications by price over time</figcaption><p></p>
+<figcaption># of Applications by price over time</figcaption>
 </figure>
 </div>
 </section>
@@ -839,15 +842,15 @@
 
  ]]></description>
   <category>iPhone</category>
-  <guid>https://www.charlesteague.com/blog/theres-an-app-for-that/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/theres-an-app-for-that/</guid>
   <pubDate>Thu, 05 Feb 2009 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/theres-an-app-for-that/1.png" medium="image" type="image/png" height="124" width="144"/>
 </item>
 <item>
   <title>App Store Raw Data</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/app-store-raw-data/index.html</link>
+  <link>https://www.charlesteague.com/blog/app-store-raw-data/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -861,14 +864,15 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
  ]]></description>
   <category>iPhone</category>
   <category>News</category>
-  <guid>https://www.charlesteague.com/blog/app-store-raw-data/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/app-store-raw-data/</guid>
   <pubDate>Fri, 19 Dec 2008 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>One Last Note on Trends</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/one-last-note-on-trends/index.html</link>
+  <link>https://www.charlesteague.com/blog/one-last-note-on-trends/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -885,15 +889,15 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
  ]]></description>
   <category>iPhone</category>
   <category>News</category>
-  <guid>https://www.charlesteague.com/blog/one-last-note-on-trends/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/one-last-note-on-trends/</guid>
   <pubDate>Fri, 19 Dec 2008 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/one-last-note-on-trends/1.png" medium="image" type="image/png" height="118" width="144"/>
 </item>
 <item>
   <title>Down and To the Right By Design</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/down-and-to-the-right-by-design/index.html</link>
+  <link>https://www.charlesteague.com/blog/down-and-to-the-right-by-design/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -901,7 +905,7 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
 <p>If you’re looking for market feedback on the value of applications, here it is. Using updated data to take a look a pricing trends confirms what I think everyone already knows. Each month, the average price of apps on the store just declines. For example, have a look at the average price of applications (excluding medical applications, whose high prices skew the results).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/1.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>An average application price that was once nearly $4 has fallen to nearly $2.25. It’s too early to tell, but it certainly doesn’t look like we’ve hit bottom yet, either.</p>
@@ -910,7 +914,7 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
 <p>If you look at games, the downward trend is much more dramatic, but prices appear to have stabilized at just under 2 bucks an application. This, of course, begs the question-&nbsp;<a href="http://blog.charlesteague.com/links/2008/10/to-sell-apps-in.html">games are the most popular application in the store</a>, is this because they’re cheap? Or is this really the best we can hope for- that the most popular category of applications on the store is perceived as being worth about $1.50 an application?</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/2.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </section>
@@ -919,7 +923,7 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
 <p>Health and Fitness is one of the few categories that appears to be reversing this trend. After an initial price drop, this category has seen average prices rise nearly every month, now approaching $3 an application. And it does make sense- after all health and fitness applications are likely to impact your life much more significantly than a game.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/3.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/3.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 </section>
@@ -949,15 +953,15 @@ For those that are interested,&nbsp;<a href="applications.csv">here is recent (w
  ]]></description>
   <category>iPhone</category>
   <category>News</category>
-  <guid>https://www.charlesteague.com/blog/down-and-to-the-right-by-design/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/down-and-to-the-right-by-design/</guid>
   <pubDate>Thu, 11 Dec 2008 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/down-and-to-the-right-by-design/1.png" medium="image" type="image/png" height="117" width="144"/>
 </item>
 <item>
   <title>A Closer Look at App Store Category Growth</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/app-store-category-growth/index.html</link>
+  <link>https://www.charlesteague.com/blog/app-store-category-growth/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -967,7 +971,7 @@ Taking a closer look at the growth rate of various categories confirms what ever
 <p>The below is a look at the most common application categories and their growth rate.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/app-store-category-growth/1.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/app-store-category-growth/1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>1) Although the Utilities category was initially a high growth category, it’s growth is actually relatively flat. Entertainment applications have surpassed Utilities as the second most common type of application on the store.</p>
@@ -975,7 +979,7 @@ Taking a closer look at the growth rate of various categories confirms what ever
 <p>The below is a look at the least common categories and their growth rates. Healthcare &amp; Fitness is the big winner here…</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/app-store-category-growth/2.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.charlesteague.com/blog/app-store-category-growth/2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <section id="section" class="level3">
@@ -987,15 +991,15 @@ Taking a closer look at the growth rate of various categories confirms what ever
  ]]></description>
   <category>iPhone</category>
   <category>News</category>
-  <guid>https://www.charlesteague.com/blog/app-store-category-growth/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/app-store-category-growth/</guid>
   <pubDate>Fri, 05 Dec 2008 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/app-store-category-growth/1.png" medium="image" type="image/png" height="112" width="144"/>
 </item>
 <item>
   <title>It’s True - 10,000 Applications</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/10000-applications/index.html</link>
+  <link>https://www.charlesteague.com/blog/10000-applications/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1009,15 +1013,15 @@ Taking a closer look at the growth rate of various categories confirms what ever
   <category>Random</category>
   <category>iPhone</category>
   <category>News</category>
-  <guid>https://www.charlesteague.com/blog/10000-applications/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/10000-applications/</guid>
   <pubDate>Thu, 04 Dec 2008 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/10000-applications/1.png" medium="image" type="image/png" height="130" width="144"/>
 </item>
 <item>
   <title>Apps for a Song</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/apps-for-a-song/index.html</link>
+  <link>https://www.charlesteague.com/blog/apps-for-a-song/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1032,15 +1036,15 @@ Taking a closer look at the growth rate of various categories confirms what ever
 
  ]]></description>
   <category>iPhone</category>
-  <guid>https://www.charlesteague.com/blog/apps-for-a-song/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/apps-for-a-song/</guid>
   <pubDate>Thu, 04 Dec 2008 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/apps-for-a-song/1.png" medium="image" type="image/png" height="111" width="144"/>
 </item>
 <item>
   <title>5 months and 9,000 Applications Later</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/5-months-and-9000-apps-later/index.html</link>
+  <link>https://www.charlesteague.com/blog/5-months-and-9000-apps-later/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1325,15 +1329,15 @@ The average price of an application on the app store is $3.21, but if you ignore
 
  ]]></description>
   <category>iPhone</category>
-  <guid>https://www.charlesteague.com/blog/5-months-and-9000-apps-later/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/5-months-and-9000-apps-later/</guid>
   <pubDate>Tue, 25 Nov 2008 05:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/1.png" medium="image" type="image/png" height="91" width="144"/>
 </item>
 <item>
   <title>Brown Zune, Windows Live Writer, and My MacBook Pro</title>
   <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/brown-zune/index.html</link>
+  <link>https://www.charlesteague.com/blog/brown-zune/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -1343,14 +1347,14 @@ The average price of an application on the app store is $3.21, but if you ignore
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/brown-zune/Picture 2.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">“Application #1 is Zune. Yeah, I said it. I’m not being a MS fanboy- Zune is a truly great application (the interface is far superior to iTunes, really not even comparable), but it also has subscription music, which is a huge money saver for me (I waste a lot less money buying music that I end up getting sick of or not liking at all). So enjoy the rich irony of Zune running on my MacBook Pro, and my horrible brown Zune docked to the awesomely great looking laptop.”</figcaption><p></p>
+<figcaption>“Application #1 is Zune. Yeah, I said it. I’m not being a MS fanboy- Zune is a truly great application (the interface is far superior to iTunes, really not even comparable), but it also has subscription music, which is a huge money saver for me (I waste a lot less money buying music that I end up getting sick of or not liking at all). So enjoy the rich irony of Zune running on my MacBook Pro, and my horrible brown Zune docked to the awesomely great looking laptop.”</figcaption>
 </figure>
 </div>
 <p>&nbsp;</p>
 <div class="quarto-figure quarto-figure-center" style="width: 100%;">
 <figure class="figure">
 <p><img src="https://www.charlesteague.com/blog/brown-zune/Picture 3.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">The second application is, of course, Windows Live Writer. I actually spent the first week or so on the Mac without installing Writer, and it was just too painful. Trying to use the web interface was a complete non starter, and there was simply no comparison between other editors out there (ok, now I’m being biased). A quick VMWare and Windows XP install later and I’m running Writer on my Mac, using Unity to create a first class experience.</figcaption><p></p>
+<figcaption>The second application is, of course, Windows Live Writer. I actually spent the first week or so on the Mac without installing Writer, and it was just too painful. Trying to use the web interface was a complete non starter, and there was simply no comparison between other editors out there (ok, now I’m being biased). A quick VMWare and Windows XP install later and I’m running Writer on my Mac, using Unity to create a first class experience.</figcaption>
 </figure>
 </div>
 <p>The transition was really smoothed by the addition of VMware- anytime I need to I can simply open up Windows and do what I need to do (I ended up installing Visual Studio there so I can whip up quick utility apps in C#, for example). to any windows users getting ready to make the jump, I can definitely give you two pieces of advice from my experience:</p>
@@ -1361,9 +1365,8 @@ The average price of an application on the app store is $3.21, but if you ignore
  ]]></description>
   <category>Technology</category>
   <category>Random</category>
-  <guid>https://www.charlesteague.com/blog/brown-zune/index.html</guid>
+  <guid>https://www.charlesteague.com/blog/brown-zune/</guid>
   <pubDate>Tue, 21 Oct 2008 04:00:00 GMT</pubDate>
-  <media:content url="https://www.charlesteague.com/blog/brown-zune/Picture%202.png" medium="image" type="image/png"/>
 </item>
 </channel>
 </rss>
