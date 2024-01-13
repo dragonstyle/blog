@@ -1,17 +1,8 @@
 project:
   type: site
 header-includes: |
-  <script src="https://getinsights.io/js/insights.js"></script>
-  <script>
-  // Initialize for your project,
-  // you can find this on your dashboard
-  insights.init("bWUDOYx7R1EJ4HWc")
-  
-  // ...
-  
-  // track page views
-  insights.trackPages()
-  </script>
+  <script data-goatcounter="https://dragonstyle.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
   
   <style>
   .navbar-brand {
