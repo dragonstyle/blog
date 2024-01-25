@@ -1,0 +1,37 @@
+---
+title: Now Shipping - Quarto 1.4
+author: Charles Teague
+description: |
+    Dashboards and Typst, a new manuscript project type, a cross-reference overhaul, Shiny for Python support, and a ton more.
+date: 2023-01-25
+---
+
+Quarto 1.4 has been officially released, which is an exciting milestone. This release was a longer cycle, taking just over 9 months and encompassing a number of pretty significant improvements to Quarto. Rather than attempt to explain them all, I'll just point you at a better write up: <https://quarto.org/docs/blog/posts/2024-01-24-1.4-release/>
+
+### Issues and Release Length
+
+Historically, Quarto releases have actually been relatively short, on the order of 3-5 months. This release took as us much longer than usual. In exchange for all that time, however, we made a significant dent in our issues, fixing more than **700** issues.
+
+| Release | Days | Issues Closed | Closed / Day |
+|---------|------|---------------|--------------|
+| **1.0** | 518  | 60            | 0.12         |
+| **1.1** | 65   | 86            | 1.32         |
+| **1.2** | 75   | 159           | 2.12         |
+| **1.3** | 169  | 401           | 2.37         |
+| **1.4** | 273  | 713           | 2.61         |
+
+: Days between releases {#tbl-days .striped}
+
+It isn't clear that we can sustain this level of issue closing, but we're just a few days into Quarto 1.5 pre-release builds and so far we're exceeding that 2.61 / day rate. I think we obviously won't sustain that but in the meantime 🍻.
+
+### ⭐ Stars ⭐
+
+Our GitHub stars have continued to trend nicely.
+
+![A Timeline of Quarto Releases and Stars](quarto.svg){#fig-timeline}
+
+------------------------------------------------------------------------
+
+::: {.button style="font-size: 1.5em; text-align: center;"}
+[Download Quarto 1.4](https://quarto.org/docs/download/)
+:::
