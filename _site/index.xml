@@ -10,7 +10,101 @@
 <atom:link href="https://www.charlesteague.com/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-99.9.9</generator>
-<lastBuildDate>Sat, 11 Nov 2023 14:52:49 GMT</lastBuildDate>
+<lastBuildDate>Thu, 25 Jan 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Now Shipping - Quarto 1.4</title>
+  <dc:creator>Charles Teague</dc:creator>
+  <link>https://www.charlesteague.com/blog/quarto-14/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Quarto 1.4 has been officially released, which is an exciting milestone. This release was a longer cycle, taking just over 9 months and encompassing a number of pretty significant improvements to Quarto. You can learn more about what is new in this release on the <a href="https://quarto.org/docs/blog/posts/2024-01-24-1.4-release/">Quarto Blog</a>.</p>
+<div class="button" style="font-size: 1.5em; text-align: center;">
+<p><a href="https://quarto.org/docs/download/">Download Quarto 1.4</a></p>
+</div>
+<section id="issues-and-release-length" class="level3">
+<h3 class="anchored" data-anchor-id="issues-and-release-length">Issues and Release Length</h3>
+<p>Historically, Quarto releases have actually been relatively short, on the order of 3-5 months. This release took as us much longer than usual. In exchange for all that time, however, we made a significant dent in our issues, fixing more than <strong>700</strong> issues.</p>
+<div id="tbl-days" class="striped quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-days-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Days between releases
+</figcaption>
+<div aria-describedby="tbl-days-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table">
+<thead>
+<tr class="header">
+<th>Release</th>
+<th>Days</th>
+<th>Issues Closed</th>
+<th>Closed / Day</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1.0</strong></td>
+<td>518</td>
+<td>60</td>
+<td>0.12</td>
+</tr>
+<tr class="even">
+<td><strong>1.1</strong></td>
+<td>65</td>
+<td>86</td>
+<td>1.32</td>
+</tr>
+<tr class="odd">
+<td><strong>1.2</strong></td>
+<td>75</td>
+<td>159</td>
+<td>2.12</td>
+</tr>
+<tr class="even">
+<td><strong>1.3</strong></td>
+<td>169</td>
+<td>401</td>
+<td>2.37</td>
+</tr>
+<tr class="odd">
+<td><strong>1.4</strong></td>
+<td>273</td>
+<td>713</td>
+<td>2.61</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>It isn’t clear that we can sustain this level of issue closing, but we’re just a few days into Quarto 1.5 pre-release builds and so far we’re exceeding that 2.61 / day rate. I think we obviously won’t sustain that but in the meantime 🍻.</p>
+</section>
+<section id="stars" class="level3">
+<h3 class="anchored" data-anchor-id="stars">⭐ Stars ⭐</h3>
+<p>Our GitHub stars have continued to trend nicely.</p>
+<div id="fig-timeline" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="quarto-stars.svg" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="https://www.charlesteague.com/blog/quarto-14/quarto-stars.svg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A Timeline of Quarto Releases and Stars
+</figcaption>
+</figure>
+</div>
+
+
+
+</section>
+
+ ]]></description>
+  <category>Quarto</category>
+  <category>Product</category>
+  <guid>https://www.charlesteague.com/blog/quarto-14/</guid>
+  <pubDate>Thu, 25 Jan 2024 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>2 New Extensions for Quarto</title>
   <dc:creator>Charles Teague</dc:creator>
@@ -1331,42 +1425,6 @@ The average price of an application on the app store is $3.21, but if you ignore
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/5-months-and-9000-apps-later/</guid>
   <pubDate>Tue, 25 Nov 2008 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Brown Zune, Windows Live Writer, and My MacBook Pro</title>
-  <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/brown-zune/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>I’m more than a month into my conversion to a Mac, and so far I’ve adjusted nicely. The largest issue for me was the fact that I didn’t know any shortcut keys, so I was using the mouse a lot more than I’m used to. I’m overcoming that, though I desparately miss ctrl+tab to switch between windows of the current application.</p>
-<p>There are two applications that I haven’t been able to give up in my transition, however.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/brown-zune/Picture 2.png" class="img-fluid figure-img"></p>
-<figcaption>“Application #1 is Zune. Yeah, I said it. I’m not being a MS fanboy- Zune is a truly great application (the interface is far superior to iTunes, really not even comparable), but it also has subscription music, which is a huge money saver for me (I waste a lot less money buying music that I end up getting sick of or not liking at all). So enjoy the rich irony of Zune running on my MacBook Pro, and my horrible brown Zune docked to the awesomely great looking laptop.”</figcaption>
-</figure>
-</div>
-<p>&nbsp;</p>
-<div class="quarto-figure quarto-figure-center" style="width: 100%;">
-<figure class="figure">
-<p><img src="https://www.charlesteague.com/blog/brown-zune/Picture 3.png" class="img-fluid figure-img"></p>
-<figcaption>The second application is, of course, Windows Live Writer. I actually spent the first week or so on the Mac without installing Writer, and it was just too painful. Trying to use the web interface was a complete non starter, and there was simply no comparison between other editors out there (ok, now I’m being biased). A quick VMWare and Windows XP install later and I’m running Writer on my Mac, using Unity to create a first class experience.</figcaption>
-</figure>
-</div>
-<p>The transition was really smoothed by the addition of VMware- anytime I need to I can simply open up Windows and do what I need to do (I ended up installing Visual Studio there so I can whip up quick utility apps in C#, for example). to any windows users getting ready to make the jump, I can definitely give you two pieces of advice from my experience:</p>
-<p>The Mac experience is sweet. The OS is nice, the hardware and software are beautiful, and everything does really just work. I’d recommend it. Invest in VMWare Fusion. For the small additional cost of of a VMware license, you can keep your Windows apps around, and have a fall back plan in case you need to do something that just requires Windows.</p>
-
-
-
- ]]></description>
-  <category>Technology</category>
-  <category>Random</category>
-  <guid>https://www.charlesteague.com/blog/brown-zune/</guid>
-  <pubDate>Tue, 21 Oct 2008 04:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

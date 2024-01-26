@@ -7,9 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Charles Teague">
-<meta name="dcterms.date" content="2022-03-09">
+<meta name="dcterms.date" content="2024-01-25">
+<meta name="description" content="Dashboards and Typst, a new manuscript project type, a cross-reference overhaul, Shiny for Python support, and a ton more.">
 
-<title>Dragonstyle – Great Writing</title>
+<title>Dragonstyle – Now Shipping - Quarto 1.4</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -91,8 +95,8 @@ insights.trackPages()
 </style>
 
 
-<meta name="twitter:title" content="Dragonstyle - Great Writing">
-<meta name="twitter:description" content="A favorite novelist weighs in on scientific writing">
+<meta name="twitter:title" content="Dragonstyle - Now Shipping - Quarto 1.4">
+<meta name="twitter:description" content="Dashboards and Typst, a new manuscript project type, a cross-reference overhaul, Shiny for Python support, and a ton more.">
 <meta name="twitter:creator" content="@dragonstyle">
 <meta name="twitter:card" content="summary">
 </head>
@@ -134,12 +138,15 @@ insights.trackPages()
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Great Writing</h1>
-            <p class="subtitle lead">A favorite novelist weighs in on scientific writing</p>
-                                <div class="quarto-categories">
-                <div class="quarto-category">Writing</div>
-                <div class="quarto-category">Random</div>
-                <div class="quarto-category">Science</div>
+      <h1 class="title">Now Shipping - Quarto 1.4</h1>
+                  <div>
+        <div class="description">
+          <p>Dashboards and Typst, a new manuscript project type, a cross-reference overhaul, Shiny for Python support, and a ton more.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Quarto</div>
+                <div class="quarto-category">Product</div>
               </div>
                   </div>
   </div>
@@ -157,7 +164,7 @@ insights.trackPages()
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 9, 2022</p>
+        <p class="date">January 25, 2024</p>
       </div>
     </div>
     
@@ -176,22 +183,85 @@ insights.trackPages()
 
 
 
-<p>Cormac McCarthy is a favorite author of mine. I find his direct, short, and almost terse style of writing to be engaging. Little did I know that he had actually weighed in on what it takes to do great scientific writing. He did!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="west.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p>Quarto 1.4 has been officially released, which is an exciting milestone. This release was a longer cycle, taking just over 9 months and encompassing a number of pretty significant improvements to Quarto. You can learn more about what is new in this release on the <a href="https://quarto.org/docs/blog/posts/2024-01-24-1.4-release/">Quarto Blog</a>.</p>
+<div class="button" style="font-size: 1.5em; text-align: center;">
+<p><a href="https://quarto.org/docs/download/">Download Quarto 1.4</a></p>
+</div>
+<section id="issues-and-release-length" class="level3">
+<h3 class="anchored" data-anchor-id="issues-and-release-length">Issues and Release Length</h3>
+<p>Historically, Quarto releases have actually been relatively short, on the order of 3-5 months. This release took as us much longer than usual. In exchange for all that time, however, we made a significant dent in our issues, fixing more than <strong>700</strong> issues.</p>
+<div id="tbl-days" class="striped quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-days-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Days between releases
+</figcaption>
+<div aria-describedby="tbl-days-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table">
+<thead>
+<tr class="header">
+<th>Release</th>
+<th>Days</th>
+<th>Issues Closed</th>
+<th>Closed / Day</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1.0</strong></td>
+<td>518</td>
+<td>60</td>
+<td>0.12</td>
+</tr>
+<tr class="even">
+<td><strong>1.1</strong></td>
+<td>65</td>
+<td>86</td>
+<td>1.32</td>
+</tr>
+<tr class="odd">
+<td><strong>1.2</strong></td>
+<td>75</td>
+<td>159</td>
+<td>2.12</td>
+</tr>
+<tr class="even">
+<td><strong>1.3</strong></td>
+<td>169</td>
+<td>401</td>
+<td>2.37</td>
+</tr>
+<tr class="odd">
+<td><strong>1.4</strong></td>
+<td>273</td>
+<td>713</td>
+<td>2.61</td>
+</tr>
+</tbody>
+</table>
+</div>
 </figure>
 </div>
-<p>I believe what he outlines are tips for good writing (not just good scientific writing). A few highlights:</p>
-<ul>
-<li><p>Keep sentences short, simply constructed and direct. Concise, clear sentences work well for scientific explanations. Minimize clauses, compound sentences and transition words — such as ‘however’ or ‘thus’ — so that the reader can focus on the main message.</p></li>
-<li><p>Don’t over-elaborate. Only use an adjective if it’s relevant. Your paper is not a dialogue with the readers’ potential questions, so don’t go overboard anticipating them. Don’t say the same thing in three different ways in any single section. Don’t say both ‘elucidate’ and ‘elaborate’. Just choose one, or you risk that your readers will give up.</p></li>
-<li><p>Dashes should emphasize the clauses you consider most important — without using bold or italics — and not only for defining terms.</p></li>
-<li><p>Finally, try to write the best version of your paper: the one that you like. You can’t please an anonymous reader, but you should be able to please yourself. Your paper — you hope — is for posterity. Remember how you first read the papers that inspired you while you enjoy the process of writing your own.</p></li>
-</ul>
-<p>Read: <a href="https://www.nature.com/articles/d41586-019-02918-5">Novelist Cormac McCarthy’s tips on how to write a great science paper</a></p>
+<p>It isn’t clear that we can sustain this level of issue closing, but we’re just a few days into Quarto 1.5 pre-release builds and so far we’re exceeding that 2.61 / day rate. I think we obviously won’t sustain that but in the meantime 🍻.</p>
+</section>
+<section id="stars" class="level3">
+<h3 class="anchored" data-anchor-id="stars">⭐ Stars ⭐</h3>
+<p>Our GitHub stars have continued to trend nicely.</p>
+<div id="fig-timeline" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="quarto-stars.svg" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="quarto-stars.svg" class="img-fluid figure-img"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A Timeline of Quarto Releases and Stars
+</figcaption>
+</figure>
+</div>
 
 
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Figure&nbsp;1: A Timeline of Quarto Releases and Stars</span>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -584,8 +654,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <script src="https://utteranc.es/client.js" repo="dragonstyle/blog" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/dragonstyle/blog/edit/main/blog/quarto-14/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dragonstyle/blog/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/dragonstyle/blog/edit/main/blog/writing-style/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/dragonstyle/blog/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+</body></html>

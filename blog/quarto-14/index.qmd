@@ -2,11 +2,19 @@
 title: Now Shipping - Quarto 1.4
 author: Charles Teague
 description: |
-    Dashboards and Typst, a new manuscript project type, a cross-reference overhaul, Shiny for Python support, and a ton more.
-date: 2023-01-25
+  Dashboards and Typst, a new manuscript project type, a cross-reference overhaul, Shiny for Python support, and a ton more.
+categories:
+  - Quarto
+  - Product
+date: 2024-01-25
+lightbox: true
 ---
 
-Quarto 1.4 has been officially released, which is an exciting milestone. This release was a longer cycle, taking just over 9 months and encompassing a number of pretty significant improvements to Quarto. Rather than attempt to explain them all, I'll just point you at a better write up: <https://quarto.org/docs/blog/posts/2024-01-24-1.4-release/>
+Quarto 1.4 has been officially released, which is an exciting milestone. This release was a longer cycle, taking just over 9 months and encompassing a number of pretty significant improvements to Quarto. You can learn more about what is new in this release on the [Quarto Blog](https://quarto.org/docs/blog/posts/2024-01-24-1.4-release/).
+
+::: {.button style="font-size: 1.5em; text-align: center;"}
+[Download Quarto 1.4](https://quarto.org/docs/download/)
+:::
 
 ### Issues and Release Length
 
@@ -28,10 +36,4 @@ It isn't clear that we can sustain this level of issue closing, but we're just a
 
 Our GitHub stars have continued to trend nicely.
 
-![A Timeline of Quarto Releases and Stars](quarto.svg){#fig-timeline}
-
-------------------------------------------------------------------------
-
-::: {.button style="font-size: 1.5em; text-align: center;"}
-[Download Quarto 1.4](https://quarto.org/docs/download/)
-:::
+![A Timeline of Quarto Releases and Stars](quarto-stars.svg){#fig-timeline}

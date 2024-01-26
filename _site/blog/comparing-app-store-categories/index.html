@@ -9,7 +9,7 @@
 <meta name="author" content="Charles Teague">
 <meta name="dcterms.date" content="2009-04-21">
 
-<title>Dragonstyle - Comparing App Store Categories</title>
+<title>Dragonstyle – Comparing App Store Categories</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -534,7 +534,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
