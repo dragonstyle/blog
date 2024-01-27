@@ -1,0 +1,38 @@
+---
+title: Embed Social Posts Using Share-Post Extension
+author: Charles Teague
+description: |
+  A new extension that makes embedding posts in your Quarto documents easy.
+categories:
+  - Quarto
+  - Product
+date: 2024-01-26
+lightbox: true
+image: share.png
+---
+
+I just put together a simple, but ho pefully useful, extension that will allow you to embed social posts within your Quarto document using a shortcode. It includes support for HTML, LaTeX, and fallback output formats, though the HTML output is really the main point.
+
+Here's a simple example, using the shortcode:
+
+```markdown
+{{{< share-post https://mstdn.social/@ramikrispin/111697864037291257 >}}}
+```
+
+which results in a nice embedded preview, such as:
+
+{{< share-post https://mstdn.social/@ramikrispin/111697864037291257 >}}
+
+It currently supports Mastodon, Twitter, LinkedIn, Threads, Instagram, and Pinterest. It's usually easy to add more, so feel free to [request improvements](https://github.com/dragonstyle/share-post)!
+
+### Learn More
+
+Install this extension:
+
+```bash
+quarto add dragonstyle/share-post
+```
+
+Learn more, suggest changes, open PRs, and more at <https://github.com/dragonstyle/share-post>
+
+You can a look at a more comprehensive example (with other formats as well) at <https://dragonstyle.github.io/share-post/>.

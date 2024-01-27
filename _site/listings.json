@@ -1,7 +1,18 @@
 [
   {
+    "listing": "/forest/index.html",
+    "items": [
+      "/forest/trees/index.html"
+    ]
+  },
+  {
+    "listing": "/forest/trees/index.html",
+    "items": []
+  },
+  {
     "listing": "/index.html",
     "items": [
+      "/blog/share-post-extension/index.html",
       "/blog/quarto-14/index.html",
       "/blog/2-new-extensions/index.html",
       "/blog/writing-style/index.html",
@@ -27,16 +38,6 @@
       "/blog/app-store-comments/index.html",
       "/blog/transition-2/index.html",
       "/blog/transition-1/index.html"
-    ]
-  },
-  {
-    "listing": "/forest/trees/index.html",
-    "items": []
-  },
-  {
-    "listing": "/forest/index.html",
-    "items": [
-      "/forest/trees/index.html"
     ]
   }
 ]

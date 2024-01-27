@@ -5,3 +5,5 @@
 
 /.quarto/
 forest/.DS_Store
+
+/.luarc.json

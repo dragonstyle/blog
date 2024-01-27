@@ -10,7 +10,42 @@
 <atom:link href="https://www.charlesteague.com/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-99.9.9</generator>
-<lastBuildDate>Thu, 25 Jan 2024 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 26 Jan 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Embed Social Posts Using Share-Post Extension</title>
+  <dc:creator>Charles Teague</dc:creator>
+  <link>https://www.charlesteague.com/blog/share-post-extension/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>I just put together a simple, but ho pefully useful, extension that will allow you to embed social posts within your Quarto document using a shortcode. It includes support for HTML, LaTeX, and fallback output formats, though the HTML output is really the main point.</p>
+<p>Here’s a simple example, using the shortcode:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1">{{&lt; share-post https://mstdn.social/@ramikrispin/111697864037291257 &gt;}}</span></code></pre></div>
+<p>which results in a nice embedded preview, such as:</p>
+<iframe src="https://mstdn.social/@ramikrispin/111697864037291257/embed" class="mastodon-embed" style="max-width: 100%; border: 0;" width="400" allowfullscreen="allowfullscreen"></iframe>
+<p>It currently supports Mastodon, Twitter, LinkedIn, Threads, Instagram, and Pinterest. It’s usually easy to add more, so feel free to <a href="https://github.com/dragonstyle/share-post">request improvements</a>!</p>
+<section id="learn-more" class="level3">
+<h3 class="anchored" data-anchor-id="learn-more">Learn More</h3>
+<p>Install this extension:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">quarto</span> add dragonstyle/share-post</span></code></pre></div>
+<p>Learn more, suggest changes, open PRs, and more at <a href="https://github.com/dragonstyle/share-post" class="uri">https://github.com/dragonstyle/share-post</a></p>
+<p>You can a look at a more comprehensive example (with other formats as well) at <a href="https://dragonstyle.github.io/share-post/" class="uri">https://dragonstyle.github.io/share-post/</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Quarto</category>
+  <category>Product</category>
+  <guid>https://www.charlesteague.com/blog/share-post-extension/</guid>
+  <pubDate>Fri, 26 Jan 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://www.charlesteague.com/blog/share-post-extension/share.png" medium="image" type="image/png" height="73" width="144"/>
+</item>
 <item>
   <title>Now Shipping - Quarto 1.4</title>
   <dc:creator>Charles Teague</dc:creator>
@@ -87,7 +122,7 @@ Table&nbsp;1: Days between releases
 <div id="fig-timeline" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="quarto-stars.svg" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="https://www.charlesteague.com/blog/quarto-14/quarto-stars.svg" class="img-fluid figure-img"></a>
+<a href="quarto-stars.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="https://www.charlesteague.com/blog/quarto-14/quarto-stars.svg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-timeline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: A Timeline of Quarto Releases and Stars
@@ -1132,299 +1167,6 @@ Taking a closer look at the growth rate of various categories confirms what ever
   <category>iPhone</category>
   <guid>https://www.charlesteague.com/blog/apps-for-a-song/</guid>
   <pubDate>Thu, 04 Dec 2008 05:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>5 months and 9,000 Applications Later</title>
-  <dc:creator>Charles Teague</dc:creator>
-  <link>https://www.charlesteague.com/blog/5-months-and-9000-apps-later/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>The App Store has now been around for a little more than 5 months. And so, this afternoon I was curious about the state of the world in the App Store. After digging around on the net for some up to date analysis, I gave up and decided I’d do some analysis myself. (Most of the analysis, including my own previous analysis, only uses the top applications, which are available in an RSS feed. But that creates bias, since the analysis is exclusively based upon successful applications).</p>
-<p>After a little expedition to gather some data (I admit it, I used .Net rather than a more fashionable scripting language), I now have an easily updateable spreadsheet with all of the apps in the app store.</p>
-<p>There were some surprises.</p>
-<section id="application-publishing-trends" class="level2">
-<h2 class="anchored" data-anchor-id="application-publishing-trends"><strong>Application Publishing Trends</strong></h2>
-<p>For example, there are&nbsp;<strong><em>more than 9,000</em></strong>&nbsp;applications in the app store. You read that right. I had seen estimates of 5,000+, but that really underestimates just how many applications are there (a ton…). There is now something like 180 new applications each day. It’s an incredible trend that currently isn’t showing any sings of leveling off.</p>
-<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/1.png" class="img-fluid"></p>
-<p>Note the huge spike around the street availability date of the 2nd generation iPhone- developers are rushing to get their app in the store in time for the launch (only to be disappointed when the approval process was opaque and sluggish). Apple has clearly worked to scale their review process since their normal days are approaching that initial spike that overwhelmed the review process around the launch.</p>
-<p>If you have a look at the cumulative chart, you can see the same thing- little to no drop off in the volume of applications…</p>
-<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/2.png" class="img-fluid"></p>
-</section>
-<section id="pricing" class="level2">
-<h2 class="anchored" data-anchor-id="pricing">Pricing</h2>
-<p>There are more than 7,000 applications that are for sale, and just over 2,000 free applications.&nbsp;</p>
-<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/3.png" class="img-fluid"></p>
-<p><br>
-The average price of an application on the app store is $3.21, but if you ignore the free applications and instead ask the question what the average price is for non-free applications, the answer is actually $4.15.</p>
-<p>The distribution of prices is pretty much what you’d expect- a lot of free and cheap applications, very few applications that are very expensive. Note that there are more $.99 applications than free applications.</p>
-<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/4.png" class="img-fluid"><br>
-</p>
-<p>When you look at the average price in each category, it’s not surprising to see serious application categories like Business, Healthcare, and Finance have the highest average price. Also not that surprising to see entertainment oriented categories with the lowest average prices. This follows the vitamin versus pain killer theory- people pay more for pain killers than for vitamins.</p>
-<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/5.png" class="img-fluid"></p>
-<p>A related point to consider- free applications are&nbsp;<em>a lot</em>&nbsp;more popular than paid applications. Since we don’t know how the popularity score is calculated, it’s a bit difficult to figure out what to make of this, other than to point out the obvious- people are willing to try free stuff.</p>
-<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/6.png" class="img-fluid"></p>
-</section>
-<section id="distribution" class="level2">
-<h2 class="anchored" data-anchor-id="distribution">Distribution</h2>
-<p>In a previous posts I analyzed the 100 most popular applications (at the time). One of the takeaways from that analysis was that games dominated the top application lists. If you needed more evidence that games are the runaway success of the store, here it is. Games represent 23% of the applications available on the store, but make up between 39 and 50% of the positions on the list of top applications.</p>
-<p><img src="https://www.charlesteague.com/blog/5-months-and-9000-apps-later/7.png" class="img-fluid"></p>
-<section id="most-popular-applications-any-category-any-price" class="level3">
-<h3 class="anchored" data-anchor-id="most-popular-applications-any-category-any-price"><strong>Most Popular Applications (Any Category, Any Price)</strong></h3>
-<p>The App Store data about each application contains a field with a popularity score (this is the field that is used to show the popularity bar graphs next to songs and other content in the store). Applications, include that data as well, with values ranging from 0 to 1. When I researched how that value is populated, Apple’s official position is that it is a combination of sales and other Apple internal calculations. Well, according to the popularity score, here are the most popular applications in the App Store. All are free.</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th><strong>Name</strong></th>
-<th><strong>Price</strong></th>
-<th><strong>Popularity</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Google Mobile App</td>
-<td>$0.00&nbsp;</td>
-<td>1.000000000000</td>
-</tr>
-<tr class="even">
-<td>Shazam</td>
-<td>$0.00&nbsp;</td>
-<td>1.000000000000</td>
-</tr>
-<tr class="odd">
-<td>Urbanspoon</td>
-<td>$0.00&nbsp;</td>
-<td>1.000000000000</td>
-</tr>
-<tr class="even">
-<td>Backgrounds</td>
-<td>$0.00&nbsp;</td>
-<td>1.000000000000</td>
-</tr>
-<tr class="odd">
-<td>160000 Recipes - BigOven</td>
-<td>$0.00&nbsp;</td>
-<td>1.000000000000</td>
-</tr>
-<tr class="even">
-<td>Cube</td>
-<td>$0.00&nbsp;</td>
-<td>1.000000000000</td>
-</tr>
-<tr class="odd">
-<td>The Weather ChannelÂ®</td>
-<td>$0.00&nbsp;</td>
-<td>1.000000000000</td>
-</tr>
-<tr class="even">
-<td>Facebook</td>
-<td>$0.00&nbsp;</td>
-<td>1.000000000000</td>
-</tr>
-<tr class="odd">
-<td>Touch Hockey: FS5 (FREE)</td>
-<td>$0.00&nbsp;</td>
-<td>1.000000000000</td>
-</tr>
-<tr class="even">
-<td>Google Earth</td>
-<td>$0.00&nbsp;</td>
-<td>0.886920900000</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="most-popular-paid-applications" class="level3">
-<h3 class="anchored" data-anchor-id="most-popular-paid-applications"><strong>Most Popular Paid Applications</strong></h3>
-<p>Using the same popularity score, here are the more popular paid applications in the store. Note the massive discrepancy in the scores.&nbsp;<strong><em>The most popular paid application is #48 on the list of all of the most popular applications</em></strong>. Free clearly rules on the App Store.</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th><strong>Name</strong></th>
-<th><strong>Price</strong></th>
-<th><strong>Popularity</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Flick Fishing</td>
-<td>$0.99&nbsp;</td>
-<td>0.293970020000</td>
-</tr>
-<tr class="even">
-<td>Ocarina</td>
-<td>$0.99&nbsp;</td>
-<td>0.235705390000</td>
-</tr>
-<tr class="odd">
-<td>CameraBag</td>
-<td>$2.99&nbsp;</td>
-<td>0.217822370000</td>
-</tr>
-<tr class="even">
-<td>Moto Chaser</td>
-<td>$0.99&nbsp;</td>
-<td>0.183404980000</td>
-</tr>
-<tr class="odd">
-<td>Face Melter</td>
-<td>$1.99&nbsp;</td>
-<td>0.165116010000</td>
-</tr>
-<tr class="even">
-<td>Vint B&amp;W</td>
-<td>$0.99&nbsp;</td>
-<td>0.143047210000</td>
-</tr>
-<tr class="odd">
-<td>iHunt</td>
-<td>$0.99&nbsp;</td>
-<td>0.112076000000</td>
-</tr>
-<tr class="even">
-<td>Pocket First Aid &amp; CPR Guide</td>
-<td>$1.99&nbsp;</td>
-<td>0.102925606000</td>
-</tr>
-<tr class="odd">
-<td>Grocery iQ</td>
-<td>$0.99&nbsp;</td>
-<td>0.100141720000</td>
-</tr>
-<tr class="even">
-<td>Easy Relax</td>
-<td>$0.99&nbsp;</td>
-<td>0.092379180000</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="applications-over-100" class="level2">
-<h2 class="anchored" data-anchor-id="applications-over-100">Applications Over $100</h2>
-<p>When I took a look at the expensive applications, I was surprised to find an application that cost $899.99! Anyone remember the controversy around the release and subsequent removal of ‘I Am Rich?’ These expensive applications, unlike the frivolous ‘I Am Rich’ are actually quite useful. iRa, for example, provides monitoring of video surveillance cameras. The ‘Lexi’ applications provide access to a comprehensive drug database for use by medical providers to improve point of care service. These are not trivial applications…</p>
-<table class="table">
-<colgroup>
-<col style="width: 39%">
-<col style="width: 25%">
-<col style="width: 22%">
-<col style="width: 12%">
-</colgroup>
-<thead>
-<tr class="header">
-<th><strong>Name</strong></th>
-<th><strong>Category</strong></th>
-<th><strong>Publisher</strong></th>
-<th><strong>Price</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>iRa</td>
-<td>Business</td>
-<td>Lextech Labs</td>
-<td>$899.99&nbsp;</td>
-</tr>
-<tr class="even">
-<td>MATG - SAP BusinessOne</td>
-<td>Finance</td>
-<td>MyAccountsToGo</td>
-<td>$449.99&nbsp;</td>
-</tr>
-<tr class="odd">
-<td>MATG - Dynamics GP</td>
-<td>Finance</td>
-<td>MyAccountsToGo</td>
-<td>$449.99&nbsp;</td>
-</tr>
-<tr class="even">
-<td>Lexi-COMPLETE</td>
-<td>Healthcare &amp; Fitness</td>
-<td>Lexi-Comp</td>
-<td>$299.99&nbsp;</td>
-</tr>
-<tr class="odd">
-<td>Lexi-SELECT</td>
-<td>Healthcare &amp; Fitness</td>
-<td>Lexi-Comp</td>
-<td>$219.99&nbsp;</td>
-</tr>
-<tr class="even">
-<td>Eclipse 500</td>
-<td>Utilities</td>
-<td>PunkStar Studios</td>
-<td>$199.99&nbsp;</td>
-</tr>
-<tr class="odd">
-<td>ROSIE Home Automation</td>
-<td>Lifestyle</td>
-<td>Savant Systems LLC</td>
-<td>$199.99&nbsp;</td>
-</tr>
-<tr class="even">
-<td>Lexi-CLINICAL SUITE</td>
-<td>Healthcare &amp; Fitness</td>
-<td>Lexi-Comp</td>
-<td>$179.99&nbsp;</td>
-</tr>
-<tr class="odd">
-<td>Lexi-PEDIATRIC SUITE</td>
-<td>Healthcare &amp; Fitness</td>
-<td>Lexi-Comp</td>
-<td>$179.99&nbsp;</td>
-</tr>
-<tr class="even">
-<td>ProRemote</td>
-<td>Music</td>
-<td>Far Out Labs</td>
-<td>$149.99&nbsp;</td>
-</tr>
-<tr class="odd">
-<td>iChart EMR</td>
-<td>Healthcare &amp; Fitness</td>
-<td>Caretools Inc</td>
-<td>$139.99&nbsp;</td>
-</tr>
-<tr class="even">
-<td>Lexi-Drugs &amp; Lexi-Interact</td>
-<td>Healthcare &amp; Fitness</td>
-<td>Lexi-Comp</td>
-<td>$119.99&nbsp;</td>
-</tr>
-<tr class="odd">
-<td>Dental Lexi-Drugs &amp; Lexi-Interact</td>
-<td>Healthcare &amp; Fitness</td>
-<td>Lexi-Comp</td>
-<td>$119.99&nbsp;</td>
-</tr>
-<tr class="even">
-<td>Tunic Guitar</td>
-<td>Music</td>
-<td>Bernhard Stopper</td>
-<td>$109.99&nbsp;</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="wrap-up" class="level2">
-<h2 class="anchored" data-anchor-id="wrap-up">Wrap Up</h2>
-<p>The growth of the application market for the iPhone is incredible. 9,000 applications in&nbsp;155 months!&nbsp;</p>
-<ol type="1">
-<li><p>Free applications really dominate the app store, even though there are a lot more paid applications. No idea whether anyone is making serious money, though.&nbsp;</p></li>
-<li><p>People are trying to sell serious applications on the App Store, charging hundreds of dollars for high value applications and data. No idea whether this is working at all.&nbsp;</p></li>
-</ol>
-<p>If anyone has additional thoughts about interesting analysis to consider with this data, or would like an updated copy of the data so they can do some analysis themselves, leave me a comment and I’ll do what I can!</p>
-
-
-</section>
-
- ]]></description>
-  <category>iPhone</category>
-  <guid>https://www.charlesteague.com/blog/5-months-and-9000-apps-later/</guid>
-  <pubDate>Tue, 25 Nov 2008 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
