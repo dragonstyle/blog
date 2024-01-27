@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.charlesteague.com/blog/share-post-extension/index.html</loc>
-    <lastmod>2024-01-27T01:50:39.790Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.charlesteague.com/about.html</loc>
     <lastmod>2023-11-11T14:52:49.030Z</lastmod>
   </url>
@@ -41,20 +37,24 @@
     <lastmod>2023-11-11T14:52:49.301Z</lastmod>
   </url>
   <url>
-    <loc>https://www.charlesteague.com/blog/apps-for-a-song/index.html</loc>
-    <lastmod>2023-11-11T14:52:49.245Z</lastmod>
+    <loc>https://www.charlesteague.com/blog/transition-1/index.html</loc>
+    <lastmod>2023-11-11T14:52:49.301Z</lastmod>
   </url>
   <url>
-    <loc>https://www.charlesteague.com/blog/20000-applications/index.html</loc>
-    <lastmod>2023-11-11T14:52:49.054Z</lastmod>
+    <loc>https://www.charlesteague.com/blog/hope-for-expensive-apps/index.html</loc>
+    <lastmod>2023-11-11T14:52:49.268Z</lastmod>
   </url>
   <url>
-    <loc>https://www.charlesteague.com/blog/comparing-app-store-categories/index.html</loc>
-    <lastmod>2023-11-11T14:52:49.266Z</lastmod>
+    <loc>https://www.charlesteague.com/blog/its-been-a-while/index.html</loc>
+    <lastmod>2023-11-11T14:52:49.269Z</lastmod>
   </url>
   <url>
-    <loc>https://www.charlesteague.com/blog/app-store-raw-data/index.html</loc>
-    <lastmod>2023-11-11T14:52:49.235Z</lastmod>
+    <loc>https://www.charlesteague.com/blog/app-store-comments/index.html</loc>
+    <lastmod>2023-11-11T14:52:49.077Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.charlesteague.com/blog/brown-zune/index.html</loc>
+    <lastmod>2023-11-11T14:52:49.252Z</lastmod>
   </url>
   <url>
     <loc>https://www.charlesteague.com/forest/index.html</loc>
@@ -65,24 +65,28 @@
     <lastmod>2023-11-11T16:15:20.499Z</lastmod>
   </url>
   <url>
-    <loc>https://www.charlesteague.com/blog/brown-zune/index.html</loc>
-    <lastmod>2023-11-11T14:52:49.252Z</lastmod>
+    <loc>https://www.charlesteague.com/index.html</loc>
+    <lastmod>2023-11-11T14:52:49.310Z</lastmod>
   </url>
   <url>
-    <loc>https://www.charlesteague.com/blog/app-store-comments/index.html</loc>
-    <lastmod>2023-11-11T14:52:49.077Z</lastmod>
+    <loc>https://www.charlesteague.com/blog/app-store-raw-data/index.html</loc>
+    <lastmod>2023-11-11T14:52:49.235Z</lastmod>
   </url>
   <url>
-    <loc>https://www.charlesteague.com/blog/its-been-a-while/index.html</loc>
-    <lastmod>2023-11-11T14:52:49.269Z</lastmod>
+    <loc>https://www.charlesteague.com/blog/comparing-app-store-categories/index.html</loc>
+    <lastmod>2023-11-11T14:52:49.266Z</lastmod>
   </url>
   <url>
-    <loc>https://www.charlesteague.com/blog/hope-for-expensive-apps/index.html</loc>
-    <lastmod>2023-11-11T14:52:49.268Z</lastmod>
+    <loc>https://www.charlesteague.com/blog/20000-applications/index.html</loc>
+    <lastmod>2023-11-11T14:52:49.054Z</lastmod>
   </url>
   <url>
-    <loc>https://www.charlesteague.com/blog/transition-1/index.html</loc>
-    <lastmod>2023-11-11T14:52:49.301Z</lastmod>
+    <loc>https://www.charlesteague.com/blog/apps-for-a-song/index.html</loc>
+    <lastmod>2023-11-11T14:52:49.245Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.charlesteague.com/blog/share-post-extension/index.html</loc>
+    <lastmod>2024-01-27T01:50:39.790Z</lastmod>
   </url>
   <url>
     <loc>https://www.charlesteague.com/blog/radio-silience/index.html</loc>
@@ -115,9 +119,5 @@
   <url>
     <loc>https://www.charlesteague.com/blog/build-and-test-analytics/index.html</loc>
     <lastmod>2023-11-11T14:52:49.252Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.charlesteague.com/index.html</loc>
-    <lastmod>2023-11-11T14:52:49.310Z</lastmod>
   </url>
 </urlset>
